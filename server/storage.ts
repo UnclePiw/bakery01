@@ -106,8 +106,8 @@ export class MemStorage implements IStorage {
       { id: randomUUID(), name: "เดนิช", imageUrl: null, shelfLifeHours: 12 },
       { id: randomUUID(), name: "บัตเตอร์เค้ก", imageUrl: null, shelfLifeHours: 24 },
       { id: randomUUID(), name: "โดนัท", imageUrl: null, shelfLifeHours: 16 },
-      { id: randomUUID(), name: "คุกกี้", imageUrl: null, shelfLifeHours: 72 },
-      { id: randomUUID(), name: "แซนด์วิช", imageUrl: null, shelfLifeHours: 6 },
+      { id: randomUUID(), name: "คุกกี้เนย", imageUrl: null, shelfLifeHours: 72 },
+      { id: randomUUID(), name: "มัฟฟิน", imageUrl: null, shelfLifeHours: 12 },
     ];
     products.forEach((p) => this.bakeryProducts.set(p.id, p));
 
@@ -142,6 +142,41 @@ export class MemStorage implements IStorage {
         batchNumber: "BATCH-002",
         receivedDate: new Date(today.setDate(today.getDate() - 1)).toISOString().split("T")[0],
         isFromYesterday: false,
+      });
+    }
+
+    const croissantId = Array.from(this.bakeryProducts.values()).find((p) => p.name === "ครัวซองต์")?.id;
+    const cookieId = Array.from(this.bakeryProducts.values()).find((p) => p.name === "คุกกี้เนย")?.id;
+    const muffinId = Array.from(this.bakeryProducts.values()).find((p) => p.name === "มัฟฟิน")?.id;
+    
+    if (croissantId && cookieId && muffinId) {
+      const now = new Date();
+      const fiveHoursAgo = new Date(now.getTime() - 5 * 60 * 60 * 1000);
+      const twoHoursAgo = new Date(now.getTime() - 2 * 60 * 60 * 1000);
+      const fourHoursAgo = new Date(now.getTime() - 4 * 60 * 60 * 1000);
+
+      this.productStock.set(randomUUID(), {
+        id: randomUUID(),
+        productId: croissantId,
+        branchId: firstBranch,
+        quantity: 8,
+        productionTime: fiveHoursAgo,
+      });
+
+      this.productStock.set(randomUUID(), {
+        id: randomUUID(),
+        productId: cookieId,
+        branchId: firstBranch,
+        quantity: 3,
+        productionTime: twoHoursAgo,
+      });
+
+      this.productStock.set(randomUUID(), {
+        id: randomUUID(),
+        productId: muffinId,
+        branchId: firstBranch,
+        quantity: 4,
+        productionTime: fourHoursAgo,
       });
     }
   }
