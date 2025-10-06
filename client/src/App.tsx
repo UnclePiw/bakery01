@@ -6,7 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { BranchSelector } from "@/components/BranchSelector";
-import { Bell, LayoutDashboard, Package, Clock, AlertTriangle, TrendingUp } from "lucide-react";
+import { Bell, LayoutDashboard, Package, Clock, AlertTriangle, TrendingUp, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useState, useEffect } from "react";
@@ -21,6 +21,7 @@ import HourlyCheck from "@/pages/HourlyCheck";
 import Alerts from "@/pages/Alerts";
 import ForecastImport from "@/pages/ForecastImport";
 import TodayForecast from "@/pages/TodayForecast";
+import Optimization from "@/pages/Optimization";
 import NotFound from "@/pages/not-found";
 
 function Router({ selectedBranchId }: { selectedBranchId: string }) {
@@ -31,6 +32,9 @@ function Router({ selectedBranchId }: { selectedBranchId: string }) {
       </Route>
       <Route path="/today-forecast">
         <TodayForecast selectedBranchId={selectedBranchId} />
+      </Route>
+      <Route path="/optimization">
+        <Optimization selectedBranchId={selectedBranchId} />
       </Route>
       <Route path="/ingredients">
         <IngredientManagement selectedBranchId={selectedBranchId} />
@@ -55,13 +59,14 @@ function BottomNav() {
   const navItems = [
     { path: "/", label: "Dashboard", icon: LayoutDashboard },
     { path: "/today-forecast", label: "พยากรณ์", icon: TrendingUp },
+    { path: "/optimization", label: "เพิ่มประสิทธิภาพ", icon: Zap },
     { path: "/ingredients", label: "วัตถุดิบ", icon: Package },
     { path: "/hourly-check", label: "ตรวจนับ", icon: Clock },
   ];
 
   return (
     <div className="md:hidden fixed bottom-0 left-0 right-0 bg-card border-t z-50">
-      <div className="grid grid-cols-4 gap-1 p-2">
+      <div className="grid grid-cols-5 gap-1 p-2">
         {navItems.map((item) => {
           const Icon = item.icon;
           const isActive = location === item.path;
@@ -90,6 +95,7 @@ function DesktopNav() {
   const navItems = [
     { path: "/", label: "Dashboard", icon: LayoutDashboard },
     { path: "/today-forecast", label: "พยากรณ์วันนี้", icon: TrendingUp },
+    { path: "/optimization", label: "เพิ่มประสิทธิภาพ", icon: Zap },
     { path: "/ingredients", label: "จัดการวัตถุดิบ", icon: Package },
     { path: "/hourly-check", label: "ตรวจนับรายชั่วโมง", icon: Clock },
     { path: "/alerts", label: "การแจ้งเตือน", icon: AlertTriangle },

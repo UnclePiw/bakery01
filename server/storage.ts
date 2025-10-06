@@ -418,7 +418,7 @@ export class MemStorage implements IStorage {
 }
 
 import { db } from "./db";
-import { eq, and, gte, lte } from "drizzle-orm";
+import { eq, and, gte, lte, sql } from "drizzle-orm";
 import * as schema from "@shared/schema";
 
 export class DbStorage implements IStorage {
@@ -617,54 +617,48 @@ export class DbStorage implements IStorage {
 
   async getProductionPlans(branchId?: string): Promise<ProductionPlan[]> {
     if (branchId) {
-      return db.query.productionPlans.findMany({
-        where: eq(schema.productionPlans.branch, branchId),
-      });
+      return db.select().from(schema.productionPlans)
+        .where(sql`${schema.productionPlans.branch} LIKE ${branchId + ':%'}`);
     }
     return db.query.productionPlans.findMany();
   }
 
   async getPromotionRecommendations(branchId?: string): Promise<PromotionRecommendation[]> {
     if (branchId) {
-      return db.query.promotionRecommendations.findMany({
-        where: eq(schema.promotionRecommendations.store, branchId),
-      });
+      return db.select().from(schema.promotionRecommendations)
+        .where(sql`${schema.promotionRecommendations.store} LIKE ${branchId + ':%'}`);
     }
     return db.query.promotionRecommendations.findMany();
   }
 
   async getDynamicPricingSchedules(branchId?: string): Promise<DynamicPricingSchedule[]> {
     if (branchId) {
-      return db.query.dynamicPricingSchedules.findMany({
-        where: eq(schema.dynamicPricingSchedules.branch, branchId),
-      });
+      return db.select().from(schema.dynamicPricingSchedules)
+        .where(sql`${schema.dynamicPricingSchedules.branch} LIKE ${branchId + ':%'}`);
     }
     return db.query.dynamicPricingSchedules.findMany();
   }
 
   async getShelfLifeAlerts(branchId?: string): Promise<ShelfLifeAlert[]> {
     if (branchId) {
-      return db.query.shelfLifeAlerts.findMany({
-        where: eq(schema.shelfLifeAlerts.branch, branchId),
-      });
+      return db.select().from(schema.shelfLifeAlerts)
+        .where(sql`${schema.shelfLifeAlerts.branch} LIKE ${branchId + ':%'}`);
     }
     return db.query.shelfLifeAlerts.findMany();
   }
 
   async getDailyActionPlans(branchId?: string): Promise<DailyActionPlan[]> {
     if (branchId) {
-      return db.query.dailyActionPlans.findMany({
-        where: eq(schema.dailyActionPlans.branch, branchId),
-      });
+      return db.select().from(schema.dailyActionPlans)
+        .where(sql`${schema.dailyActionPlans.branch} LIKE ${branchId + ':%'}`);
     }
     return db.query.dailyActionPlans.findMany();
   }
 
   async getBranchWasteAnalysis(branchId?: string): Promise<BranchWasteAnalysis[]> {
     if (branchId) {
-      return db.query.branchWasteAnalysis.findMany({
-        where: eq(schema.branchWasteAnalysis.store, branchId),
-      });
+      return db.select().from(schema.branchWasteAnalysis)
+        .where(sql`${schema.branchWasteAnalysis.store} LIKE ${branchId + ':%'}`);
     }
     return db.query.branchWasteAnalysis.findMany();
   }

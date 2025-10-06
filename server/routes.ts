@@ -458,9 +458,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.get("/api/optimization/production-plans/:branchId?", async (req: Request, res: Response) => {
+  app.get("/api/optimization/production-plans", async (req: Request, res: Response) => {
     try {
-      const { branchId } = req.params;
+      const branchId = req.query.branchId as string | undefined;
       const plans = await storage.getProductionPlans(branchId);
       res.json(plans);
     } catch (error) {
@@ -468,9 +468,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.get("/api/optimization/promotions/:branchId?", async (req: Request, res: Response) => {
+  app.get("/api/optimization/promotions", async (req: Request, res: Response) => {
     try {
-      const { branchId } = req.params;
+      const branchId = req.query.branchId as string | undefined;
       const promotions = await storage.getPromotionRecommendations(branchId);
       res.json(promotions);
     } catch (error) {
@@ -478,9 +478,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.get("/api/optimization/pricing-schedules/:branchId?", async (req: Request, res: Response) => {
+  app.get("/api/optimization/pricing-schedules", async (req: Request, res: Response) => {
     try {
-      const { branchId } = req.params;
+      const branchId = req.query.branchId as string | undefined;
       const schedules = await storage.getDynamicPricingSchedules(branchId);
       res.json(schedules);
     } catch (error) {
@@ -488,9 +488,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.get("/api/optimization/shelf-life-alerts/:branchId?", async (req: Request, res: Response) => {
+  app.get("/api/optimization/shelf-life-alerts", async (req: Request, res: Response) => {
     try {
-      const { branchId } = req.params;
+      const branchId = req.query.branchId as string | undefined;
       const alerts = await storage.getShelfLifeAlerts(branchId);
       res.json(alerts);
     } catch (error) {
@@ -498,9 +498,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.get("/api/optimization/daily-actions/:branchId?", async (req: Request, res: Response) => {
+  app.get("/api/optimization/daily-actions", async (req: Request, res: Response) => {
     try {
-      const { branchId } = req.params;
+      const branchId = req.query.branchId as string | undefined;
       const actions = await storage.getDailyActionPlans(branchId);
       res.json(actions);
     } catch (error) {
@@ -508,9 +508,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.get("/api/reports/waste-analysis/:branchId?", async (req: Request, res: Response) => {
+  app.get("/api/reports/waste-analysis", async (req: Request, res: Response) => {
     try {
-      const { branchId } = req.params;
+      const branchId = req.query.branchId as string | undefined;
       const analysis = await storage.getBranchWasteAnalysis(branchId);
       res.json(analysis);
     } catch (error) {
