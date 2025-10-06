@@ -159,7 +159,7 @@ function AppContent({ selectedBranch, setSelectedBranch, alertCount, mockBranche
   );
 }
 
-function App() {
+function AppWithData() {
   const [selectedBranch, setSelectedBranch] = useState("");
   const [alertCount] = useState(3);
 
@@ -178,15 +178,21 @@ function App() {
   }
 
   return (
+    <AppContent
+      selectedBranch={selectedBranch}
+      setSelectedBranch={setSelectedBranch}
+      alertCount={alertCount}
+      mockBranches={branches}
+    />
+  );
+}
+
+function App() {
+  return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
         <TooltipProvider>
-          <AppContent
-            selectedBranch={selectedBranch}
-            setSelectedBranch={setSelectedBranch}
-            alertCount={alertCount}
-            mockBranches={branches}
-          />
+          <AppWithData />
           <Toaster />
         </TooltipProvider>
       </ThemeProvider>
