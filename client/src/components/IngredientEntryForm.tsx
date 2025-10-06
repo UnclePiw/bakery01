@@ -135,15 +135,12 @@ export function IngredientEntryForm({ ingredients, onSubmit }: IngredientEntryFo
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <Label>วันหมดอายุ</Label>
-                  <div className="relative">
-                    <Input
-                      type="date"
-                      value={entry.expiryDate}
-                      onChange={(e) => updateEntry(type, index, "expiryDate", e.target.value)}
-                      data-testid={`input-expiry-${index}`}
-                    />
-                    <Calendar className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
-                  </div>
+                  <Input
+                    type="date"
+                    value={entry.expiryDate || ""}
+                    onChange={(e) => updateEntry(type, index, "expiryDate", e.target.value)}
+                    data-testid={`input-expiry-${index}`}
+                  />
                 </div>
                 <div>
                   <Label>เลขแบตช์ (ถ้ามี)</Label>
