@@ -6,7 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { BranchSelector } from "@/components/BranchSelector";
-import { Bell, LayoutDashboard, Package, Clock, AlertTriangle } from "lucide-react";
+import { Bell, LayoutDashboard, Package, Clock, AlertTriangle, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useState, useEffect } from "react";
@@ -20,6 +20,7 @@ import IngredientManagement from "@/pages/IngredientManagement";
 import HourlyCheck from "@/pages/HourlyCheck";
 import Alerts from "@/pages/Alerts";
 import ForecastImport from "@/pages/ForecastImport";
+import TodayForecast from "@/pages/TodayForecast";
 import NotFound from "@/pages/not-found";
 
 function Router({ selectedBranchId }: { selectedBranchId: string }) {
@@ -27,6 +28,9 @@ function Router({ selectedBranchId }: { selectedBranchId: string }) {
     <Switch>
       <Route path="/">
         <Dashboard selectedBranchId={selectedBranchId} />
+      </Route>
+      <Route path="/today-forecast">
+        <TodayForecast selectedBranchId={selectedBranchId} />
       </Route>
       <Route path="/ingredients">
         <IngredientManagement selectedBranchId={selectedBranchId} />
@@ -50,9 +54,9 @@ function BottomNav() {
 
   const navItems = [
     { path: "/", label: "Dashboard", icon: LayoutDashboard },
+    { path: "/today-forecast", label: "พยากรณ์", icon: TrendingUp },
     { path: "/ingredients", label: "วัตถุดิบ", icon: Package },
     { path: "/hourly-check", label: "ตรวจนับ", icon: Clock },
-    { path: "/alerts", label: "แจ้งเตือน", icon: AlertTriangle },
   ];
 
   return (
@@ -85,6 +89,7 @@ function DesktopNav() {
 
   const navItems = [
     { path: "/", label: "Dashboard", icon: LayoutDashboard },
+    { path: "/today-forecast", label: "พยากรณ์วันนี้", icon: TrendingUp },
     { path: "/ingredients", label: "จัดการวัตถุดิบ", icon: Package },
     { path: "/hourly-check", label: "ตรวจนับรายชั่วโมง", icon: Clock },
     { path: "/alerts", label: "การแจ้งเตือน", icon: AlertTriangle },

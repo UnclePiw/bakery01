@@ -409,5 +409,52 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  app.get("/api/today-forecast/:branchId", async (req: Request, res: Response) => {
+    try {
+      const { branchId } = req.params;
+      const today = new Date().toISOString().split("T")[0];
+      
+      const forecast = await storage.getBranchForecast(branchId, today);
+      const productStock = await storage.getProductStock(branchId);
+      const products = await storage.getBakeryProducts();
+
+      const now = new Date();
+      
+      const forecastWithPromotion = forecast ? forecast.products.map((productForecast) => {
+        const stock = productStock.find((s) => s.productId === productForecast.productId);
+        const product = products.find((p) => p.id === productForecast.productId);
+        
+        let hoursOnShelf = 0;
+        let needsPromotion = false;
+        
+        if (stock && product) {
+          const productionTime = new Date(stock.productionTime);
+          hoursOnShelf = (now.getTime() - productionTime.getTime()) / (1000 * 60 * 60);
+          needsPromotion = hoursOnShelf > 3;
+        }
+
+        return {
+          ...productForecast,
+          currentStock: stock?.quantity || 0,
+          hoursOnShelf: Math.round(hoursOnShelf * 10) / 10,
+          needsPromotion,
+          shelfLifeHours: product?.shelfLifeHours || 0,
+        };
+      }) : [];
+
+      res.json({
+        date: today,
+        branchId,
+        branchName: forecast?.branchName || "",
+        totalForecast: forecast?.totalForecast || 0,
+        accuracy: forecast?.accuracy || null,
+        products: forecastWithPromotion,
+      });
+    } catch (error) {
+      console.error("Failed to fetch today's forecast:", error);
+      res.status(500).json({ error: "Failed to fetch today's forecast" });
+    }
+  });
+
   return httpServer;
 }
