@@ -77,7 +77,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
           (expiryDate.getTime() - today.getTime()) / (1000 * 60 * 60 * 24)
         );
         return {
-          ...s,
+          id: s.id,
+          ingredientId: s.ingredientId,
+          branchId: s.branchId,
+          name: s.ingredient.name,
+          unit: s.ingredient.unit,
+          quantity: parseFloat(s.quantity),
+          expiryDate: s.expiryDate,
+          batchNumber: s.batchNumber,
+          receivedDate: s.receivedDate,
+          isFromYesterday: s.isFromYesterday,
           daysUntilExpiry,
         };
       });
