@@ -17,19 +17,39 @@ interface OptimizationProps {
 
 export default function Optimization({ selectedBranchId }: OptimizationProps) {
   const { data: productionPlans = [], isLoading: isLoadingPlans } = useQuery<ProductionPlan[]>({
-    queryKey: ["/api/optimization/production-plans", { branchId: selectedBranchId }],
+    queryKey: ["/api/optimization/production-plans", selectedBranchId],
+    queryFn: async () => {
+      const res = await fetch(`/api/optimization/production-plans?branchId=${selectedBranchId}`);
+      if (!res.ok) throw new Error('Failed to fetch');
+      return res.json();
+    },
   });
 
   const { data: promotions = [], isLoading: isLoadingPromotions } = useQuery<PromotionRecommendation[]>({
-    queryKey: ["/api/optimization/promotions", { branchId: selectedBranchId }],
+    queryKey: ["/api/optimization/promotions", selectedBranchId],
+    queryFn: async () => {
+      const res = await fetch(`/api/optimization/promotions?branchId=${selectedBranchId}`);
+      if (!res.ok) throw new Error('Failed to fetch');
+      return res.json();
+    },
   });
 
   const { data: pricingSchedules = [], isLoading: isLoadingPricing } = useQuery<DynamicPricingSchedule[]>({
-    queryKey: ["/api/optimization/pricing-schedules", { branchId: selectedBranchId }],
+    queryKey: ["/api/optimization/pricing-schedules", selectedBranchId],
+    queryFn: async () => {
+      const res = await fetch(`/api/optimization/pricing-schedules?branchId=${selectedBranchId}`);
+      if (!res.ok) throw new Error('Failed to fetch');
+      return res.json();
+    },
   });
 
   const { data: dailyActions = [], isLoading: isLoadingActions } = useQuery<DailyActionPlan[]>({
-    queryKey: ["/api/optimization/daily-actions", { branchId: selectedBranchId }],
+    queryKey: ["/api/optimization/daily-actions", selectedBranchId],
+    queryFn: async () => {
+      const res = await fetch(`/api/optimization/daily-actions?branchId=${selectedBranchId}`);
+      if (!res.ok) throw new Error('Failed to fetch');
+      return res.json();
+    },
   });
 
   if (isLoadingPlans || isLoadingPromotions || isLoadingPricing || isLoadingActions) {

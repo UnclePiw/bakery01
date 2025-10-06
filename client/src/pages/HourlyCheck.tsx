@@ -10,11 +10,18 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { useToast } from "@/hooks/use-toast";
 
-interface Product {
+interface ProductStock {
   id: string;
-  name: string;
-  systemQuantity: number;
-  lastCheck?: string;
+  productId: string;
+  branchId: string;
+  quantity: number;
+  productionTime: Date;
+  product: {
+    id: string;
+    name: string;
+    imageUrl: string | null;
+    shelfLifeHours: number;
+  };
 }
 
 interface HourlyCheckProps {
@@ -27,7 +34,7 @@ export default function HourlyCheck({ selectedBranchId }: HourlyCheckProps) {
   const { toast } = useToast();
   const queryClient = useQueryClient();
 
-  const { data: productStock, isLoading } = useQuery({
+  const { data: productStock, isLoading } = useQuery<ProductStock[]>({
     queryKey: ["/api/products/stock", selectedBranchId],
     queryFn: () => api.getProductStock(selectedBranchId),
   });
@@ -35,7 +42,7 @@ export default function HourlyCheck({ selectedBranchId }: HourlyCheckProps) {
   useEffect(() => {
     if (productStock) {
       const initialCounts = productStock.reduce(
-        (acc: Record<string, number>, p: Product) => ({ ...acc, [p.id]: p.systemQuantity }),
+        (acc: Record<string, number>, p: ProductStock) => ({ ...acc, [p.productId]: p.quantity }),
         {}
       );
       setCounts(initialCounts);
@@ -117,14 +124,14 @@ export default function HourlyCheck({ selectedBranchId }: HourlyCheckProps) {
       )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {(productStock || []).map((product: Product) => {
-          const counted = counts[product.id] || 0;
-          const variance = counted - product.systemQuantity;
+        {(productStock || []).map((stock: ProductStock) => {
+          const counted = counts[stock.productId] || 0;
+          const variance = counted - stock.quantity;
           return (
-            <Card key={product.id} className="p-6" data-testid={`card-product-${product.id}`}>
+            <Card key={stock.id} className="p-6" data-testid={`card-product-${stock.productId}`}>
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <h3 className="font-semibold">{product.name}</h3>
+                  <h3 className="font-semibold">{stock.product.name}</h3>
                   {variance !== 0 && (
                     <Badge
                       variant={variance < 0 ? "destructive" : "secondary"}
@@ -144,27 +151,30 @@ export default function HourlyCheck({ selectedBranchId }: HourlyCheckProps) {
                   <div className="text-sm text-muted-foreground">
                     ในระบบ:{" "}
                     <span className="font-mono font-medium text-foreground">
-                      {product.systemQuantity}
+                      {stock.quantity}
                     </span>{" "}
                     ชิ้น
                   </div>
-                  {product.lastCheck && (
-                    <div className="text-xs text-muted-foreground">
-                      ตรวจล่าสุด: {product.lastCheck}
-                    </div>
-                  )}
+                  <div className="text-xs text-muted-foreground">
+                    ผลิต: {new Date(stock.productionTime).toLocaleString('th-TH', { 
+                      day: 'numeric', 
+                      month: 'short', 
+                      hour: '2-digit', 
+                      minute: '2-digit' 
+                    })}
+                  </div>
                 </div>
                 <div>
-                  <Label htmlFor={`count-${product.id}`}>นับได้จริง</Label>
+                  <Label htmlFor={`count-${stock.productId}`}>นับได้จริง</Label>
                   <Input
-                    id={`count-${product.id}`}
+                    id={`count-${stock.productId}`}
                     type="number"
                     value={counted}
                     onChange={(e) =>
-                      setCounts({ ...counts, [product.id]: parseInt(e.target.value) || 0 })
+                      setCounts({ ...counts, [stock.productId]: parseInt(e.target.value) || 0 })
                     }
                     className="font-mono text-lg"
-                    data-testid={`input-count-${product.id}`}
+                    data-testid={`input-count-${stock.productId}`}
                   />
                 </div>
               </div>
