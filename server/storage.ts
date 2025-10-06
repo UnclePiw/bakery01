@@ -20,7 +20,7 @@ export interface IStorage {
 
   getBranches(): Promise<Branch[]>;
   getBranch(id: string): Promise<Branch | undefined>;
-  createBranch(branch: Omit<Branch, "id">): Promise<Branch>;
+  createBranch(branch: Branch): Promise<Branch>;
 
   getIngredients(): Promise<Ingredient[]>;
   getIngredient(id: string): Promise<Ingredient | undefined>;
@@ -81,10 +81,13 @@ export class MemStorage implements IStorage {
 
   private seedData() {
     const branches = [
-      { id: randomUUID(), name: "สาขาสยาม", location: "สยามพารากอน" },
-      { id: randomUUID(), name: "สาขาอโศก", location: "เทอมินอล 21" },
-      { id: randomUUID(), name: "สาขาสีลม", location: "ซิลม คอมเพล็กซ์" },
-      { id: randomUUID(), name: "สาขาเซ็นทรัล", location: "เซ็นทรัลเวิลด์" },
+      { id: "3510", name: "ชายหาดกมลา 1", location: null },
+      { id: "18469", name: "ราไวย์บีช", location: null },
+      { id: "18504", name: "ตลาดนัดสามกอง", location: null },
+      { id: "8732", name: "ราชพฤกษ์ (บางพลับ)", location: null },
+      { id: "15757", name: "The Bliss South Beach Patong", location: null },
+      { id: "9146", name: "หมู่บ้านพนาสนธิ์", location: null },
+      { id: "9922", name: "ศรีสุดา", location: null },
     ];
     branches.forEach((b) => this.branches.set(b.id, b));
 
@@ -166,11 +169,9 @@ export class MemStorage implements IStorage {
     return this.branches.get(id);
   }
 
-  async createBranch(branch: Omit<Branch, "id">): Promise<Branch> {
-    const id = randomUUID();
-    const newBranch: Branch = { ...branch, id };
-    this.branches.set(id, newBranch);
-    return newBranch;
+  async createBranch(branch: Branch): Promise<Branch> {
+    this.branches.set(branch.id, branch);
+    return branch;
   }
 
   async getIngredients(): Promise<Ingredient[]> {

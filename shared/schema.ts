@@ -10,7 +10,7 @@ export const users = pgTable("users", {
 });
 
 export const branches = pgTable("branches", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  id: varchar("id").primaryKey(),
   name: text("name").notNull(),
   location: text("location"),
 });
@@ -95,7 +95,7 @@ export const insertUserSchema = createInsertSchema(users).pick({
   password: true,
 });
 
-export const insertBranchSchema = createInsertSchema(branches).omit({ id: true });
+export const insertBranchSchema = createInsertSchema(branches);
 export const insertIngredientSchema = createInsertSchema(ingredients).omit({ id: true });
 export const insertIngredientStockSchema = createInsertSchema(ingredientStock).omit({ id: true });
 export const insertBakeryProductSchema = createInsertSchema(bakeryProducts).omit({ id: true });
