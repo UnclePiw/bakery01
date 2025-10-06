@@ -56,7 +56,7 @@ export default function IngredientManagement({ selectedBranchId }: IngredientMan
   };
 
   const filteredStock = (stock || []).filter((item: IngredientStock) =>
-    item.name.toLowerCase().includes(searchQuery.toLowerCase())
+    item.name && item.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
