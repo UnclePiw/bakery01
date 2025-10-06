@@ -135,7 +135,7 @@ function AppContent({ selectedBranch, setSelectedBranch, alertCount, mockBranche
             <header className="sticky top-0 z-40 bg-card border-b">
               <div className="container mx-auto px-4 h-16 flex items-center justify-between gap-4">
                 <div className="flex items-center gap-4">
-                  <h1 className="text-xl font-bold hidden sm:block">ระบบจัดการเบเกอรี่</h1>
+                  <h1 className="font-bold hidden sm:block text-[16px] text-center ml-[0px] mr-[0px] mt-[0px] mb-[0px]">Bakery System</h1>
                   <h1 className="text-xl font-bold sm:hidden">เบเกอรี่</h1>
                   <BranchSelector
                     branches={mockBranches}
