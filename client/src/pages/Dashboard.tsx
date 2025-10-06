@@ -1,6 +1,7 @@
 import { StatCard } from "@/components/StatCard";
 import { AlertList } from "@/components/AlertList";
 import { ForecastChart } from "@/components/ForecastChart";
+import { ForecastPanel } from "@/components/ForecastPanel";
 import { ProductionRecommendation } from "@/components/ProductionRecommendation";
 import { IngredientEntryForm } from "@/components/IngredientEntryForm";
 import { HourlyCheckModal } from "@/components/HourlyCheckModal";
@@ -19,6 +20,7 @@ interface DashboardProps {
 export default function Dashboard({ selectedBranchId }: DashboardProps) {
   const [showHourlyCheck, setShowHourlyCheck] = useState(false);
   const [showDateTimePicker, setShowDateTimePicker] = useState(false);
+  const [forecastDate, setForecastDate] = useState(new Date().toISOString().split("T")[0]);
   const queryClient = useQueryClient();
   const { toast } = useToast();
 
@@ -225,6 +227,8 @@ export default function Dashboard({ selectedBranchId }: DashboardProps) {
           <ProductionRecommendation items={productionPlan} onStartProduction={handleProductionStart} />
         </div>
       </div>
+
+      <ForecastPanel selectedBranch={selectedBranchId} selectedDate={forecastDate} />
 
       <HourlyCheckModal
         open={showHourlyCheck}

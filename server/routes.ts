@@ -2,7 +2,6 @@ import type { Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
 import { Server as SocketIOServer } from "socket.io";
 import { storage } from "./storage";
-import { excelParser } from "./excelParser";
 import { z } from "zod";
 
 const addIngredientStockSchema = z.object({
@@ -267,33 +266,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.get("/api/forecast/:branchId", async (req: Request, res: Response) => {
     try {
-      const { branchId } = req.params;
-      const today = new Date();
-      
-      try {
-        const demandData = excelParser.parseDemandForecast();
-        const branchForecasts = demandData.filter((f) => f.branch === branchId || !f.branch);
-
-        const hours = Array.from({ length: 12 }, (_, i) => i + 8);
-        const forecastData = hours.map((hour) => {
-          const forecast = branchForecasts.find((f) => f.hour === hour);
-          return {
-            hour: `${hour.toString().padStart(2, "0")}:00`,
-            predicted: forecast?.predictedDemand || Math.floor(Math.random() * 50) + 30,
-            actual: hour <= new Date().getHours() ? Math.floor(Math.random() * 50) + 25 : undefined,
-          };
-        });
-
-        res.json(forecastData);
-      } catch (parseError) {
-        const hours = Array.from({ length: 12 }, (_, i) => i + 8);
-        const mockData = hours.map((hour) => ({
-          hour: `${hour.toString().padStart(2, "0")}:00`,
-          predicted: Math.floor(Math.random() * 50) + 30,
-          actual: hour <= new Date().getHours() ? Math.floor(Math.random() * 50) + 25 : undefined,
-        }));
-        res.json(mockData);
-      }
+      const hours = Array.from({ length: 12 }, (_, i) => i + 8);
+      const mockData = hours.map((hour) => ({
+        hour: `${hour.toString().padStart(2, "0")}:00`,
+        predicted: Math.floor(Math.random() * 50) + 30,
+        actual: hour <= new Date().getHours() ? Math.floor(Math.random() * 50) + 25 : undefined,
+      }));
+      res.json(mockData);
     } catch (error) {
       res.status(500).json({ error: "Failed to fetch forecast" });
     }
@@ -302,60 +281,27 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/production-plan/:branchId", async (req: Request, res: Response) => {
     try {
       const { branchId } = req.params;
-      
-      try {
-        const productionPlans = excelParser.parseProductionPlans();
-        const branchPlans = productionPlans.filter((p) => p.branch === branchId || !p.branch);
+      const products = await storage.getBakeryProducts();
+      const productStock = await storage.getProductStock(branchId);
 
-        const products = await storage.getBakeryProducts();
-        const productStock = await storage.getProductStock(branchId);
+      const recommendations = products.map((product) => {
+        const stock = productStock.find((s) => s.productId === product.id);
+        const currentStock = stock?.quantity || 0;
+        const forecastDemand = Math.floor(Math.random() * 30) + 20;
+        const suggestedProduction = Math.max(0, forecastDemand - currentStock);
 
-        const recommendations = products.map((product) => {
-          const plan = branchPlans.find((p) => 
-            p.product.toLowerCase().includes(product.name.toLowerCase()) || 
-            product.name.toLowerCase().includes(p.product.toLowerCase())
-          );
-          
-          const stock = productStock.find((s) => s.productId === product.id);
-          const currentStock = stock?.quantity || 0;
-          const forecastDemand = plan?.recommendedQuantity || Math.floor(Math.random() * 30) + 20;
-          const suggestedProduction = Math.max(0, forecastDemand - currentStock);
+        return {
+          id: product.id,
+          name: product.name,
+          currentStock,
+          forecastDemand,
+          suggestedProduction,
+          ingredientsAvailable: Math.random() > 0.2,
+          shelfLifeHours: product.shelfLifeHours,
+        };
+      });
 
-          return {
-            id: product.id,
-            name: product.name,
-            currentStock,
-            forecastDemand,
-            suggestedProduction,
-            ingredientsAvailable: Math.random() > 0.2,
-            shelfLifeHours: product.shelfLifeHours,
-          };
-        });
-
-        res.json(recommendations);
-      } catch (parseError) {
-        const products = await storage.getBakeryProducts();
-        const productStock = await storage.getProductStock(branchId);
-
-        const mockRecommendations = products.map((product) => {
-          const stock = productStock.find((s) => s.productId === product.id);
-          const currentStock = stock?.quantity || Math.floor(Math.random() * 20);
-          const forecastDemand = Math.floor(Math.random() * 30) + 20;
-          const suggestedProduction = Math.max(0, forecastDemand - currentStock);
-
-          return {
-            id: product.id,
-            name: product.name,
-            currentStock,
-            forecastDemand,
-            suggestedProduction,
-            ingredientsAvailable: Math.random() > 0.2,
-            shelfLifeHours: product.shelfLifeHours,
-          };
-        });
-
-        res.json(mockRecommendations);
-      }
+      res.json(recommendations);
     } catch (error) {
       res.status(500).json({ error: "Failed to fetch production plan" });
     }

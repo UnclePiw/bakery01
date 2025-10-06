@@ -17,6 +17,7 @@ import Dashboard from "@/pages/Dashboard";
 import IngredientManagement from "@/pages/IngredientManagement";
 import HourlyCheck from "@/pages/HourlyCheck";
 import Alerts from "@/pages/Alerts";
+import ForecastImport from "@/pages/ForecastImport";
 import NotFound from "@/pages/not-found";
 
 function Router({ selectedBranchId }: { selectedBranchId: string }) {
@@ -33,6 +34,9 @@ function Router({ selectedBranchId }: { selectedBranchId: string }) {
       </Route>
       <Route path="/alerts">
         <Alerts selectedBranchId={selectedBranchId} />
+      </Route>
+      <Route path="/forecast-import">
+        <ForecastImport />
       </Route>
       <Route component={NotFound} />
     </Switch>
