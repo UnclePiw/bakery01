@@ -1,0 +1,4234 @@
+[
+ {
+  "store": "18469: ราไวย์บีช",
+  "qty_sold": 68950,
+  "waste_qty": 3677,
+  "waste_cost": 44353.19681289495,
+  "waste_rate": 5.55392118159843,
+  "total_volume": 72627
+ },
+ {
+  "store": "14555: KARON  AVENUE",
+  "qty_sold": 43535,
+  "waste_qty": 3084,
+  "waste_cost": 43760.58264956974,
+  "waste_rate": 6.507866235768509,
+  "total_volume": 46619
+ },
+ {
+  "store": "15757: The Bliss South Beach Patong",
+  "qty_sold": 49159,
+  "waste_qty": 3025,
+  "waste_cost": 38607.35242619467,
+  "waste_rate": 5.501256479648504,
+  "total_volume": 52184
+ },
+ {
+  "store": "15714: The Rich (เกาะแก้ว)",
+  "qty_sold": 15122,
+  "waste_qty": 2273,
+  "waste_cost": 27984.11143487664,
+  "waste_rate": 14.02448929265638,
+  "total_volume": 17395
+ },
+ {
+  "store": "15483: PTTOR สนามบินกระบี่",
+  "qty_sold": 8320,
+  "waste_qty": 2129,
+  "waste_cost": 25955.65519007881,
+  "waste_rate": 20.8323589756967,
+  "total_volume": 10449
+ },
+ {
+  "store": "18074: บ้านป่าหล่าย จ.ภูเก็ต",
+  "qty_sold": 18002,
+  "waste_qty": 2334,
+  "waste_cost": 25955.59942788199,
+  "waste_rate": 12.3336452597282,
+  "total_volume": 20336
+ },
+ {
+  "store": "6243: อ่าวลึกใต้",
+  "qty_sold": 18423,
+  "waste_qty": 1997,
+  "waste_cost": 25811.57759034874,
+  "waste_rate": 9.85199512052939,
+  "total_volume": 20420
+ },
+ {
+  "store": "6266: บขส.ระนอง",
+  "qty_sold": 24481,
+  "waste_qty": 1991,
+  "waste_cost": 25496.39906097453,
+  "waste_rate": 8.10281141204743,
+  "total_volume": 26472
+ },
+ {
+  "store": "13391: ถนนเสน่หานุสรณ์",
+  "qty_sold": 24510,
+  "waste_qty": 1962,
+  "waste_cost": 24547.82376566674,
+  "waste_rate": 7.999635902381459,
+  "total_volume": 26472
+ },
+ {
+  "store": "11045: พรุฉิมพลี ซอย 1",
+  "qty_sold": 25151,
+  "waste_qty": 1744,
+  "waste_cost": 23764.74151553184,
+  "waste_rate": 5.612325914737439,
+  "total_volume": 26895
+ },
+ {
+  "store": "5073: บ้านไม้ขาว",
+  "qty_sold": 13714,
+  "waste_qty": 1869,
+  "waste_cost": 23528.8407387649,
+  "waste_rate": 14.46875606327882,
+  "total_volume": 15583
+ },
+ {
+  "store": "8704: ปากพนังตะวันตก",
+  "qty_sold": 10776,
+  "waste_qty": 1776,
+  "waste_cost": 23484.63240950273,
+  "waste_rate": 13.66125937215883,
+  "total_volume": 12552
+ },
+ {
+  "store": "6841: บ้านอ่าวนาง 2",
+  "qty_sold": 16813,
+  "waste_qty": 1770,
+  "waste_cost": 23355.64267926836,
+  "waste_rate": 9.58707890198445,
+  "total_volume": 18583
+ },
+ {
+  "store": "10339: Phi Phi Sea Front",
+  "qty_sold": 17535,
+  "waste_qty": 1593,
+  "waste_cost": 22613.57302781078,
+  "waste_rate": 8.683404329029372,
+  "total_volume": 19128
+ },
+ {
+  "store": "2530: เกาะยาว",
+  "qty_sold": 22499,
+  "waste_qty": 1833,
+  "waste_cost": 22038.37701203265,
+  "waste_rate": 10.38500934079199,
+  "total_volume": 24332
+ },
+ {
+  "store": "3510: ชายหาดกมลา 1",
+  "qty_sold": 32589,
+  "waste_qty": 1746,
+  "waste_cost": 21971.39787702467,
+  "waste_rate": 6.669930471923455,
+  "total_volume": 34335
+ },
+ {
+  "store": "18926: เหมืองนาคา",
+  "qty_sold": 28548,
+  "waste_qty": 1744,
+  "waste_cost": 21184.70502072575,
+  "waste_rate": 6.989568751250434,
+  "total_volume": 30292
+ },
+ {
+  "store": "5774: ซอยบางชีเหล้า",
+  "qty_sold": 11909,
+  "waste_qty": 1633,
+  "waste_cost": 20745.27730215117,
+  "waste_rate": 10.82025298044118,
+  "total_volume": 13542
+ },
+ {
+  "store": "7572: ชุมชนม่าหนิก",
+  "qty_sold": 8919,
+  "waste_qty": 1678,
+  "waste_cost": 20504.82684882353,
+  "waste_rate": 14.21093079723538,
+  "total_volume": 10597
+ },
+ {
+  "store": "9922: ศรีสุดา",
+  "qty_sold": 20851,
+  "waste_qty": 1581,
+  "waste_cost": 20392.22255660847,
+  "waste_rate": 7.36995798634084,
+  "total_volume": 22432
+ },
+ {
+  "store": "2713: โรงเรียนการบินกำแพงแสน",
+  "qty_sold": 11495,
+  "waste_qty": 1568,
+  "waste_cost": 20274.64018408664,
+  "waste_rate": 11.11326735047495,
+  "total_volume": 13063
+ },
+ {
+  "store": "11826: เรวดี 17",
+  "qty_sold": 21226,
+  "waste_qty": 1585,
+  "waste_cost": 19916.99963062573,
+  "waste_rate": 6.754086574150302,
+  "total_volume": 22811
+ },
+ {
+  "store": "6336: หมู่บ้านบรรพต",
+  "qty_sold": 15040,
+  "waste_qty": 1468,
+  "waste_cost": 19734.12164627857,
+  "waste_rate": 8.025334543499296,
+  "total_volume": 16508
+ },
+ {
+  "store": "14305: ถนนคลองเรียน2",
+  "qty_sold": 11442,
+  "waste_qty": 1483,
+  "waste_cost": 19704.52662608801,
+  "waste_rate": 10.66920414153712,
+  "total_volume": 12925
+ },
+ {
+  "store": "19798: ถนนเจ้าฟ้าสวนหลวง",
+  "qty_sold": 9651,
+  "waste_qty": 1521,
+  "waste_cost": 19526.62771191101,
+  "waste_rate": 13.5150449429511,
+  "total_volume": 11172
+ },
+ {
+  "store": "8546: ถนนศรีสุนทร",
+  "qty_sold": 10949,
+  "waste_qty": 1411,
+  "waste_cost": 19506.87193647193,
+  "waste_rate": 11.52574626902469,
+  "total_volume": 12360
+ },
+ {
+  "store": "2392: บ้านอ่าวนาง",
+  "qty_sold": 33342,
+  "waste_qty": 1459,
+  "waste_cost": 19394.80107506111,
+  "waste_rate": 4.927948621013624,
+  "total_volume": 34801
+ },
+ {
+  "store": "4727: นพรัตน์ธานี",
+  "qty_sold": 23178,
+  "waste_qty": 1527,
+  "waste_cost": 19312.47300868916,
+  "waste_rate": 6.087939970569997,
+  "total_volume": 24705
+ },
+ {
+  "store": "4097: นาในภูเก็ต",
+  "qty_sold": 10817,
+  "waste_qty": 1471,
+  "waste_cost": 19259.28926348035,
+  "waste_rate": 12.90338266866502,
+  "total_volume": 12288
+ },
+ {
+  "store": "15007: PTTORสนามบินภูเก็ต",
+  "qty_sold": 18354,
+  "waste_qty": 1463,
+  "waste_cost": 19181.71894847074,
+  "waste_rate": 7.691972409647,
+  "total_volume": 19817
+ },
+ {
+  "store": "6026: ในหาน 3",
+  "qty_sold": 14035,
+  "waste_qty": 1505,
+  "waste_cost": 19035.76478415146,
+  "waste_rate": 11.40077705545303,
+  "total_volume": 15540
+ },
+ {
+  "store": "13510: เนเชอร์รัล ป่าตอง",
+  "qty_sold": 14819,
+  "waste_qty": 1379,
+  "waste_cost": 18697.80290176606,
+  "waste_rate": 7.194734837125401,
+  "total_volume": 16198
+ },
+ {
+  "store": "5957: โพรงมะเดื่อ บ้านไร่ (นครปฐม)",
+  "qty_sold": 5819,
+  "waste_qty": 1365,
+  "waste_cost": 18015.93180781867,
+  "waste_rate": 17.01659110255325,
+  "total_volume": 7184
+ },
+ {
+  "store": "13155: ข้างโรงพยาบาลกระบี่",
+  "qty_sold": 13685,
+  "waste_qty": 1377,
+  "waste_cost": 17663.46992492196,
+  "waste_rate": 9.870978099061903,
+  "total_volume": 15062
+ },
+ {
+  "store": "12106: ถนนเทพอนุสรณ์",
+  "qty_sold": 18462,
+  "waste_qty": 1404,
+  "waste_cost": 17547.70961027578,
+  "waste_rate": 6.906346871139107,
+  "total_volume": 19866
+ },
+ {
+  "store": "5622: ถนนบางลาป่าตอง",
+  "qty_sold": 13880,
+  "waste_qty": 1316,
+  "waste_cost": 17531.25673577492,
+  "waste_rate": 8.72711295059053,
+  "total_volume": 15196
+ },
+ {
+  "store": "14111: นาทวี - ด่านประกอบ",
+  "qty_sold": 11705,
+  "waste_qty": 1288,
+  "waste_cost": 16982.84411596892,
+  "waste_rate": 7.778737053536484,
+  "total_volume": 12993
+ },
+ {
+  "store": "2340: ประปานคร",
+  "qty_sold": 5385,
+  "waste_qty": 1303,
+  "waste_cost": 16915.86936566867,
+  "waste_rate": 18.27976123827652,
+  "total_volume": 6688
+ },
+ {
+  "store": "17635: ถนนประชาสามัคคี จ.ภูเก็ต",
+  "qty_sold": 6992,
+  "waste_qty": 1259,
+  "waste_cost": 16718.92641293399,
+  "waste_rate": 13.39219062683428,
+  "total_volume": 8251
+ },
+ {
+  "store": "19633: เทศบาลบางเลน",
+  "qty_sold": 5267,
+  "waste_qty": 1269,
+  "waste_cost": 16156.23115240193,
+  "waste_rate": 17.55101194677369,
+  "total_volume": 6536
+ },
+ {
+  "store": "13088: ร้านค้าสวัสดิการ รพ.ค่ายวชิราวุธ",
+  "qty_sold": 13562,
+  "waste_qty": 1183,
+  "waste_cost": 15626.27216550663,
+  "waste_rate": 6.352395552702645,
+  "total_volume": 14745
+ },
+ {
+  "store": "15271: ถนนกะโรม",
+  "qty_sold": 11835,
+  "waste_qty": 1164,
+  "waste_cost": 15545.56087848501,
+  "waste_rate": 9.172151911152767,
+  "total_volume": 12999
+ },
+ {
+  "store": "13918: ชุมชนสนามบินภูเก็ต 2",
+  "qty_sold": 5432,
+  "waste_qty": 1182,
+  "waste_cost": 15310.0519760014,
+  "waste_rate": 15.48307666435977,
+  "total_volume": 6614
+ },
+ {
+  "store": "6995: ชุมชนเก็ตโฮ่",
+  "qty_sold": 20749,
+  "waste_qty": 1188,
+  "waste_cost": 15300.02683789372,
+  "waste_rate": 7.104274158802018,
+  "total_volume": 21937
+ },
+ {
+  "store": "14905: ตำบลท่าซัก",
+  "qty_sold": 8010,
+  "waste_qty": 1168,
+  "waste_cost": 15252.03808215482,
+  "waste_rate": 10.09273538520842,
+  "total_volume": 9178
+ },
+ {
+  "store": "17031: รัตนาธิเบศร์-ท่าอิฐ",
+  "qty_sold": 11015,
+  "waste_qty": 1225,
+  "waste_cost": 15191.53516373692,
+  "waste_rate": 9.132966524590332,
+  "total_volume": 12240
+ },
+ {
+  "store": "10453: ภูเก็ตแฟนตาเซีย",
+  "qty_sold": 13755,
+  "waste_qty": 1199,
+  "waste_cost": 15131.99025046676,
+  "waste_rate": 7.856724526939407,
+  "total_volume": 14954
+ },
+ {
+  "store": "2380: ตลาดสินทอง",
+  "qty_sold": 14137,
+  "waste_qty": 1129,
+  "waste_cost": 15072.97096842607,
+  "waste_rate": 8.374635881547114,
+  "total_volume": 15266
+ },
+ {
+  "store": "2531: คลองนิล",
+  "qty_sold": 13174,
+  "waste_qty": 1126,
+  "waste_cost": 14772.53385276302,
+  "waste_rate": 8.802362239866433,
+  "total_volume": 14300
+ },
+ {
+  "store": "9457: เทศบาลปลายบาง",
+  "qty_sold": 13928,
+  "waste_qty": 1145,
+  "waste_cost": 14769.94666930169,
+  "waste_rate": 7.995683669857549,
+  "total_volume": 15073
+ },
+ {
+  "store": "14968: หมู่บ้านดรีมพรีว่า",
+  "qty_sold": 4631,
+  "waste_qty": 1151,
+  "waste_cost": 14763.63290043712,
+  "waste_rate": 16.0745349950453,
+  "total_volume": 5782
+ },
+ {
+  "store": "2353: PTTOR เมืองระนอง",
+  "qty_sold": 8503,
+  "waste_qty": 1155,
+  "waste_cost": 14580.6825702458,
+  "waste_rate": 12.23559428255257,
+  "total_volume": 9658
+ },
+ {
+  "store": "18229: หน้าโรงพยาบาลกระบุรี",
+  "qty_sold": 16730,
+  "waste_qty": 1089,
+  "waste_cost": 14574.92591344782,
+  "waste_rate": 6.910095065418354,
+  "total_volume": 17819
+ },
+ {
+  "store": "16117: ซ.หลานไทย",
+  "qty_sold": 7212,
+  "waste_qty": 1161,
+  "waste_cost": 14551.96876612459,
+  "waste_rate": 13.46256995651852,
+  "total_volume": 8373
+ },
+ {
+  "store": "6798: หาดคลองดาว",
+  "qty_sold": 17665,
+  "waste_qty": 1144,
+  "waste_cost": 14540.10840045995,
+  "waste_rate": 7.561930787668807,
+  "total_volume": 18809
+ },
+ {
+  "store": "12122: ซอยบ้านครู (นครปฐม)",
+  "qty_sold": 5850,
+  "waste_qty": 1195,
+  "waste_cost": 14494.86923019726,
+  "waste_rate": 16.46388943438459,
+  "total_volume": 7045
+ },
+ {
+  "store": "15030: เทศบาลไทรม้า",
+  "qty_sold": 9971,
+  "waste_qty": 1124,
+  "waste_cost": 14236.14519732304,
+  "waste_rate": 9.065297757299808,
+  "total_volume": 11095
+ },
+ {
+  "store": "9146: หมู่บ้านพนาสนธิ์",
+  "qty_sold": 24685,
+  "waste_qty": 1021,
+  "waste_cost": 14135.84430200744,
+  "waste_rate": 4.347109822479695,
+  "total_volume": 25706
+ },
+ {
+  "store": "14358: สามแยกลภาวัล",
+  "qty_sold": 14873,
+  "waste_qty": 1040,
+  "waste_cost": 14092.56105482264,
+  "waste_rate": 6.751640036972828,
+  "total_volume": 15913
+ },
+ {
+  "store": "18504: ตลาดนัดสามกอง",
+  "qty_sold": 13551,
+  "waste_qty": 1080,
+  "waste_cost": 13866.36051994476,
+  "waste_rate": 8.208297364226807,
+  "total_volume": 14631
+ },
+ {
+  "store": "4016: แหลมเพชร",
+  "qty_sold": 9161,
+  "waste_qty": 1155,
+  "waste_cost": 13866.03666218421,
+  "waste_rate": 10.81492759623835,
+  "total_volume": 10316
+ },
+ {
+  "store": "1213: ราษฎร์ยินดี",
+  "qty_sold": 6594,
+  "waste_qty": 990,
+  "waste_cost": 13856.86594993997,
+  "waste_rate": 12.47941507857412,
+  "total_volume": 7584
+ },
+ {
+  "store": "574: ท่าอิฐ",
+  "qty_sold": 14378,
+  "waste_qty": 1099,
+  "waste_cost": 13791.55224184606,
+  "waste_rate": 6.978658854812812,
+  "total_volume": 15477
+ },
+ {
+  "store": "16099: anantara vacation club",
+  "qty_sold": 8676,
+  "waste_qty": 1139,
+  "waste_cost": 13768.88405457944,
+  "waste_rate": 13.50572259165119,
+  "total_volume": 9815
+ },
+ {
+  "store": "11653: ถนนพัฒนาการคูขวาง",
+  "qty_sold": 10602,
+  "waste_qty": 1036,
+  "waste_cost": 13760.62847626105,
+  "waste_rate": 8.57164405351636,
+  "total_volume": 11638
+ },
+ {
+  "store": "18866: ปากทางท่าอิฐ (แยกไทรม้า)",
+  "qty_sold": 18379,
+  "waste_qty": 1101,
+  "waste_cost": 13693.73694956894,
+  "waste_rate": 6.3108182190755,
+  "total_volume": 19480
+ },
+ {
+  "store": "15772: PTTOR เพชรเกษม กม.62 (ขาเข้า)",
+  "qty_sold": 6656,
+  "waste_qty": 1009,
+  "waste_cost": 13680.12660637086,
+  "waste_rate": 14.41346930988875,
+  "total_volume": 7665
+ },
+ {
+  "store": "10707: กะตะธานี",
+  "qty_sold": 4568,
+  "waste_qty": 1100,
+  "waste_cost": 13589.12501145539,
+  "waste_rate": 19.86303333089205,
+  "total_volume": 5668
+ },
+ {
+  "store": "4371: ดอนตูม",
+  "qty_sold": 10547,
+  "waste_qty": 1012,
+  "waste_cost": 13514.31034865048,
+  "waste_rate": 8.656977054144543,
+  "total_volume": 11559
+ },
+ {
+  "store": "8918: ณุศาศิริ",
+  "qty_sold": 15593,
+  "waste_qty": 1006,
+  "waste_cost": 13491.1491475501,
+  "waste_rate": 5.884458883685638,
+  "total_volume": 16599
+ },
+ {
+  "store": "5767: ถนนรักษ์จันทร์",
+  "qty_sold": 10644,
+  "waste_qty": 1037,
+  "waste_cost": 13465.96463220373,
+  "waste_rate": 8.68498283870911,
+  "total_volume": 11681
+ },
+ {
+  "store": "18438: สามแยกปิ่นเกลียว (นครปฐม)",
+  "qty_sold": 17965,
+  "waste_qty": 1014,
+  "waste_cost": 13356.45859803032,
+  "waste_rate": 6.226661270576434,
+  "total_volume": 18979
+ },
+ {
+  "store": "5442: สะพานปลาระนอง",
+  "qty_sold": 7842,
+  "waste_qty": 1042,
+  "waste_cost": 13267.49247012423,
+  "waste_rate": 10.34755898506267,
+  "total_volume": 8884
+ },
+ {
+  "store": "17767: ชุมชนดอนซาก (กำแพงแสน)",
+  "qty_sold": 2968,
+  "waste_qty": 1058,
+  "waste_cost": 13241.34935005549,
+  "waste_rate": 22.89885437490389,
+  "total_volume": 4026
+ },
+ {
+  "store": "15367: ตลาดช้อย",
+  "qty_sold": 5949,
+  "waste_qty": 1035,
+  "waste_cost": 13170.97779728161,
+  "waste_rate": 13.13116030334201,
+  "total_volume": 6984
+ },
+ {
+  "store": "18591: โรงพยาบาลนครปฐม",
+  "qty_sold": 13206,
+  "waste_qty": 1013,
+  "waste_cost": 13154.7011468108,
+  "waste_rate": 7.061199504172278,
+  "total_volume": 14219
+ },
+ {
+  "store": "5379: ซอยใสยวน 11",
+  "qty_sold": 10719,
+  "waste_qty": 1110,
+  "waste_cost": 13013.7985581294,
+  "waste_rate": 10.82005153708898,
+  "total_volume": 11829
+ },
+ {
+  "store": "8732: ราชพฤกษ์ (บางพลับ )",
+  "qty_sold": 14154,
+  "waste_qty": 999,
+  "waste_cost": 12926.38481468679,
+  "waste_rate": 6.427201665052244,
+  "total_volume": 15153
+ },
+ {
+  "store": "11921: ทวีวัฒนา 47",
+  "qty_sold": 10439,
+  "waste_qty": 1026,
+  "waste_cost": 12868.86826881889,
+  "waste_rate": 2.673327978751886,
+  "total_volume": 11465
+ },
+ {
+  "store": "4498: เพชรเกษม 110 แยก 6",
+  "qty_sold": 15534,
+  "waste_qty": 1096,
+  "waste_cost": 12827.54885753289,
+  "waste_rate": 6.735754374755711,
+  "total_volume": 16630
+ },
+ {
+  "store": "14683: นนทบุรี ซ.8 เลี่ยงเมืองนนท์",
+  "qty_sold": 14220,
+  "waste_qty": 1002,
+  "waste_cost": 12801.81737954578,
+  "waste_rate": 6.879614182911864,
+  "total_volume": 15222
+ },
+ {
+  "store": "14844: บ้านกะหลิม",
+  "qty_sold": 4688,
+  "waste_qty": 1053,
+  "waste_cost": 12797.86525744127,
+  "waste_rate": 17.48152259509104,
+  "total_volume": 5741
+ },
+ {
+  "store": "6025: ศักดิเดช ซอย 5",
+  "qty_sold": 16468,
+  "waste_qty": 983,
+  "waste_cost": 12686.79009700449,
+  "waste_rate": 6.22176418766906,
+  "total_volume": 17451
+ },
+ {
+  "store": "4728: นภาจรัส",
+  "qty_sold": 11226,
+  "waste_qty": 1036,
+  "waste_cost": 12623.4325885126,
+  "waste_rate": 9.25013014777583,
+  "total_volume": 12262
+ },
+ {
+  "store": "13498: ซอยพรุใหญ่",
+  "qty_sold": 5223,
+  "waste_qty": 1022,
+  "waste_cost": 12559.79188932297,
+  "waste_rate": 15.30396512882388,
+  "total_volume": 6245
+ },
+ {
+  "store": "19001: Patong Tower จ.ภูเก็ต",
+  "qty_sold": 20376,
+  "waste_qty": 1056,
+  "waste_cost": 12527.65408123342,
+  "waste_rate": 5.752603265870681,
+  "total_volume": 21432
+ },
+ {
+  "store": "16301: ถนนน้อมเกล้า(นครปฐม)",
+  "qty_sold": 7098,
+  "waste_qty": 1049,
+  "waste_cost": 12513.14165368151,
+  "waste_rate": 12.75560376973576,
+  "total_volume": 8147
+ },
+ {
+  "store": "6183: คลองโยง",
+  "qty_sold": 13449,
+  "waste_qty": 989,
+  "waste_cost": 12499.05264481527,
+  "waste_rate": 7.259524816404058,
+  "total_volume": 14438
+ },
+ {
+  "store": "13070: แหลมพันวา",
+  "qty_sold": 10022,
+  "waste_qty": 954,
+  "waste_cost": 12469.53597505346,
+  "waste_rate": 9.356322004850599,
+  "total_volume": 10976
+ },
+ {
+  "store": "14163: หมู่บ้านสมพงษ์ (คลองโยง)",
+  "qty_sold": 12642,
+  "waste_qty": 1003,
+  "waste_cost": 12442.26428921403,
+  "waste_rate": 7.695905797424393,
+  "total_volume": 13645
+ },
+ {
+  "store": "18869: สหกรณ์ออมทรัพย์ครู (สงขลา)",
+  "qty_sold": 10796,
+  "waste_qty": 964,
+  "waste_cost": 12371.39832426607,
+  "waste_rate": 8.588848799482058,
+  "total_volume": 11760
+ },
+ {
+  "store": "3660: ทุ่งมังกร 20",
+  "qty_sold": 13688,
+  "waste_qty": 1010,
+  "waste_cost": 12346.56521348404,
+  "waste_rate": 6.900534104778535,
+  "total_volume": 14698
+ },
+ {
+  "store": "13324: ซอยในยาง 2\/1",
+  "qty_sold": 7547,
+  "waste_qty": 1026,
+  "waste_cost": 12270.64332327628,
+  "waste_rate": 12.06995118107196,
+  "total_volume": 8573
+ },
+ {
+  "store": "14744: ม.ดวงทอง 2",
+  "qty_sold": 5578,
+  "waste_qty": 1055,
+  "waste_cost": 12246.57649859933,
+  "waste_rate": 16.30283341122956,
+  "total_volume": 6633
+ },
+ {
+  "store": "15932: ตำบลควนลัง",
+  "qty_sold": 9999,
+  "waste_qty": 886,
+  "waste_cost": 12244.01297030553,
+  "waste_rate": 9.168159510777352,
+  "total_volume": 10885
+ },
+ {
+  "store": "17797: ตลาดนัดห้วยพลู (นครชัยศรี)",
+  "qty_sold": 5813,
+  "waste_qty": 935,
+  "waste_cost": 12182.91470395072,
+  "waste_rate": 12.66872206257982,
+  "total_volume": 6748
+ },
+ {
+  "store": "19424: มบ.ธินวุฒิ",
+  "qty_sold": 10663,
+  "waste_qty": 952,
+  "waste_cost": 12148.07981444944,
+  "waste_rate": 8.338538837588267,
+  "total_volume": 11615
+ },
+ {
+  "store": "14479: สามแยกบ่อพลับ",
+  "qty_sold": 5836,
+  "waste_qty": 1021,
+  "waste_cost": 12052.78248822071,
+  "waste_rate": 14.60070592383433,
+  "total_volume": 6857
+ },
+ {
+  "store": "11428: ธนากรวิลล่า 2",
+  "qty_sold": 14186,
+  "waste_qty": 936,
+  "waste_cost": 12006.63295545247,
+  "waste_rate": 7.014634772707262,
+  "total_volume": 15122
+ },
+ {
+  "store": "5965: สวัสดิรักษ์ 2",
+  "qty_sold": 7522,
+  "waste_qty": 949,
+  "waste_cost": 11933.50283642208,
+  "waste_rate": 12.96957927961577,
+  "total_volume": 8471
+ },
+ {
+  "store": "14548: สามแยกท่าอิฐ",
+  "qty_sold": 18726,
+  "waste_qty": 935,
+  "waste_cost": 11916.76895878689,
+  "waste_rate": 5.15399610499533,
+  "total_volume": 19661
+ },
+ {
+  "store": "6335: หน้า ร.พ.ค่ายเสนาณรงค์",
+  "qty_sold": 4541,
+  "waste_qty": 872,
+  "waste_cost": 11783.29188229209,
+  "waste_rate": 14.67801812352509,
+  "total_volume": 5413
+ },
+ {
+  "store": "2542: พระแอะ",
+  "qty_sold": 17016,
+  "waste_qty": 948,
+  "waste_cost": 11783.22925774391,
+  "waste_rate": 6.195229596971497,
+  "total_volume": 17964
+ },
+ {
+  "store": "5240: ชุมชนตาก้อง",
+  "qty_sold": 14068,
+  "waste_qty": 897,
+  "waste_cost": 11758.47478516889,
+  "waste_rate": 5.545573803888319,
+  "total_volume": 14965
+ },
+ {
+  "store": "18253: ตำบลปากพูน",
+  "qty_sold": 10829,
+  "waste_qty": 886,
+  "waste_cost": 11573.92534835632,
+  "waste_rate": 7.598416331056949,
+  "total_volume": 11715
+ },
+ {
+  "store": "902: ประชาราษฎร์-5",
+  "qty_sold": 11872,
+  "waste_qty": 927,
+  "waste_cost": 11571.65057923181,
+  "waste_rate": 7.589083280742753,
+  "total_volume": 12799
+ },
+ {
+  "store": "2458: ภูเก็ตวิลล่า",
+  "qty_sold": 8224,
+  "waste_qty": 897,
+  "waste_cost": 11439.73492853272,
+  "waste_rate": 11.1039638279489,
+  "total_volume": 9121
+ },
+ {
+  "store": "15003: PTTORเมืองบ้านพรุ(หาดใหญ่)",
+  "qty_sold": 5892,
+  "waste_qty": 864,
+  "waste_cost": 11432.08883829064,
+  "waste_rate": 12.17900775940977,
+  "total_volume": 6756
+ },
+ {
+  "store": "18812: บางไกรใน (ถนนปลายบาง)",
+  "qty_sold": 8286,
+  "waste_qty": 876,
+  "waste_cost": 11397.98485384566,
+  "waste_rate": 9.669584588676038,
+  "total_volume": 9162
+ },
+ {
+  "store": "2892: บขส.หาดใหญ่",
+  "qty_sold": 9030,
+  "waste_qty": 946,
+  "waste_cost": 11392.75673104024,
+  "waste_rate": 9.326832419199187,
+  "total_volume": 9976
+ },
+ {
+  "store": "3718: ดาวรุ่ง",
+  "qty_sold": 6674,
+  "waste_qty": 938,
+  "waste_cost": 11374.68687745718,
+  "waste_rate": 13.28603943226585,
+  "total_volume": 7612
+ },
+ {
+  "store": "7574: โคกโตนด",
+  "qty_sold": 9131,
+  "waste_qty": 947,
+  "waste_cost": 11335.95592234445,
+  "waste_rate": 9.516482753435145,
+  "total_volume": 10078
+ },
+ {
+  "store": "14635: หมู่บ้านปรารถนา จุด 3",
+  "qty_sold": 4595,
+  "waste_qty": 887,
+  "waste_cost": 11305.25061648489,
+  "waste_rate": 15.56900624550194,
+  "total_volume": 5482
+ },
+ {
+  "store": "4612: บางขุนนนท์คอนโด",
+  "qty_sold": 13504,
+  "waste_qty": 942,
+  "waste_cost": 11291.67623881303,
+  "waste_rate": 6.498658779510685,
+  "total_volume": 14446
+ },
+ {
+  "store": "5189: อ่าวมะขาม",
+  "qty_sold": 6948,
+  "waste_qty": 870,
+  "waste_cost": 11185.54850362921,
+  "waste_rate": 10.38170845962462,
+  "total_volume": 7818
+ },
+ {
+  "store": "14534: PTTOR มาลัยแมน กม.32",
+  "qty_sold": 9200,
+  "waste_qty": 826,
+  "waste_cost": 10999.7922478716,
+  "waste_rate": 9.466910142579978,
+  "total_volume": 10026
+ },
+ {
+  "store": "5557: ควนธานี",
+  "qty_sold": 6189,
+  "waste_qty": 867,
+  "waste_cost": 10968.92272757482,
+  "waste_rate": 12.37848471575029,
+  "total_volume": 7056
+ },
+ {
+  "store": "9641: หมู่บ้านฉลองสุข",
+  "qty_sold": 13098,
+  "waste_qty": 823,
+  "waste_cost": 10965.46654715388,
+  "waste_rate": 7.323687986070511,
+  "total_volume": 13921
+ },
+ {
+  "store": "4367: บากันเตียง",
+  "qty_sold": 9936,
+  "waste_qty": 912,
+  "waste_cost": 10915.43785209046,
+  "waste_rate": 11.24980576612264,
+  "total_volume": 10848
+ },
+ {
+  "store": "8492: สน.บางขุนนนท์ จุด 2",
+  "qty_sold": 11384,
+  "waste_qty": 841,
+  "waste_cost": 10854.85131183402,
+  "waste_rate": 8.141477875748054,
+  "total_volume": 12225
+ },
+ {
+  "store": "18327: ซอยสถานีรถไฟนครชัยศรี",
+  "qty_sold": 10789,
+  "waste_qty": 838,
+  "waste_cost": 10831.68550713682,
+  "waste_rate": 8.560469096759059,
+  "total_volume": 11627
+ },
+ {
+  "store": "10739: ปตท.ลำลูกบัว (บางเลน)",
+  "qty_sold": 6327,
+  "waste_qty": 841,
+  "waste_cost": 10790.24250226046,
+  "waste_rate": 9.705662831607796,
+  "total_volume": 7168
+ },
+ {
+  "store": "9465: ชุมชนสามกระบือเผือก",
+  "qty_sold": 12195,
+  "waste_qty": 809,
+  "waste_cost": 10741.95342405836,
+  "waste_rate": 5.771494426222069,
+  "total_volume": 13004
+ },
+ {
+  "store": "18208: บางพลับ ซอย 5 ราชพฤกษ์",
+  "qty_sold": 13097,
+  "waste_qty": 840,
+  "waste_cost": 10711.5215975521,
+  "waste_rate": 6.232654413461189,
+  "total_volume": 13937
+ },
+ {
+  "store": "16038: เทศบาล 1\/3 (นครปฐม)",
+  "qty_sold": 3768,
+  "waste_qty": 828,
+  "waste_cost": 10695.84394472827,
+  "waste_rate": 12.17432070323227,
+  "total_volume": 4596
+ },
+ {
+  "store": "10938: บ้านหยิด",
+  "qty_sold": 7876,
+  "waste_qty": 902,
+  "waste_cost": 10674.71692306946,
+  "waste_rate": 12.27729666637295,
+  "total_volume": 8778
+ },
+ {
+  "store": "15316: ตลาดไฟฟ้า(นครชัยศรี)",
+  "qty_sold": 19112,
+  "waste_qty": 840,
+  "waste_cost": 10491.74188136564,
+  "waste_rate": 3.9307812911638,
+  "total_volume": 19952
+ },
+ {
+  "store": "4763: โรงพยาบาลสตูล",
+  "qty_sold": 2985,
+  "waste_qty": 870,
+  "waste_cost": 10477.95551130513,
+  "waste_rate": 20.49824878230768,
+  "total_volume": 3855
+ },
+ {
+  "store": "17916: PTTOR ศาลาธรรมสพน์",
+  "qty_sold": 1628,
+  "waste_qty": 829,
+  "waste_cost": 10409.19301065717,
+  "waste_rate": 26.62317408655895,
+  "total_volume": 2457
+ },
+ {
+  "store": "15980: ถนนตรัง-สิเกา",
+  "qty_sold": 6790,
+  "waste_qty": 763,
+  "waste_cost": 10338.76467445505,
+  "waste_rate": 8.619838522793525,
+  "total_volume": 7553
+ },
+ {
+  "store": "5380: กะตะไนท์พลาซ่า",
+  "qty_sold": 10032,
+  "waste_qty": 865,
+  "waste_cost": 10289.19775722341,
+  "waste_rate": 9.061055822666777,
+  "total_volume": 10897
+ },
+ {
+  "store": "13921: บ้านเกาะกวาง",
+  "qty_sold": 9154,
+  "waste_qty": 862,
+  "waste_cost": 10137.29284404805,
+  "waste_rate": 7.421920174728732,
+  "total_volume": 10016
+ },
+ {
+  "store": "7081: ตลาดแม่สมจิตกะตะ (ภูเก็ต)",
+  "qty_sold": 8531,
+  "waste_qty": 862,
+  "waste_cost": 10075.63093381054,
+  "waste_rate": 12.01366709966878,
+  "total_volume": 9393
+ },
+ {
+  "store": "11111: ซอยหลวงพ่อแช่ม",
+  "qty_sold": 5210,
+  "waste_qty": 872,
+  "waste_cost": 10073.74983074821,
+  "waste_rate": 14.51600310179062,
+  "total_volume": 6082
+ },
+ {
+  "store": "7815: หมู่บ้านมนธานี",
+  "qty_sold": 12605,
+  "waste_qty": 786,
+  "waste_cost": 10013.8995026093,
+  "waste_rate": 5.090621790894684,
+  "total_volume": 13391
+ },
+ {
+  "store": "19403: ภูเขาหญ้า",
+  "qty_sold": 3960,
+  "waste_qty": 853,
+  "waste_cost": 9878.634073130668,
+  "waste_rate": 16.8818704579521,
+  "total_volume": 4813
+ },
+ {
+  "store": "18919: ตลาดอ่าวนาง",
+  "qty_sold": 17986,
+  "waste_qty": 761,
+  "waste_cost": 9866.919628857482,
+  "waste_rate": 4.577498734565447,
+  "total_volume": 18747
+ },
+ {
+  "store": "18149: รัตนาธิเบศร์ 17 (ปากซอย)",
+  "qty_sold": 4074,
+  "waste_qty": 760,
+  "waste_cost": 9799.633547703514,
+  "waste_rate": 12.37224086440467,
+  "total_volume": 4834
+ },
+ {
+  "store": "17556: PTTOR ถนนมาลัยแมน กม.19",
+  "qty_sold": 5617,
+  "waste_qty": 744,
+  "waste_cost": 9781.614145434369,
+  "waste_rate": 10.77621578775586,
+  "total_volume": 6361
+ },
+ {
+  "store": "6939: หมู่บ้านเจ้าพระยา จุด 4",
+  "qty_sold": 15307,
+  "waste_qty": 796,
+  "waste_cost": 9696.739956554255,
+  "waste_rate": 5.70160041263947,
+  "total_volume": 16103
+ },
+ {
+  "store": "13342: ตลาดเทศบาลบางเลน",
+  "qty_sold": 2904,
+  "waste_qty": 733,
+  "waste_cost": 9685.289944733335,
+  "waste_rate": 20.32029339853301,
+  "total_volume": 3637
+ },
+ {
+  "store": "13325: กาญจนวนิช ซอย 27",
+  "qty_sold": 8322,
+  "waste_qty": 757,
+  "waste_cost": 9536.072326304076,
+  "waste_rate": 7.931244018691863,
+  "total_volume": 9079
+ },
+ {
+  "store": "14898: ภิชญาบางภาษี",
+  "qty_sold": 2340,
+  "waste_qty": 724,
+  "waste_cost": 9488.824137495689,
+  "waste_rate": 20.62785627071341,
+  "total_volume": 3064
+ },
+ {
+  "store": "16774: PTTOR เขาเขียว (สิงหนคร)",
+  "qty_sold": 6474,
+  "waste_qty": 729,
+  "waste_cost": 9482.73150282953,
+  "waste_rate": 10.42576885546358,
+  "total_volume": 7203
+ },
+ {
+  "store": "13425: ปตท.มาลัยแมน กม.39",
+  "qty_sold": 11360,
+  "waste_qty": 717,
+  "waste_cost": 9430.119483542001,
+  "waste_rate": 6.103020689949773,
+  "total_volume": 12077
+ },
+ {
+  "store": "15328: ถนนทุ่งรี",
+  "qty_sold": 9634,
+  "waste_qty": 674,
+  "waste_cost": 9394.266397305539,
+  "waste_rate": 6.164805928862154,
+  "total_volume": 10308
+ },
+ {
+  "store": "6852: ชุมชนบางพระ",
+  "qty_sold": 2148,
+  "waste_qty": 755,
+  "waste_cost": 9338.87277038077,
+  "waste_rate": 25.30679672750157,
+  "total_volume": 2903
+ },
+ {
+  "store": "13110: ถนนนิพัทธ์ภักดี",
+  "qty_sold": 3256,
+  "waste_qty": 739,
+  "waste_cost": 9311.447586692306,
+  "waste_rate": 18.31715852963593,
+  "total_volume": 3995
+ },
+ {
+  "store": "17008: PTTOR บันนังสตา",
+  "qty_sold": 5948,
+  "waste_qty": 784,
+  "waste_cost": 9248.860365517357,
+  "waste_rate": 13.50948406952236,
+  "total_volume": 6732
+ },
+ {
+  "store": "17910: PTTOR บางรัก (ตรัง)",
+  "qty_sold": 1870,
+  "waste_qty": 764,
+  "waste_cost": 9240.118169928239,
+  "waste_rate": 25.3477583636353,
+  "total_volume": 2634
+ },
+ {
+  "store": "14091: สี่แยกหนองงูเหลือม",
+  "qty_sold": 3406,
+  "waste_qty": 744,
+  "waste_cost": 9224.440046034879,
+  "waste_rate": 16.4874093908904,
+  "total_volume": 4150
+ },
+ {
+  "store": "5761: พุทธมณฑลสาย 2 (ศาลาธรรมสพน์)",
+  "qty_sold": 8102,
+  "waste_qty": 676,
+  "waste_cost": 9224.205093745191,
+  "waste_rate": 7.776970716415628,
+  "total_volume": 8778
+ },
+ {
+  "store": "18132: เพชรเกษม 110 (กลางซอย)",
+  "qty_sold": 4437,
+  "waste_qty": 692,
+  "waste_cost": 9219.695250820087,
+  "waste_rate": 11.6325549982839,
+  "total_volume": 5129
+ },
+ {
+  "store": "5623: หมู่บ้านณัฐกมลกู้กู",
+  "qty_sold": 5329,
+  "waste_qty": 735,
+  "waste_cost": 9205.30424419837,
+  "waste_rate": 10.44940037286976,
+  "total_volume": 6064
+ },
+ {
+  "store": "4067: ตลาดกรุงนนท์",
+  "qty_sold": 11808,
+  "waste_qty": 763,
+  "waste_cost": 9151.96953818756,
+  "waste_rate": 6.449737741618315,
+  "total_volume": 12571
+ },
+ {
+  "store": "6634: ในหาน 2",
+  "qty_sold": 5719,
+  "waste_qty": 770,
+  "waste_cost": 9146.491827530519,
+  "waste_rate": 14.45731924893065,
+  "total_volume": 6489
+ },
+ {
+  "store": "18714: ไทรม้า ซอย 11",
+  "qty_sold": 3413,
+  "waste_qty": 759,
+  "waste_cost": 9117.619511261422,
+  "waste_rate": 16.42532244617724,
+  "total_volume": 4172
+ },
+ {
+  "store": "10541: สน.บางขุนนนท์",
+  "qty_sold": 3145,
+  "waste_qty": 737,
+  "waste_cost": 9084.14027908417,
+  "waste_rate": 14.24401056404452,
+  "total_volume": 3882
+ },
+ {
+  "store": "6094: PTTOR ท่าช้าง (บางกล่ำ)",
+  "qty_sold": 15326,
+  "waste_qty": 716,
+  "waste_cost": 9081.818786469783,
+  "waste_rate": 4.148718357409793,
+  "total_volume": 16042
+ },
+ {
+  "store": "14412: ถนนรถไฟตะวันตก(นครปฐม)",
+  "qty_sold": 10032,
+  "waste_qty": 708,
+  "waste_cost": 8901.076956445233,
+  "waste_rate": 6.477118723762609,
+  "total_volume": 10740
+ },
+ {
+  "store": "11113: บ้านชิงโค",
+  "qty_sold": 4668,
+  "waste_qty": 693,
+  "waste_cost": 8854.035773045558,
+  "waste_rate": 11.68412263037706,
+  "total_volume": 5361
+ },
+ {
+  "store": "18555: แยกนนทบุรี-รัตนาธิเบศร์",
+  "qty_sold": 4611,
+  "waste_qty": 680,
+  "waste_cost": 8853.95385133972,
+  "waste_rate": 11.77988943763592,
+  "total_volume": 5291
+ },
+ {
+  "store": "13306: อ.ย่านตาขาว",
+  "qty_sold": 4617,
+  "waste_qty": 695,
+  "waste_cost": 8846.65724177513,
+  "waste_rate": 13.62762465844658,
+  "total_volume": 5312
+ },
+ {
+  "store": "17300: ชุมชนลำเหย (ดอนตูม)",
+  "qty_sold": 2714,
+  "waste_qty": 764,
+  "waste_cost": 8836.042142168955,
+  "waste_rate": 16.78877383987491,
+  "total_volume": 3478
+ },
+ {
+  "store": "693: สะเดา",
+  "qty_sold": 3464,
+  "waste_qty": 758,
+  "waste_cost": 8763.17318168571,
+  "waste_rate": 14.79358646201354,
+  "total_volume": 4222
+ },
+ {
+  "store": "5475: ตลาดเชิงทะเล",
+  "qty_sold": 4724,
+  "waste_qty": 708,
+  "waste_cost": 8687.356737444781,
+  "waste_rate": 14.57590292552342,
+  "total_volume": 5432
+ },
+ {
+  "store": "10232: ถนนจริงจิตร",
+  "qty_sold": 8177,
+  "waste_qty": 692,
+  "waste_cost": 8636.278005940434,
+  "waste_rate": 6.606609201388959,
+  "total_volume": 8869
+ },
+ {
+  "store": "7908: PTTOR ฉลองปิโตรเลี่ยม",
+  "qty_sold": 4197,
+  "waste_qty": 579,
+  "waste_cost": 8601.085065794434,
+  "waste_rate": 11.48962528626708,
+  "total_volume": 4776
+ },
+ {
+  "store": "1559: กระทรวงมหาดไทย",
+  "qty_sold": 4068,
+  "waste_qty": 684,
+  "waste_cost": 8580.82253207242,
+  "waste_rate": 14.20402254278476,
+  "total_volume": 4752
+ },
+ {
+  "store": "15689: อำเภอบางกรวย",
+  "qty_sold": 9999,
+  "waste_qty": 663,
+  "waste_cost": 8508.308389830361,
+  "waste_rate": 5.592346511683528,
+  "total_volume": 10662
+ },
+ {
+  "store": "18334: ชุมชนสวนตะไคร้ (นครปฐม)",
+  "qty_sold": 7206,
+  "waste_qty": 684,
+  "waste_cost": 8504.328155867443,
+  "waste_rate": 8.800017989207179,
+  "total_volume": 7890
+ },
+ {
+  "store": "3181: กะรนพลาซ่า",
+  "qty_sold": 4579,
+  "waste_qty": 679,
+  "waste_cost": 8492.991230176523,
+  "waste_rate": 11.87614936404283,
+  "total_volume": 5258
+ },
+ {
+  "store": "5777: อภัยบริรักษ์",
+  "qty_sold": 7205,
+  "waste_qty": 591,
+  "waste_cost": 8483.075548591707,
+  "waste_rate": 6.988491041811199,
+  "total_volume": 7796
+ },
+ {
+  "store": "5149: เกาะหลีเป๊ะ",
+  "qty_sold": 7962,
+  "waste_qty": 665,
+  "waste_cost": 8481.773184383113,
+  "waste_rate": 7.007173064704328,
+  "total_volume": 8627
+ },
+ {
+  "store": "16353: PTTOR สุไหงโก-ลก",
+  "qty_sold": 7564,
+  "waste_qty": 719,
+  "waste_cost": 8465.137189192294,
+  "waste_rate": 8.814583314390207,
+  "total_volume": 8283
+ },
+ {
+  "store": "16959: PTTOR รือเสาะ",
+  "qty_sold": 3184,
+  "waste_qty": 685,
+  "waste_cost": 8444.063838583244,
+  "waste_rate": 19.72329154739578,
+  "total_volume": 3869
+ },
+ {
+  "store": "14189: Cool Condo บางกรวย",
+  "qty_sold": 3075,
+  "waste_qty": 682,
+  "waste_cost": 8411.764523456648,
+  "waste_rate": 16.64587192619229,
+  "total_volume": 3757
+ },
+ {
+  "store": "14650: เขาหลัก Center",
+  "qty_sold": 15593,
+  "waste_qty": 663,
+  "waste_cost": 8331.639392349089,
+  "waste_rate": 4.347265624283408,
+  "total_volume": 16256
+ },
+ {
+  "store": "8973: ซอยกิ่งแก้วอุทิศ",
+  "qty_sold": 4526,
+  "waste_qty": 694,
+  "waste_cost": 8279.767162911236,
+  "waste_rate": 14.66232188711424,
+  "total_volume": 5220
+ },
+ {
+  "store": "19453: หน้าสนามบินหาดใหญ่",
+  "qty_sold": 6738,
+  "waste_qty": 668,
+  "waste_cost": 8244.65792791142,
+  "waste_rate": 8.120841894619067,
+  "total_volume": 7406
+ },
+ {
+  "store": "11759: ลากูน่าภูเก็ต",
+  "qty_sold": 7008,
+  "waste_qty": 656,
+  "waste_cost": 8235.271372285886,
+  "waste_rate": 7.648392816377006,
+  "total_volume": 7664
+ },
+ {
+  "store": "4339: อ่าวฉลอง",
+  "qty_sold": 6011,
+  "waste_qty": 688,
+  "waste_cost": 8174.788123525912,
+  "waste_rate": 13.00472105909119,
+  "total_volume": 6699
+ },
+ {
+  "store": "15182: ตำบลคูเต่า",
+  "qty_sold": 2534,
+  "waste_qty": 693,
+  "waste_cost": 8130.309739543614,
+  "waste_rate": 25.3040005877112,
+  "total_volume": 3227
+ },
+ {
+  "store": "6935: ราชปาทานุสรณ์",
+  "qty_sold": 5300,
+  "waste_qty": 689,
+  "waste_cost": 8115.782586546319,
+  "waste_rate": 4.775223582241822,
+  "total_volume": 5989
+ },
+ {
+  "store": "16279: ชุมชนประดับดาว ราชพฤกษ์",
+  "qty_sold": 3225,
+  "waste_qty": 624,
+  "waste_cost": 8062.402910790362,
+  "waste_rate": 14.55894590846047,
+  "total_volume": 3849
+ },
+ {
+  "store": "17909: เลี่ยงเมืองนนทบุรี 10",
+  "qty_sold": 3656,
+  "waste_qty": 631,
+  "waste_cost": 8008.181603050401,
+  "waste_rate": 12.45563643345901,
+  "total_volume": 4287
+ },
+ {
+  "store": "14871: เพชรเกษม(เทศบาลหาดใหญ่)",
+  "qty_sold": 2551,
+  "waste_qty": 667,
+  "waste_cost": 7979.993553658219,
+  "waste_rate": 19.37915109160843,
+  "total_volume": 3218
+ },
+ {
+  "store": "6324: ชุมชนมะเกลือ ศาลายา",
+  "qty_sold": 11137,
+  "waste_qty": 626,
+  "waste_cost": 7975.625553972361,
+  "waste_rate": 5.654800570272602,
+  "total_volume": 11763
+ },
+ {
+  "store": "14167: โคกโตนด ซอย 12",
+  "qty_sold": 6777,
+  "waste_qty": 620,
+  "waste_cost": 7916.594660913926,
+  "waste_rate": 8.208239848684306,
+  "total_volume": 7397
+ },
+ {
+  "store": "14381: บ้านศรีตรัง",
+  "qty_sold": 6711,
+  "waste_qty": 610,
+  "waste_cost": 7897.086851399302,
+  "waste_rate": 8.053264442554756,
+  "total_volume": 7321
+ },
+ {
+  "store": "1619: สทิงพระ",
+  "qty_sold": 6774,
+  "waste_qty": 619,
+  "waste_cost": 7878.631010332651,
+  "waste_rate": 10.41841039023004,
+  "total_volume": 7393
+ },
+ {
+  "store": "15869: ถนนตรังคภูมิ",
+  "qty_sold": 5169,
+  "waste_qty": 681,
+  "waste_cost": 7853.05907006331,
+  "waste_rate": 14.17782475148406,
+  "total_volume": 5850
+ },
+ {
+  "store": "11289: ม.ราชภัฎนครศรีธรรมราช",
+  "qty_sold": 10333,
+  "waste_qty": 639,
+  "waste_cost": 7852.277689418284,
+  "waste_rate": 4.571795693648212,
+  "total_volume": 10972
+ },
+ {
+  "store": "18012: บางเลน 19",
+  "qty_sold": 3058,
+  "waste_qty": 635,
+  "waste_cost": 7846.165987957108,
+  "waste_rate": 14.37185493764441,
+  "total_volume": 3693
+ },
+ {
+  "store": "16310: ตลาดกลางบางพระ (นครชัยศรี)",
+  "qty_sold": 4225,
+  "waste_qty": 627,
+  "waste_cost": 7818.08172066832,
+  "waste_rate": 11.62744310983748,
+  "total_volume": 4852
+ },
+ {
+  "store": "17034: ศูนย์การแพทย์กาญจนาภิเษก โซน C",
+  "qty_sold": 7434,
+  "waste_qty": 628,
+  "waste_cost": 7787.646919197704,
+  "waste_rate": 6.364833674932941,
+  "total_volume": 8062
+ },
+ {
+  "store": "15845: แยกฉลุง",
+  "qty_sold": 3955,
+  "waste_qty": 637,
+  "waste_cost": 7733.65619997559,
+  "waste_rate": 16.02843538461013,
+  "total_volume": 4592
+ },
+ {
+  "store": "18318: บางเลนเจริญ (ซอยบางเลน 21)",
+  "qty_sold": 3151,
+  "waste_qty": 660,
+  "waste_cost": 7713.424326927944,
+  "waste_rate": 15.34659327596042,
+  "total_volume": 3811
+ },
+ {
+  "store": "14750: ตำบลน้ำน้อย",
+  "qty_sold": 3024,
+  "waste_qty": 603,
+  "waste_cost": 7710.676938120532,
+  "waste_rate": 17.58214095287615,
+  "total_volume": 3627
+ },
+ {
+  "store": "1268: เทศา ซอย 2",
+  "qty_sold": 3800,
+  "waste_qty": 633,
+  "waste_cost": 7687.749341546019,
+  "waste_rate": 14.26141166525782,
+  "total_volume": 4433
+ },
+ {
+  "store": "12061: บ้านแสนสุข (นครปฐม)",
+  "qty_sold": 5781,
+  "waste_qty": 615,
+  "waste_cost": 7648.892925292502,
+  "waste_rate": 10.05580228637223,
+  "total_volume": 6396
+ },
+ {
+  "store": "19692: ชุมชนนาบอน จ.ภูเก็ต",
+  "qty_sold": 6376,
+  "waste_qty": 624,
+  "waste_cost": 7630.47578922247,
+  "waste_rate": 11.90886912309121,
+  "total_volume": 7000
+ },
+ {
+  "store": "13015: ถนนทวีรัตน์",
+  "qty_sold": 7774,
+  "waste_qty": 599,
+  "waste_cost": 7623.316979210069,
+  "waste_rate": 7.328993877406787,
+  "total_volume": 8373
+ },
+ {
+  "store": "15608: บ้านไทรม้า",
+  "qty_sold": 8107,
+  "waste_qty": 586,
+  "waste_cost": 7601.652188260849,
+  "waste_rate": 6.635014746713564,
+  "total_volume": 8693
+ },
+ {
+  "store": "11124: ชัยพฤกษ์ (สาย 5)",
+  "qty_sold": 9257,
+  "waste_qty": 591,
+  "waste_cost": 7594.343934393892,
+  "waste_rate": 5.798224765932972,
+  "total_volume": 9848
+ },
+ {
+  "store": "9529: ไทรม้า จุด 2",
+  "qty_sold": 2992,
+  "waste_qty": 580,
+  "waste_cost": 7514.782081669548,
+  "waste_rate": 12.94381350866706,
+  "total_volume": 3572
+ },
+ {
+  "store": "7384: ม.จอมทอง",
+  "qty_sold": 5023,
+  "waste_qty": 634,
+  "waste_cost": 7477.585626299828,
+  "waste_rate": 12.01526905599696,
+  "total_volume": 5657
+ },
+ {
+  "store": "6509: จังซีลอน",
+  "qty_sold": 8229,
+  "waste_qty": 653,
+  "waste_cost": 7411.43448836221,
+  "waste_rate": 8.218549020326225,
+  "total_volume": 8882
+ },
+ {
+  "store": "18055: ชุมชนวังน้ำเขียว (กำแพงแสน)",
+  "qty_sold": 2207,
+  "waste_qty": 577,
+  "waste_cost": 7404.852450639451,
+  "waste_rate": 18.29657220761515,
+  "total_volume": 2784
+ },
+ {
+  "store": "18446: ซอยเทศบาล 11 (บางหลวง)",
+  "qty_sold": 6283,
+  "waste_qty": 630,
+  "waste_cost": 7378.101900885564,
+  "waste_rate": 10.87888017028764,
+  "total_volume": 6913
+ },
+ {
+  "store": "10502: ไรรดา(นครปฐม)",
+  "qty_sold": 3472,
+  "waste_qty": 606,
+  "waste_cost": 7318.736500025349,
+  "waste_rate": 14.35284560341768,
+  "total_volume": 4078
+ },
+ {
+  "store": "3025: PTTOR นาหม่อม",
+  "qty_sold": 9263,
+  "waste_qty": 602,
+  "waste_cost": 7280.575499130131,
+  "waste_rate": 5.915415286016883,
+  "total_volume": 9865
+ },
+ {
+  "store": "14226: คลองเปี๊ยะ",
+  "qty_sold": 4777,
+  "waste_qty": 596,
+  "waste_cost": 7223.362589035806,
+  "waste_rate": 13.40996785616532,
+  "total_volume": 5373
+ },
+ {
+  "store": "13583: พฤกษา 8",
+  "qty_sold": 3383,
+  "waste_qty": 540,
+  "waste_cost": 7157.146909400212,
+  "waste_rate": 14.04580251719216,
+  "total_volume": 3923
+ },
+ {
+  "store": "19149: ถนนนนทบุรี-ท่าน้ำนนท์",
+  "qty_sold": 1815,
+  "waste_qty": 564,
+  "waste_cost": 7139.769608048863,
+  "waste_rate": 20.49541555752736,
+  "total_volume": 2379
+ },
+ {
+  "store": "3946: หอพักศาลายา (KS)",
+  "qty_sold": 9499,
+  "waste_qty": 580,
+  "waste_cost": 7105.713099966066,
+  "waste_rate": 7.225853652406942,
+  "total_volume": 10079
+ },
+ {
+  "store": "9300: ตลาดระงู",
+  "qty_sold": 3387,
+  "waste_qty": 565,
+  "waste_cost": 7049.510943680472,
+  "waste_rate": 13.44040721929397,
+  "total_volume": 3952
+ },
+ {
+  "store": "17716: ประชาราษฎร์ 3",
+  "qty_sold": 3933,
+  "waste_qty": 553,
+  "waste_cost": 7010.761756641754,
+  "waste_rate": 9.410159761831071,
+  "total_volume": 4486
+ },
+ {
+  "store": "10581: จรัญฯ 95\/1",
+  "qty_sold": 9744,
+  "waste_qty": 545,
+  "waste_cost": 6982.10954703942,
+  "waste_rate": 5.462430954586818,
+  "total_volume": 10289
+ },
+ {
+  "store": "15518: บ้านสวนรื่นรมย์(ห้วยยอด)",
+  "qty_sold": 13593,
+  "waste_qty": 576,
+  "waste_cost": 6925.080457876987,
+  "waste_rate": 4.43010744175917,
+  "total_volume": 14169
+ },
+ {
+  "store": "18130: ตำบลทุ่งยาว",
+  "qty_sold": 9279,
+  "waste_qty": 552,
+  "waste_cost": 6899.401688336294,
+  "waste_rate": 10.52805218927589,
+  "total_volume": 9831
+ },
+ {
+  "store": "14080: ตลาดเหนือคลอง",
+  "qty_sold": 5071,
+  "waste_qty": 557,
+  "waste_cost": 6884.432184045369,
+  "waste_rate": 10.1002701002701,
+  "total_volume": 5628
+ },
+ {
+  "store": "11333: ตลาดโคกบก",
+  "qty_sold": 3666,
+  "waste_qty": 555,
+  "waste_cost": 6865.212826313878,
+  "waste_rate": 12.9322705369217,
+  "total_volume": 4221
+ },
+ {
+  "store": "18410: PTTOR เพชรเกษม กม. 48 (ขาเข้า)",
+  "qty_sold": 4407,
+  "waste_qty": 582,
+  "waste_cost": 6810.392210387648,
+  "waste_rate": 8.318047478264196,
+  "total_volume": 4989
+ },
+ {
+  "store": "15160: PTTOR ตากใบ",
+  "qty_sold": 3457,
+  "waste_qty": 585,
+  "waste_cost": 6786.062111852104,
+  "waste_rate": 14.39855650822901,
+  "total_volume": 4042
+ },
+ {
+  "store": "15269: สัมมากรราชพฤกษ์",
+  "qty_sold": 1410,
+  "waste_qty": 540,
+  "waste_cost": 6759.681784183435,
+  "waste_rate": 23.0676615339957,
+  "total_volume": 1950
+ },
+ {
+  "store": "9327: ตลาดห้าแยกฉลอง",
+  "qty_sold": 4094,
+  "waste_qty": 553,
+  "waste_cost": 6745.367910334183,
+  "waste_rate": 10.75176085129364,
+  "total_volume": 4647
+ },
+ {
+  "store": "16672: อบต.วัดละมุด",
+  "qty_sold": 2122,
+  "waste_qty": 575,
+  "waste_cost": 6737.294214253632,
+  "waste_rate": 19.66384923407984,
+  "total_volume": 2697
+ },
+ {
+  "store": "13002: บ้านด่านนอก",
+  "qty_sold": 2580,
+  "waste_qty": 582,
+  "waste_cost": 6717.948153439111,
+  "waste_rate": 16.39827286459124,
+  "total_volume": 3162
+ },
+ {
+  "store": "13508: พุทธมณฑลสาย 1 ซอย 37",
+  "qty_sold": 2373,
+  "waste_qty": 512,
+  "waste_cost": 6678.290442837253,
+  "waste_rate": 17.83461196165242,
+  "total_volume": 2885
+ },
+ {
+  "store": "1838: ปิ่นเกลียว",
+  "qty_sold": 1246,
+  "waste_qty": 556,
+  "waste_cost": 6664.558556057414,
+  "waste_rate": 28.19244756125126,
+  "total_volume": 1802
+ },
+ {
+  "store": "17921: ลานตากฟ้า (นครชัยศรี)",
+  "qty_sold": 3080,
+  "waste_qty": 560,
+  "waste_cost": 6638.505921379466,
+  "waste_rate": 12.23051760781822,
+  "total_volume": 3640
+ },
+ {
+  "store": "8932: กำแพงแสนพนมทวน",
+  "qty_sold": 2332,
+  "waste_qty": 542,
+  "waste_cost": 6617.088235084991,
+  "waste_rate": 16.21633438265128,
+  "total_volume": 2874
+ },
+ {
+  "store": "7790: คลองพน",
+  "qty_sold": 6018,
+  "waste_qty": 552,
+  "waste_cost": 6562.202314816911,
+  "waste_rate": 8.422500851015545,
+  "total_volume": 6570
+ },
+ {
+  "store": "14803: PTTORยี่งอ",
+  "qty_sold": 3136,
+  "waste_qty": 561,
+  "waste_cost": 6512.959945412357,
+  "waste_rate": 14.16155926170763,
+  "total_volume": 3697
+ },
+ {
+  "store": "567: จรัญฯ 68",
+  "qty_sold": 6286,
+  "waste_qty": 493,
+  "waste_cost": 6512.175636880709,
+  "waste_rate": 8.123573701693568,
+  "total_volume": 6779
+ },
+ {
+  "store": "3049: คลองเตยหาดใหญ่",
+  "qty_sold": 5961,
+  "waste_qty": 521,
+  "waste_cost": 6510.028996087484,
+  "waste_rate": 9.022890438968178,
+  "total_volume": 6482
+ },
+ {
+  "store": "19519: บ้านห้วยเสียด",
+  "qty_sold": 5359,
+  "waste_qty": 545,
+  "waste_cost": 6453.952484870333,
+  "waste_rate": 9.666430514010925,
+  "total_volume": 5904
+ },
+ {
+  "store": "19192: บ่อพลับ 9 ซอย  9",
+  "qty_sold": 4545,
+  "waste_qty": 508,
+  "waste_cost": 6450.786748571798,
+  "waste_rate": 9.37471051412691,
+  "total_volume": 5053
+ },
+ {
+  "store": "11083: ตลาดรุ่งเจริญ (กำแพงแสน)",
+  "qty_sold": 1118,
+  "waste_qty": 502,
+  "waste_cost": 6380.612837441587,
+  "waste_rate": 22.23721943204365,
+  "total_volume": 1620
+ },
+ {
+  "store": "13449: ลพบุรีราเมศวร์(ขาออก)",
+  "qty_sold": 8349,
+  "waste_qty": 483,
+  "waste_cost": 6368.006636210375,
+  "waste_rate": 5.677945679856792,
+  "total_volume": 8832
+ },
+ {
+  "store": "1083: ตลาดสดท่าอิฐ",
+  "qty_sold": 2319,
+  "waste_qty": 497,
+  "waste_cost": 6338.357478313673,
+  "waste_rate": 15.13357270301715,
+  "total_volume": 2816
+ },
+ {
+  "store": "10873: ทุ่งมะพร้าว",
+  "qty_sold": 3417,
+  "waste_qty": 540,
+  "waste_cost": 6278.028270958901,
+  "waste_rate": 12.67085705095435,
+  "total_volume": 3957
+ },
+ {
+  "store": "18084: รอยัลเจมส์ (บางภาษี)",
+  "qty_sold": 1837,
+  "waste_qty": 493,
+  "waste_cost": 6215.794926535534,
+  "waste_rate": 20.38233110616184,
+  "total_volume": 2330
+ },
+ {
+  "store": "11547: นราภิรมย์",
+  "qty_sold": 8903,
+  "waste_qty": 513,
+  "waste_cost": 6153.259256866339,
+  "waste_rate": 5.609933079010974,
+  "total_volume": 9416
+ },
+ {
+  "store": "18052: ถนนสายเอเชีย 43",
+  "qty_sold": 6130,
+  "waste_qty": 496,
+  "waste_cost": 6118.376219935224,
+  "waste_rate": 7.708675587387464,
+  "total_volume": 6626
+ },
+ {
+  "store": "6095: ตลาดนาเมืองเพชร",
+  "qty_sold": 3597,
+  "waste_qty": 487,
+  "waste_cost": 6098.389353427879,
+  "waste_rate": 14.85093548956735,
+  "total_volume": 4084
+ },
+ {
+  "store": "16129: ถนนสามชัย ซ.1",
+  "qty_sold": 2967,
+  "waste_qty": 500,
+  "waste_cost": 6098.35599042062,
+  "waste_rate": 12.3983619261397,
+  "total_volume": 3467
+ },
+ {
+  "store": "17406: ถนนบางนา(บางกล่ำ)",
+  "qty_sold": 3750,
+  "waste_qty": 488,
+  "waste_cost": 6089.744566979817,
+  "waste_rate": 10.68717055523367,
+  "total_volume": 4238
+ },
+ {
+  "store": "11451: ถนนทุ่งใหญ่ (หาดใหญ่)",
+  "qty_sold": 4809,
+  "waste_qty": 474,
+  "waste_cost": 6064.531125489153,
+  "waste_rate": 13.4074984796806,
+  "total_volume": 5283
+ },
+ {
+  "store": "16775: PTTOR กะทู้-ป่าตอง",
+  "qty_sold": 4120,
+  "waste_qty": 498,
+  "waste_cost": 6041.363119421987,
+  "waste_rate": 10.69039471666283,
+  "total_volume": 4618
+ },
+ {
+  "store": "5686: PTTOR เขาช้างออยล์",
+  "qty_sold": 3177,
+  "waste_qty": 527,
+  "waste_cost": 6033.129859877619,
+  "waste_rate": 13.22559509260276,
+  "total_volume": 3704
+ },
+ {
+  "store": "13323: บ้านตำนาน",
+  "qty_sold": 10715,
+  "waste_qty": 477,
+  "waste_cost": 6029.58587498023,
+  "waste_rate": 5.126392833399202,
+  "total_volume": 11192
+ },
+ {
+  "store": "17455: PTTOR เพชรเกษม กม.56 (ขาเข้า)",
+  "qty_sold": 2910,
+  "waste_qty": 455,
+  "waste_cost": 6003.426042737398,
+  "waste_rate": 11.35708630245447,
+  "total_volume": 3365
+ },
+ {
+  "store": "7166: ปตท.คลองแห",
+  "qty_sold": 11347,
+  "waste_qty": 491,
+  "waste_cost": 5968.815182405004,
+  "waste_rate": 5.260345942812006,
+  "total_volume": 11838
+ },
+ {
+  "store": "8874: ตลาดคลองเตย (หาดใหญ่)",
+  "qty_sold": 5130,
+  "waste_qty": 496,
+  "waste_cost": 5947.896853815927,
+  "waste_rate": 6.583037659983295,
+  "total_volume": 5626
+ },
+ {
+  "store": "8843: ปาดังเบซาร์ 3",
+  "qty_sold": 1400,
+  "waste_qty": 519,
+  "waste_cost": 5884.452781608335,
+  "waste_rate": 22.52629384920677,
+  "total_volume": 1919
+ },
+ {
+  "store": "17536: ชุมชนไผ่ล้อม (นครปฐม)",
+  "qty_sold": 3707,
+  "waste_qty": 464,
+  "waste_cost": 5875.458632386314,
+  "waste_rate": 9.848639197751623,
+  "total_volume": 4171
+ },
+ {
+  "store": "17368: ศูนย์การเรียนรู้ ม.มหิดล ศาลายา (MLC)",
+  "qty_sold": 5873,
+  "waste_qty": 480,
+  "waste_cost": 5811.539970302986,
+  "waste_rate": 8.562321171287547,
+  "total_volume": 6353
+ },
+ {
+  "store": "16886: PTTOR พระราม 5 (ขาเข้า)",
+  "qty_sold": 2362,
+  "waste_qty": 416,
+  "waste_cost": 5807.449574696209,
+  "waste_rate": 10.72954822954823,
+  "total_volume": 2778
+ },
+ {
+  "store": "11072: บ้านท่าจีน (สตูล)",
+  "qty_sold": 3043,
+  "waste_qty": 441,
+  "waste_cost": 5805.193373334983,
+  "waste_rate": 12.22169329163066,
+  "total_volume": 3484
+ },
+ {
+  "store": "7398: ตลาดเทศบาลเทพกษัตรีย์",
+  "qty_sold": 7312,
+  "waste_qty": 482,
+  "waste_cost": 5786.526905180331,
+  "waste_rate": 7.010315491147408,
+  "total_volume": 7794
+ },
+ {
+  "store": "19405: ชุมชนลาดหญ้าไทร (กำแพงแสน)",
+  "qty_sold": 5271,
+  "waste_qty": 468,
+  "waste_cost": 5772.741960249613,
+  "waste_rate": 7.105461143565234,
+  "total_volume": 5739
+ },
+ {
+  "store": "16303: บ้านเขาฝาก",
+  "qty_sold": 4111,
+  "waste_qty": 483,
+  "waste_cost": 5765.787443804872,
+  "waste_rate": 11.62027624936503,
+  "total_volume": 4594
+ },
+ {
+  "store": "18011: บางกรวย ไทรน้อย ซอย 6",
+  "qty_sold": 8147,
+  "waste_qty": 467,
+  "waste_cost": 5764.773095681679,
+  "waste_rate": 5.31147380151805,
+  "total_volume": 8614
+ },
+ {
+  "store": "19902: ม.อ.แพทยศาสตร์ (อาคารนันทนาการ)",
+  "qty_sold": 2994,
+  "waste_qty": 438,
+  "waste_cost": 5744.136997189147,
+  "waste_rate": 10.72182111921996,
+  "total_volume": 3432
+ },
+ {
+  "store": "10736: บ้านเขาล้าน",
+  "qty_sold": 7447,
+  "waste_qty": 461,
+  "waste_cost": 5735.517612023799,
+  "waste_rate": 7.611286593779693,
+  "total_volume": 7908
+ },
+ {
+  "store": "18457: ถนนเพชรเกษม(พัทลุง)",
+  "qty_sold": 4978,
+  "waste_qty": 450,
+  "waste_cost": 5705.339892075738,
+  "waste_rate": 8.644531109288819,
+  "total_volume": 5428
+ },
+ {
+  "store": "10452: ตลาดดอนคา",
+  "qty_sold": 4175,
+  "waste_qty": 468,
+  "waste_cost": 5685.889585667246,
+  "waste_rate": 10.06061447523768,
+  "total_volume": 4643
+ },
+ {
+  "store": "18274: PTTOR แพรกหา",
+  "qty_sold": 6274,
+  "waste_qty": 432,
+  "waste_cost": 5681.350432492612,
+  "waste_rate": 10.198551039259,
+  "total_volume": 6706
+ },
+ {
+  "store": "16535: สี่แยกหุบรักษ์ (นครปฐม)",
+  "qty_sold": 3883,
+  "waste_qty": 457,
+  "waste_cost": 5671.753923030925,
+  "waste_rate": 9.570666175929333,
+  "total_volume": 4340
+ },
+ {
+  "store": "6891: PTTOR ลานสกา",
+  "qty_sold": 7921,
+  "waste_qty": 462,
+  "waste_cost": 5671.090342945634,
+  "waste_rate": 7.425809698326239,
+  "total_volume": 8383
+ },
+ {
+  "store": "18478: PTTOR รัตภูมิ (ขาออก)",
+  "qty_sold": 2691,
+  "waste_qty": 447,
+  "waste_cost": 5659.731629248194,
+  "waste_rate": 14.85244370972433,
+  "total_volume": 3138
+ },
+ {
+  "store": "15619: รพ.พระนั่งเกล้า",
+  "qty_sold": 3854,
+  "waste_qty": 438,
+  "waste_cost": 5624.524943312114,
+  "waste_rate": 7.84773168867596,
+  "total_volume": 4292
+ },
+ {
+  "store": "18010: ตลาดนัดบางเนียง",
+  "qty_sold": 7609,
+  "waste_qty": 448,
+  "waste_cost": 5584.64667250546,
+  "waste_rate": 5.731355791580783,
+  "total_volume": 8057
+ },
+ {
+  "store": "18953: ถนนลำไพล-โคกโพธิ์",
+  "qty_sold": 4945,
+  "waste_qty": 452,
+  "waste_cost": 5573.583878468275,
+  "waste_rate": 7.990410814343742,
+  "total_volume": 5397
+ },
+ {
+  "store": "7004: เรวดี (ตลาดเปรมสุข)",
+  "qty_sold": 9032,
+  "waste_qty": 445,
+  "waste_cost": 5540.278443831218,
+  "waste_rate": 4.405900889871934,
+  "total_volume": 9477
+ },
+ {
+  "store": "17671: ตำบลหนองทะเล",
+  "qty_sold": 1722,
+  "waste_qty": 466,
+  "waste_cost": 5523.916304163658,
+  "waste_rate": 13.91531734764818,
+  "total_volume": 2188
+ },
+ {
+  "store": "8998: ปตท.ดอนตูม",
+  "qty_sold": 3652,
+  "waste_qty": 421,
+  "waste_cost": 5469.555727217222,
+  "waste_rate": 8.722180957882863,
+  "total_volume": 4073
+ },
+ {
+  "store": "14017: กระทุ่มล้ม 19",
+  "qty_sold": 3236,
+  "waste_qty": 445,
+  "waste_cost": 5462.200588080333,
+  "waste_rate": 10.81071320444617,
+  "total_volume": 3681
+ },
+ {
+  "store": "16597: รพ.ตะกั่วป่า",
+  "qty_sold": 11237,
+  "waste_qty": 454,
+  "waste_cost": 5441.436480261803,
+  "waste_rate": 3.648149059604215,
+  "total_volume": 11691
+ },
+ {
+  "store": "9977: สะพานราเมศร์",
+  "qty_sold": 3674,
+  "waste_qty": 444,
+  "waste_cost": 5431.763628055633,
+  "waste_rate": 11.47718976788276,
+  "total_volume": 4118
+ },
+ {
+  "store": "12162: ถนนเพชรเกษม - ตรัง",
+  "qty_sold": 4197,
+  "waste_qty": 422,
+  "waste_cost": 5399.779831573811,
+  "waste_rate": 10.14481591316477,
+  "total_volume": 4619
+ },
+ {
+  "store": "10875: ถนนไทรบุรี (สงขลา)",
+  "qty_sold": 3380,
+  "waste_qty": 431,
+  "waste_cost": 5382.451064973055,
+  "waste_rate": 10.53811993532123,
+  "total_volume": 3811
+ },
+ {
+  "store": "14195: แยกเบญจมฯ",
+  "qty_sold": 5071,
+  "waste_qty": 438,
+  "waste_cost": 5342.766197768147,
+  "waste_rate": 9.80462988728832,
+  "total_volume": 5509
+ },
+ {
+  "store": "18978: หอพักเพชรรัตน ม.ศิลปากรทับแก้ว",
+  "qty_sold": 2179,
+  "waste_qty": 410,
+  "waste_cost": 5338.624235648171,
+  "waste_rate": 14.79284021300828,
+  "total_volume": 2589
+ },
+ {
+  "store": "15683: หมู่บ้านธนดี",
+  "qty_sold": 5690,
+  "waste_qty": 428,
+  "waste_cost": 5253.004832619392,
+  "waste_rate": 7.785233609412257,
+  "total_volume": 6118
+ },
+ {
+  "store": "10635: The Ozone บางเลน",
+  "qty_sold": 6898,
+  "waste_qty": 396,
+  "waste_cost": 5228.489295755689,
+  "waste_rate": 4.884808933998531,
+  "total_volume": 7294
+ },
+ {
+  "store": "9582: PTTOR ยุทธกิจปิโตรเลี่ยม",
+  "qty_sold": 7167,
+  "waste_qty": 415,
+  "waste_cost": 5153.07232239071,
+  "waste_rate": 4.561044676819931,
+  "total_volume": 7582
+ },
+ {
+  "store": "15669: บ้านสระสี่มุม(กำแพงแสน)",
+  "qty_sold": 2944,
+  "waste_qty": 417,
+  "waste_cost": 5136.686764832989,
+  "waste_rate": 12.32029619126393,
+  "total_volume": 3361
+ },
+ {
+  "store": "17170: KU Market (กำแพงแสน)",
+  "qty_sold": 3108,
+  "waste_qty": 390,
+  "waste_cost": 5131.183596130855,
+  "waste_rate": 10.15981125356126,
+  "total_volume": 3498
+ },
+ {
+  "store": "8861: ท่าแพ (สตูล)",
+  "qty_sold": 4646,
+  "waste_qty": 413,
+  "waste_cost": 5123.67668700059,
+  "waste_rate": 9.867423681904725,
+  "total_volume": 5059
+ },
+ {
+  "store": "15744: ท่าแพเหนือ",
+  "qty_sold": 5118,
+  "waste_qty": 423,
+  "waste_cost": 5111.882977572244,
+  "waste_rate": 9.519918318908921,
+  "total_volume": 5541
+ },
+ {
+  "store": "17751: ชุมชนห้วยม่วง (กำแพงแสน)",
+  "qty_sold": 3136,
+  "waste_qty": 403,
+  "waste_cost": 5101.483706731794,
+  "waste_rate": 9.795294449140602,
+  "total_volume": 3539
+ },
+ {
+  "store": "17633: ศูนย์ราชการลำทับ",
+  "qty_sold": 5398,
+  "waste_qty": 419,
+  "waste_cost": 5098.547357505464,
+  "waste_rate": 8.404870274749792,
+  "total_volume": 5817
+ },
+ {
+  "store": "8398: ทุ่งลุง 3",
+  "qty_sold": 2249,
+  "waste_qty": 440,
+  "waste_cost": 5050.428063176794,
+  "waste_rate": 16.13176043105006,
+  "total_volume": 2689
+ },
+ {
+  "store": "3884: สภอ.บางศรีเมือง จุด 2",
+  "qty_sold": 1545,
+  "waste_qty": 386,
+  "waste_cost": 5044.51742491103,
+  "waste_rate": 21.59298387277662,
+  "total_volume": 1931
+ },
+ {
+  "store": "5038: ประชานุเคราะห์ 2",
+  "qty_sold": 4808,
+  "waste_qty": 392,
+  "waste_cost": 5019.819540737361,
+  "waste_rate": 4.965583419265813,
+  "total_volume": 5200
+ },
+ {
+  "store": "6058: PTTOR กระบี่ใหญ่",
+  "qty_sold": 2911,
+  "waste_qty": 409,
+  "waste_cost": 5002.612485017641,
+  "waste_rate": 12.01137283107075,
+  "total_volume": 3320
+ },
+ {
+  "store": "9000: ปตท.บางเลนปิโตรเลียม",
+  "qty_sold": 1415,
+  "waste_qty": 390,
+  "waste_cost": 4986.557063675799,
+  "waste_rate": 20.95198445739661,
+  "total_volume": 1805
+ },
+ {
+  "store": "18009: PTTOR ศรีสาคร",
+  "qty_sold": 1809,
+  "waste_qty": 418,
+  "waste_cost": 4969.286567968661,
+  "waste_rate": 18.49254537673655,
+  "total_volume": 2227
+ },
+ {
+  "store": "3118: หมู่บ้านหงส์ประยูร",
+  "qty_sold": 4706,
+  "waste_qty": 396,
+  "waste_cost": 4963.003380511941,
+  "waste_rate": 7.152394106813996,
+  "total_volume": 5102
+ },
+ {
+  "store": "9329: ตลาดสินอดุลย์พันธ์",
+  "qty_sold": 3083,
+  "waste_qty": 398,
+  "waste_cost": 4945.766380079694,
+  "waste_rate": 11.95736306806363,
+  "total_volume": 3481
+ },
+ {
+  "store": "17955: ตำบลคลองแห",
+  "qty_sold": 6011,
+  "waste_qty": 359,
+  "waste_cost": 4931.148344805068,
+  "waste_rate": 5.288850660297689,
+  "total_volume": 6370
+ },
+ {
+  "store": "16776: PTTOR สนามบินหาดใหญ่",
+  "qty_sold": 2998,
+  "waste_qty": 412,
+  "waste_cost": 4919.500359975628,
+  "waste_rate": 10.96351712221175,
+  "total_volume": 3410
+ },
+ {
+  "store": "11261: สวัสดิการ รพ.ทุ่งสง 2559",
+  "qty_sold": 8330,
+  "waste_qty": 384,
+  "waste_cost": 4859.949265844285,
+  "waste_rate": 5.408261374700157,
+  "total_volume": 8714
+ },
+ {
+  "store": "16900: PTTOR บาเจาะ",
+  "qty_sold": 3395,
+  "waste_qty": 419,
+  "waste_cost": 4844.28651861352,
+  "waste_rate": 10.36132170248864,
+  "total_volume": 3814
+ },
+ {
+  "store": "10432: หาดสมิหลา",
+  "qty_sold": 2190,
+  "waste_qty": 393,
+  "waste_cost": 4830.535753392246,
+  "waste_rate": 17.55644009478365,
+  "total_volume": 2583
+ },
+ {
+  "store": "15121: ตลาดท่องเที่ยวศรีษะทอง(นครปฐม)",
+  "qty_sold": 948,
+  "waste_qty": 407,
+  "waste_cost": 4828.481579079336,
+  "waste_rate": 27.42482817869416,
+  "total_volume": 1355
+ },
+ {
+  "store": "11780: ณัฐกานต์ เพชรเกษม 112",
+  "qty_sold": 1878,
+  "waste_qty": 397,
+  "waste_cost": 4802.227043460351,
+  "waste_rate": 18.82901384452975,
+  "total_volume": 2275
+ },
+ {
+  "store": "10298: หนองศาลา",
+  "qty_sold": 4024,
+  "waste_qty": 366,
+  "waste_cost": 4794.00054296438,
+  "waste_rate": 7.039978896770034,
+  "total_volume": 4390
+ },
+ {
+  "store": "18399: PTTOR โคกหล่อ",
+  "qty_sold": 1838,
+  "waste_qty": 384,
+  "waste_cost": 4782.341772059676,
+  "waste_rate": 18.18572808957424,
+  "total_volume": 2222
+ },
+ {
+  "store": "19705: Laguna Street",
+  "qty_sold": 6956,
+  "waste_qty": 402,
+  "waste_cost": 4780.923741394066,
+  "waste_rate": 6.532037572926499,
+  "total_volume": 7358
+ },
+ {
+  "store": "15947: ปากทางโรงเรียนการบินกำแพงแสน",
+  "qty_sold": 2624,
+  "waste_qty": 388,
+  "waste_cost": 4764.41292595466,
+  "waste_rate": 11.63603293126556,
+  "total_volume": 3012
+ },
+ {
+  "store": "14869: ตลาดแยกอ่วมอ่อง",
+  "qty_sold": 1469,
+  "waste_qty": 368,
+  "waste_cost": 4762.070575505112,
+  "waste_rate": 16.67275015733166,
+  "total_volume": 1837
+ },
+ {
+  "store": "15836: ชุมชนบ้านหลวง (ดอนตูม)",
+  "qty_sold": 2826,
+  "waste_qty": 379,
+  "waste_cost": 4738.098034942004,
+  "waste_rate": 11.73487499366094,
+  "total_volume": 3205
+ },
+ {
+  "store": "13074: แยกนาปด",
+  "qty_sold": 3485,
+  "waste_qty": 387,
+  "waste_cost": 4725.866674661214,
+  "waste_rate": 14.53091239725343,
+  "total_volume": 3872
+ },
+ {
+  "store": "10290: สิรินธร ซอย 5",
+  "qty_sold": 5387,
+  "waste_qty": 374,
+  "waste_cost": 4601.016797473813,
+  "waste_rate": 7.324907012071352,
+  "total_volume": 5761
+ },
+ {
+  "store": "8631: คลองขุด",
+  "qty_sold": 4733,
+  "waste_qty": 397,
+  "waste_cost": 4592.005780853347,
+  "waste_rate": 7.370360680414256,
+  "total_volume": 5130
+ },
+ {
+  "store": "14246: ปากทางหมู่บ้านเกษตร (กำแพงแสน)",
+  "qty_sold": 1306,
+  "waste_qty": 369,
+  "waste_cost": 4577.168751650832,
+  "waste_rate": 18.60460041028327,
+  "total_volume": 1675
+ },
+ {
+  "store": "4257: แยกสมรโกฏิ",
+  "qty_sold": 2400,
+  "waste_qty": 364,
+  "waste_cost": 4516.277338800265,
+  "waste_rate": 10.41196809053952,
+  "total_volume": 2764
+ },
+ {
+  "store": "11551: หนองงูเหลือม",
+  "qty_sold": 3249,
+  "waste_qty": 362,
+  "waste_cost": 4508.361868108032,
+  "waste_rate": 8.517310976556436,
+  "total_volume": 3611
+ },
+ {
+  "store": "3527: PTTOR บ้านพรุ",
+  "qty_sold": 3823,
+  "waste_qty": 363,
+  "waste_cost": 4465.659086084827,
+  "waste_rate": 7.697438915802659,
+  "total_volume": 4186
+ },
+ {
+  "store": "13249: ชุมชนบ่อแสน",
+  "qty_sold": 5652,
+  "waste_qty": 360,
+  "waste_cost": 4461.714635425627,
+  "waste_rate": 7.735806252755405,
+  "total_volume": 6012
+ },
+ {
+  "store": "6267: กะปง",
+  "qty_sold": 10548,
+  "waste_qty": 342,
+  "waste_cost": 4430.506932715596,
+  "waste_rate": 4.763114317792486,
+  "total_volume": 10890
+ },
+ {
+  "store": "15484: PTTORหาดใหญ่ใน(ขาออก)",
+  "qty_sold": 4389,
+  "waste_qty": 352,
+  "waste_cost": 4369.201439435749,
+  "waste_rate": 7.049960682472238,
+  "total_volume": 4741
+ },
+ {
+  "store": "18063: ชุมชนรางหมัน (กำแพงแสน)",
+  "qty_sold": 1903,
+  "waste_qty": 393,
+  "waste_cost": 4365.888746641192,
+  "waste_rate": 14.85847594246032,
+  "total_volume": 2296
+ },
+ {
+  "store": "6584: ตลาดวังหม้อแกง",
+  "qty_sold": 4552,
+  "waste_qty": 353,
+  "waste_cost": 4355.368266033997,
+  "waste_rate": 7.407780222336144,
+  "total_volume": 4905
+ },
+ {
+  "store": "16164: ตำบลบ้านหาร(บางกล่ำ)",
+  "qty_sold": 2750,
+  "waste_qty": 357,
+  "waste_cost": 4338.809837554987,
+  "waste_rate": 14.38546052831767,
+  "total_volume": 3107
+ },
+ {
+  "store": "9345: ตลาดเกาะหมี",
+  "qty_sold": 2163,
+  "waste_qty": 337,
+  "waste_cost": 4332.64662850377,
+  "waste_rate": 11.09534206695779,
+  "total_volume": 2500
+ },
+ {
+  "store": "10611: รพ.กรุงเทพ-สนามจันทร์",
+  "qty_sold": 4327,
+  "waste_qty": 337,
+  "waste_cost": 4301.000346170418,
+  "waste_rate": 6.224407020686512,
+  "total_volume": 4664
+ },
+ {
+  "store": "13393: ถนนราษฎร์ยินดี ซอย 9",
+  "qty_sold": 2284,
+  "waste_qty": 348,
+  "waste_cost": 4263.300997211987,
+  "waste_rate": 14.51880127518307,
+  "total_volume": 2632
+ },
+ {
+  "store": "17343: PTTOR เบตง",
+  "qty_sold": 4305,
+  "waste_qty": 350,
+  "waste_cost": 4219.436544309917,
+  "waste_rate": 7.163710964781003,
+  "total_volume": 4655
+ },
+ {
+  "store": "908: สหกรณ์ ม.เกษตรกำแพงแสน",
+  "qty_sold": 3791,
+  "waste_qty": 330,
+  "waste_cost": 4201.121517241739,
+  "waste_rate": 7.341118525579917,
+  "total_volume": 4121
+ },
+ {
+  "store": "16765: ชุมชนบ้านเจริญสุข(กำแพงแสน)",
+  "qty_sold": 2026,
+  "waste_qty": 332,
+  "waste_cost": 4186.075018992196,
+  "waste_rate": 15.35110503531556,
+  "total_volume": 2358
+ },
+ {
+  "store": "14265: ตลาดนัดม่าหนิก",
+  "qty_sold": 4334,
+  "waste_qty": 341,
+  "waste_cost": 4167.633761107364,
+  "waste_rate": 7.47499258482865,
+  "total_volume": 4675
+ },
+ {
+  "store": "18218: ตลาดกุ้งปลาเกษตรกร บางเลน",
+  "qty_sold": 1328,
+  "waste_qty": 318,
+  "waste_cost": 4155.374440578333,
+  "waste_rate": 17.58619093896062,
+  "total_volume": 1646
+ },
+ {
+  "store": "18293: บ้านปากบารา",
+  "qty_sold": 3893,
+  "waste_qty": 344,
+  "waste_cost": 4151.949205928871,
+  "waste_rate": 10.54079479823986,
+  "total_volume": 4237
+ },
+ {
+  "store": "7624: ท่าศาลา 2",
+  "qty_sold": 3658,
+  "waste_qty": 356,
+  "waste_cost": 4144.596891305596,
+  "waste_rate": 4.212104906611733,
+  "total_volume": 4014
+ },
+ {
+  "store": "14982: Phuket Airport",
+  "qty_sold": 13730,
+  "waste_qty": 328,
+  "waste_cost": 4144.418479678694,
+  "waste_rate": 4.106440463645701,
+  "total_volume": 14058
+ },
+ {
+  "store": "8944: ตลาดม่วงงาม",
+  "qty_sold": 2312,
+  "waste_qty": 338,
+  "waste_cost": 4140.801770660686,
+  "waste_rate": 9.076958198051948,
+  "total_volume": 2650
+ },
+ {
+  "store": "15959: มอ.คณะพยาบาลศาสตร์",
+  "qty_sold": 4985,
+  "waste_qty": 313,
+  "waste_cost": 4140.256798671076,
+  "waste_rate": 5.647306551841158,
+  "total_volume": 5298
+ },
+ {
+  "store": "22867: ซอยเจ้าฟ้า 11",
+  "qty_sold": 2322,
+  "waste_qty": 336,
+  "waste_cost": 4131.910982842516,
+  "waste_rate": 14.31359236339544,
+  "total_volume": 2658
+ },
+ {
+  "store": "9390: อำเภอเทพา",
+  "qty_sold": 2324,
+  "waste_qty": 338,
+  "waste_cost": 4128.16230045336,
+  "waste_rate": 9.410647553504695,
+  "total_volume": 2662
+ },
+ {
+  "store": "18154: PTTOR ปาดังเบซาร์",
+  "qty_sold": 8406,
+  "waste_qty": 332,
+  "waste_cost": 4112.578276251549,
+  "waste_rate": 5.414742631169069,
+  "total_volume": 8738
+ },
+ {
+  "store": "13073: ซอยวัดพระใหญ่",
+  "qty_sold": 3351,
+  "waste_qty": 335,
+  "waste_cost": 4104.106019274627,
+  "waste_rate": 8.54924324248337,
+  "total_volume": 3686
+ },
+ {
+  "store": "11288: ถนนอัมพวัน (หาดใหญ่)",
+  "qty_sold": 7705,
+  "waste_qty": 318,
+  "waste_cost": 4036.596567416408,
+  "waste_rate": 4.849332144000732,
+  "total_volume": 8023
+ },
+ {
+  "store": "6868: บ่อแร่",
+  "qty_sold": 2565,
+  "waste_qty": 344,
+  "waste_cost": 4028.162532118277,
+  "waste_rate": 11.65091173509341,
+  "total_volume": 2909
+ },
+ {
+  "store": "10579: พุทธมณฑลสาย 3 ซอย 28",
+  "qty_sold": 1707,
+  "waste_qty": 324,
+  "waste_cost": 4017.902125360959,
+  "waste_rate": 16.85826408125577,
+  "total_volume": 2031
+ },
+ {
+  "store": "11450: เทศบาลบำรุงษ์",
+  "qty_sold": 6119,
+  "waste_qty": 309,
+  "waste_cost": 3976.623330534934,
+  "waste_rate": 6.92209877768884,
+  "total_volume": 6428
+ },
+ {
+  "store": "8130: ดอนตูม 2",
+  "qty_sold": 2256,
+  "waste_qty": 308,
+  "waste_cost": 3959.201732056475,
+  "waste_rate": 13.43755976286097,
+  "total_volume": 2564
+ },
+ {
+  "store": "13300: ถนนมหาดไทย (ระโนด)",
+  "qty_sold": 7483,
+  "waste_qty": 318,
+  "waste_cost": 3942.42391443229,
+  "waste_rate": 4.612058370465893,
+  "total_volume": 7801
+ },
+ {
+  "store": "6742: อ่าวนางไนท์พลาซ่า",
+  "qty_sold": 16232,
+  "waste_qty": 338,
+  "waste_cost": 3907.69643751664,
+  "waste_rate": 2.657326922697091,
+  "total_volume": 16570
+ },
+ {
+  "store": "16873: นบปริง",
+  "qty_sold": 8570,
+  "waste_qty": 314,
+  "waste_cost": 3900.148153190022,
+  "waste_rate": 4.172731734032373,
+  "total_volume": 8884
+ },
+ {
+  "store": "12059: ชุมชนสองห้อง",
+  "qty_sold": 1920,
+  "waste_qty": 308,
+  "waste_cost": 3899.535802545988,
+  "waste_rate": 11.44351464435147,
+  "total_volume": 2228
+ },
+ {
+  "store": "19223: ชุมชนสนามบินตรัง",
+  "qty_sold": 3481,
+  "waste_qty": 313,
+  "waste_cost": 3877.834692200272,
+  "waste_rate": 7.936111958882357,
+  "total_volume": 3794
+ },
+ {
+  "store": "17275: PTTOR คูหาสวรรค์",
+  "qty_sold": 3738,
+  "waste_qty": 304,
+  "waste_cost": 3872.197651217428,
+  "waste_rate": 7.701155430173531,
+  "total_volume": 4042
+ },
+ {
+  "store": "6970: ไทยบุรี",
+  "qty_sold": 3374,
+  "waste_qty": 283,
+  "waste_cost": 3834.527945138821,
+  "waste_rate": 9.74652768538967,
+  "total_volume": 3657
+ },
+ {
+  "store": "8510: ควนเนียง",
+  "qty_sold": 3224,
+  "waste_qty": 306,
+  "waste_cost": 3817.414578739052,
+  "waste_rate": 10.61514959966287,
+  "total_volume": 3530
+ },
+ {
+  "store": "14977: รพ.สงขลา(เกาะยอ)",
+  "qty_sold": 4319,
+  "waste_qty": 294,
+  "waste_cost": 3797.131651625304,
+  "waste_rate": 8.767606279520496,
+  "total_volume": 4613
+ },
+ {
+  "store": "17482: ตำบลทำนบ",
+  "qty_sold": 4830,
+  "waste_qty": 315,
+  "waste_cost": 3784.133922143471,
+  "waste_rate": 8.211329484078915,
+  "total_volume": 5145
+ },
+ {
+  "store": "13344: รางยอ(นครปฐม)",
+  "qty_sold": 6671,
+  "waste_qty": 278,
+  "waste_cost": 3772.254876030337,
+  "waste_rate": 3.390868196131354,
+  "total_volume": 6949
+ },
+ {
+  "store": "11772: ถนนสงขลา-นวมินทร์",
+  "qty_sold": 5511,
+  "waste_qty": 284,
+  "waste_cost": 3761.006674648321,
+  "waste_rate": 5.756253524014557,
+  "total_volume": 5795
+ },
+ {
+  "store": "2899: ทะเลหลวง",
+  "qty_sold": 4718,
+  "waste_qty": 320,
+  "waste_cost": 3733.17138996367,
+  "waste_rate": 4.182771606143254,
+  "total_volume": 5038
+ },
+ {
+  "store": "8173: บางเลนธานี",
+  "qty_sold": 1447,
+  "waste_qty": 297,
+  "waste_cost": 3732.57232944512,
+  "waste_rate": 13.41588785924723,
+  "total_volume": 1744
+ },
+ {
+  "store": "13499: ตำบลบางจาก นครศรีฯ",
+  "qty_sold": 3165,
+  "waste_qty": 292,
+  "waste_cost": 3700.843783112469,
+  "waste_rate": 6.382764968099448,
+  "total_volume": 3457
+ },
+ {
+  "store": "8850: ชุมชนท้องเนียน",
+  "qty_sold": 4155,
+  "waste_qty": 285,
+  "waste_cost": 3613.444038631399,
+  "waste_rate": 8.187038091564258,
+  "total_volume": 4440
+ },
+ {
+  "store": "11047: ศรีบรรพต",
+  "qty_sold": 7065,
+  "waste_qty": 297,
+  "waste_cost": 3607.342003582414,
+  "waste_rate": 6.591843053385306,
+  "total_volume": 7362
+ },
+ {
+  "store": "7106: PTTOR มงคลธนาย่านตาขาว",
+  "qty_sold": 4835,
+  "waste_qty": 278,
+  "waste_cost": 3588.680314808948,
+  "waste_rate": 4.466840899425169,
+  "total_volume": 5113
+ },
+ {
+  "store": "17654: หน้าโรงพยาบาลบางขัน",
+  "qty_sold": 7057,
+  "waste_qty": 312,
+  "waste_cost": 3571.969092230428,
+  "waste_rate": 5.544401776967859,
+  "total_volume": 7369
+ },
+ {
+  "store": "10249: ลานสกา",
+  "qty_sold": 6640,
+  "waste_qty": 289,
+  "waste_cost": 3544.012235112425,
+  "waste_rate": 5.990254077128439,
+  "total_volume": 6929
+ },
+ {
+  "store": "18519: บ้านทับปุด",
+  "qty_sold": 9380,
+  "waste_qty": 261,
+  "waste_cost": 3515.606540913865,
+  "waste_rate": 3.602587019721851,
+  "total_volume": 9641
+ },
+ {
+  "store": "15931: กาญจนวนิช(แยกคลองหวะ)",
+  "qty_sold": 3523,
+  "waste_qty": 274,
+  "waste_cost": 3488.39107115236,
+  "waste_rate": 8.033682499548492,
+  "total_volume": 3797
+ },
+ {
+  "store": "14543: ท่านา (นครชัยศรี)",
+  "qty_sold": 1030,
+  "waste_qty": 269,
+  "waste_cost": 3471.060137702249,
+  "waste_rate": 19.99123758813681,
+  "total_volume": 1299
+ },
+ {
+  "store": "18468: PTTOR บ้านตรับ",
+  "qty_sold": 3810,
+  "waste_qty": 283,
+  "waste_cost": 3449.767694087,
+  "waste_rate": 8.824256425532786,
+  "total_volume": 4093
+ },
+ {
+  "store": "18197: PTTOR เทศบาลต้นไทร (นราธิวาส)",
+  "qty_sold": 2258,
+  "waste_qty": 273,
+  "waste_cost": 3401.463371276597,
+  "waste_rate": 12.00936353283563,
+  "total_volume": 2531
+ },
+ {
+  "store": "10625: ตลาดห้วยปริก",
+  "qty_sold": 5591,
+  "waste_qty": 269,
+  "waste_cost": 3392.297947454232,
+  "waste_rate": 5.40496215837405,
+  "total_volume": 5860
+ },
+ {
+  "store": "5948: เทศบาลเกาะลันตา",
+  "qty_sold": 5680,
+  "waste_qty": 270,
+  "waste_cost": 3373.795433001987,
+  "waste_rate": 6.147008832789991,
+  "total_volume": 5950
+ },
+ {
+  "store": "8689: ตลาดสดสะเดา",
+  "qty_sold": 3844,
+  "waste_qty": 273,
+  "waste_cost": 3350.449975071888,
+  "waste_rate": 5.791070919385718,
+  "total_volume": 4117
+ },
+ {
+  "store": "2332: ถนนราชดำเนิน (นครศรี ฯ )",
+  "qty_sold": 5142,
+  "waste_qty": 300,
+  "waste_cost": 3337.019387303676,
+  "waste_rate": 5.856021197096545,
+  "total_volume": 5442
+ },
+ {
+  "store": "5261: PTTOR ป่าบอน (พัทลุง)",
+  "qty_sold": 10415,
+  "waste_qty": 270,
+  "waste_cost": 3287.945403992057,
+  "waste_rate": 3.653920371171446,
+  "total_volume": 10685
+ },
+ {
+  "store": "15999: ถนน 30 เมตร",
+  "qty_sold": 3714,
+  "waste_qty": 295,
+  "waste_cost": 3287.295295652904,
+  "waste_rate": 10.22291022692307,
+  "total_volume": 4009
+ },
+ {
+  "store": "14703: ม.ทาวน์อเวนิว(ซอยวัดมะเดื่อ)",
+  "qty_sold": 2046,
+  "waste_qty": 263,
+  "waste_cost": 3239.474399914356,
+  "waste_rate": 11.08703755474793,
+  "total_volume": 2309
+ },
+ {
+  "store": "2441: จะนะ",
+  "qty_sold": 2289,
+  "waste_qty": 265,
+  "waste_cost": 3232.433186772662,
+  "waste_rate": 10.48404641044235,
+  "total_volume": 2554
+ },
+ {
+  "store": "17192: PTTOR ราษฎร์อุทิศ (หาดใหญ่)",
+  "qty_sold": 2941,
+  "waste_qty": 272,
+  "waste_cost": 3226.689545392142,
+  "waste_rate": 7.194225338397117,
+  "total_volume": 3213
+ },
+ {
+  "store": "15847: กาญจนวนิช ซ.69",
+  "qty_sold": 3925,
+  "waste_qty": 240,
+  "waste_cost": 3159.434370870793,
+  "waste_rate": 6.294117966293019,
+  "total_volume": 4165
+ },
+ {
+  "store": "19535: ตลาดท่าข้าม(หาดใหญ่)",
+  "qty_sold": 6352,
+  "waste_qty": 241,
+  "waste_cost": 3133.432033684708,
+  "waste_rate": 4.551213387897835,
+  "total_volume": 6593
+ },
+ {
+  "store": "11112: ถนนปุณกัณฑ์ ซอย 12",
+  "qty_sold": 2604,
+  "waste_qty": 241,
+  "waste_cost": 3114.469564267384,
+  "waste_rate": 8.783551791436762,
+  "total_volume": 2845
+ },
+ {
+  "store": "10322: ห้วยโต้",
+  "qty_sold": 6867,
+  "waste_qty": 239,
+  "waste_cost": 3055.059939618448,
+  "waste_rate": 3.298209494498557,
+  "total_volume": 7106
+ },
+ {
+  "store": "18737: หน้า รพ.วังวิเศษ",
+  "qty_sold": 4662,
+  "waste_qty": 262,
+  "waste_cost": 3040.582143080965,
+  "waste_rate": 5.616640480219161,
+  "total_volume": 4924
+ },
+ {
+  "store": "18506: PTTOR หน้าสวนสาธารณะ (หาดใหญ่)",
+  "qty_sold": 4228,
+  "waste_qty": 254,
+  "waste_cost": 3035.809463169755,
+  "waste_rate": 10.1000325064041,
+  "total_volume": 4482
+ },
+ {
+  "store": "10746: ตลาดแจ่มแจ๋ว (บางเตย 5)",
+  "qty_sold": 1349,
+  "waste_qty": 242,
+  "waste_cost": 3016.500351611582,
+  "waste_rate": 13.00564061240935,
+  "total_volume": 1591
+ },
+ {
+  "store": "15273: สามกระบือเผือกซอย 1",
+  "qty_sold": 2288,
+  "waste_qty": 234,
+  "waste_cost": 2949.787191686855,
+  "waste_rate": 8.648657763388641,
+  "total_volume": 2522
+ },
+ {
+  "store": "3338: PTTOR ศรีเพชร",
+  "qty_sold": 6885,
+  "waste_qty": 235,
+  "waste_cost": 2910.158059744272,
+  "waste_rate": 4.013738213525297,
+  "total_volume": 7120
+ },
+ {
+  "store": "11986: หน้า รพ.เหนือคลอง",
+  "qty_sold": 4366,
+  "waste_qty": 249,
+  "waste_cost": 2906.548991735268,
+  "waste_rate": 6.434969922624243,
+  "total_volume": 4615
+ },
+ {
+  "store": "19873: ถนนทุ่งทอง(หาดใหญ่)",
+  "qty_sold": 963,
+  "waste_qty": 237,
+  "waste_cost": 2876.225277385341,
+  "waste_rate": 19.65626224779543,
+  "total_volume": 1200
+ },
+ {
+  "store": "8673: เอื้ออาทรถลาง",
+  "qty_sold": 5929,
+  "waste_qty": 217,
+  "waste_cost": 2866.803095928904,
+  "waste_rate": 4.503807797519453,
+  "total_volume": 6146
+ },
+ {
+  "store": "17063: PTTOR โคกสัก(เพชรเกษม)",
+  "qty_sold": 7435,
+  "waste_qty": 245,
+  "waste_cost": 2865.248274651672,
+  "waste_rate": 3.049700258182634,
+  "total_volume": 7680
+ },
+ {
+  "store": "14709: เพชรเกษม ซ.10",
+  "qty_sold": 2777,
+  "waste_qty": 221,
+  "waste_cost": 2852.016297003489,
+  "waste_rate": 7.86860163808482,
+  "total_volume": 2998
+ },
+ {
+  "store": "8942: จันดี 2",
+  "qty_sold": 5798,
+  "waste_qty": 227,
+  "waste_cost": 2846.034467120645,
+  "waste_rate": 4.691383827747464,
+  "total_volume": 6025
+ },
+ {
+  "store": "1041: ราชพฤกษ์",
+  "qty_sold": 4027,
+  "waste_qty": 224,
+  "waste_cost": 2812.786806150241,
+  "waste_rate": 5.391662313351618,
+  "total_volume": 4251
+ },
+ {
+  "store": "16082: ตำบลป่าพะยอม",
+  "qty_sold": 7433,
+  "waste_qty": 214,
+  "waste_cost": 2783.263368870354,
+  "waste_rate": 3.379498265449875,
+  "total_volume": 7647
+ },
+ {
+  "store": "13781: บ้านพระมอพิสัย(บางเลน)",
+  "qty_sold": 2002,
+  "waste_qty": 214,
+  "waste_cost": 2766.645206305289,
+  "waste_rate": 7.544942603422135,
+  "total_volume": 2216
+ },
+ {
+  "store": "9394: บ้านสะท้อน",
+  "qty_sold": 2258,
+  "waste_qty": 218,
+  "waste_cost": 2722.567354485478,
+  "waste_rate": 9.024907852116609,
+  "total_volume": 2476
+ },
+ {
+  "store": "4184: ศุภนัฐพลาซ่า",
+  "qty_sold": 10022,
+  "waste_qty": 206,
+  "waste_cost": 2708.183671298402,
+  "waste_rate": 2.570999220745414,
+  "total_volume": 10228
+ },
+ {
+  "store": "7358: คลองปาง",
+  "qty_sold": 3858,
+  "waste_qty": 217,
+  "waste_cost": 2695.441116322652,
+  "waste_rate": 4.886070155722806,
+  "total_volume": 4075
+ },
+ {
+  "store": "8449: กะเปอร์",
+  "qty_sold": 3664,
+  "waste_qty": 232,
+  "waste_cost": 2682.050524129975,
+  "waste_rate": 7.411755622879677,
+  "total_volume": 3896
+ },
+ {
+  "store": "10238: สะบ้าย้อย",
+  "qty_sold": 3550,
+  "waste_qty": 228,
+  "waste_cost": 2681.208110004424,
+  "waste_rate": 6.888330991104238,
+  "total_volume": 3778
+ },
+ {
+  "store": "9389: ตลาดระโนด",
+  "qty_sold": 2425,
+  "waste_qty": 209,
+  "waste_cost": 2644.724051270686,
+  "waste_rate": 7.056027461554743,
+  "total_volume": 2634
+ },
+ {
+  "store": "11132: ถนนนาเหนือ",
+  "qty_sold": 3667,
+  "waste_qty": 200,
+  "waste_cost": 2600.031948693694,
+  "waste_rate": 6.050224354297388,
+  "total_volume": 3867
+ },
+ {
+  "store": "6083: PTTOR ช.เอ็นเค ออยล์",
+  "qty_sold": 2668,
+  "waste_qty": 210,
+  "waste_cost": 2599.553380247708,
+  "waste_rate": 5.54556893224788,
+  "total_volume": 2878
+ },
+ {
+  "store": "18626: บ้านคึกคัก",
+  "qty_sold": 8325,
+  "waste_qty": 202,
+  "waste_cost": 2599.435669062041,
+  "waste_rate": 2.611228105076362,
+  "total_volume": 8527
+ },
+ {
+  "store": "9147: ชะอวด 2",
+  "qty_sold": 3578,
+  "waste_qty": 212,
+  "waste_cost": 2577.999626381269,
+  "waste_rate": 7.939420789985811,
+  "total_volume": 3790
+ },
+ {
+  "store": "13304: เพชรเกษม ซ.1",
+  "qty_sold": 1990,
+  "waste_qty": 210,
+  "waste_cost": 2570.200939308441,
+  "waste_rate": 10.6747620318477,
+  "total_volume": 2200
+ },
+ {
+  "store": "11466: ปตท.ทุ่งโพธิ์",
+  "qty_sold": 5787,
+  "waste_qty": 207,
+  "waste_cost": 2545.749617681586,
+  "waste_rate": 3.440235668201464,
+  "total_volume": 5994
+ },
+ {
+  "store": "17553: ถนนท่าโพธิ์",
+  "qty_sold": 3949,
+  "waste_qty": 200,
+  "waste_cost": 2543.181610679138,
+  "waste_rate": 4.19815713375484,
+  "total_volume": 4149
+ },
+ {
+  "store": "16669: PTTOR นาท่อม",
+  "qty_sold": 4298,
+  "waste_qty": 198,
+  "waste_cost": 2531.466089697632,
+  "waste_rate": 3.921082494572725,
+  "total_volume": 4496
+ },
+ {
+  "store": "3487: คลองท่อม",
+  "qty_sold": 6078,
+  "waste_qty": 209,
+  "waste_cost": 2528.35230072205,
+  "waste_rate": 4.339522282257173,
+  "total_volume": 6287
+ },
+ {
+  "store": "13920: ถนนชัยมงคล",
+  "qty_sold": 4213,
+  "waste_qty": 202,
+  "waste_cost": 2526.381925544358,
+  "waste_rate": 4.588559285280597,
+  "total_volume": 4415
+ },
+ {
+  "store": "15046: หนองหงศ์",
+  "qty_sold": 6752,
+  "waste_qty": 219,
+  "waste_cost": 2460.543185367964,
+  "waste_rate": 3.608166698744004,
+  "total_volume": 6971
+ },
+ {
+  "store": "13463: บ้านโพธิ์(ตรัง)",
+  "qty_sold": 2510,
+  "waste_qty": 199,
+  "waste_cost": 2442.649865320751,
+  "waste_rate": 8.811574466276184,
+  "total_volume": 2709
+ },
+ {
+  "store": "17799: ถนนสะเดา-ปาดังเบซาร์",
+  "qty_sold": 3602,
+  "waste_qty": 202,
+  "waste_cost": 2434.377951848815,
+  "waste_rate": 5.696826170322299,
+  "total_volume": 3804
+ },
+ {
+  "store": "11677: ถนนวิเชียรชม",
+  "qty_sold": 5064,
+  "waste_qty": 209,
+  "waste_cost": 2412.152410245938,
+  "waste_rate": 3.636006138251311,
+  "total_volume": 5273
+ },
+ {
+  "store": "22745: ถนนนวลแก้วอุทิศ 2",
+  "qty_sold": 1032,
+  "waste_qty": 190,
+  "waste_cost": 2392.344090435533,
+  "waste_rate": 10.31366872275963,
+  "total_volume": 1222
+ },
+ {
+  "store": "17630: ต้นรัก",
+  "qty_sold": 3236,
+  "waste_qty": 177,
+  "waste_cost": 2305.511666687448,
+  "waste_rate": 7.267645636934978,
+  "total_volume": 3413
+ },
+ {
+  "store": "12183: ทะเลน้อย",
+  "qty_sold": 4540,
+  "waste_qty": 178,
+  "waste_cost": 2259.737850712973,
+  "waste_rate": 5.838484406964251,
+  "total_volume": 4718
+ },
+ {
+  "store": "13224: บ้านดอนสำโรง",
+  "qty_sold": 7049,
+  "waste_qty": 167,
+  "waste_cost": 2172.768907207743,
+  "waste_rate": 4.234848226908645,
+  "total_volume": 7216
+ },
+ {
+  "store": "15998: นางทองพลาซ่า",
+  "qty_sold": 5871,
+  "waste_qty": 170,
+  "waste_cost": 2141.247007014798,
+  "waste_rate": 3.369190069190069,
+  "total_volume": 6041
+ },
+ {
+  "store": "7937: สะเดา 2",
+  "qty_sold": 1549,
+  "waste_qty": 172,
+  "waste_cost": 2134.496886223271,
+  "waste_rate": 9.726116533569948,
+  "total_volume": 1721
+ },
+ {
+  "store": "16793: ถนนพานิชสัมพันธ์",
+  "qty_sold": 4834,
+  "waste_qty": 181,
+  "waste_cost": 2078.464383795135,
+  "waste_rate": 4.8545057540755,
+  "total_volume": 5015
+ },
+ {
+  "store": "8705: นาทวี 2",
+  "qty_sold": 7272,
+  "waste_qty": 172,
+  "waste_cost": 2067.816822351664,
+  "waste_rate": 3.413628497540298,
+  "total_volume": 7444
+ },
+ {
+  "store": "17709: ตำบลทุ่งหมอ",
+  "qty_sold": 2403,
+  "waste_qty": 179,
+  "waste_cost": 2054.604610032752,
+  "waste_rate": 7.134557513801763,
+  "total_volume": 2582
+ },
+ {
+  "store": "15366: คลองขนาน",
+  "qty_sold": 2868,
+  "waste_qty": 183,
+  "waste_cost": 2046.323620455105,
+  "waste_rate": 7.541370964906218,
+  "total_volume": 3051
+ },
+ {
+  "store": "15519: พนมวังก์",
+  "qty_sold": 4207,
+  "waste_qty": 157,
+  "waste_cost": 2033.321382525929,
+  "waste_rate": 5.074239725842575,
+  "total_volume": 4364
+ },
+ {
+  "store": "15868: ถนนอรุณประชา",
+  "qty_sold": 8183,
+  "waste_qty": 158,
+  "waste_cost": 2029.094054209628,
+  "waste_rate": 2.464529736487574,
+  "total_volume": 8341
+ },
+ {
+  "store": "15996: อ่าวขนอม",
+  "qty_sold": 6077,
+  "waste_qty": 168,
+  "waste_cost": 1999.443728600251,
+  "waste_rate": 2.430895323104501,
+  "total_volume": 6245
+ },
+ {
+  "store": "4203: แหลมประการัง",
+  "qty_sold": 7761,
+  "waste_qty": 168,
+  "waste_cost": 1960.902073331402,
+  "waste_rate": 3.017378664245672,
+  "total_volume": 7929
+ },
+ {
+  "store": "7516: สิชล จุด 2",
+  "qty_sold": 5966,
+  "waste_qty": 164,
+  "waste_cost": 1960.601131178787,
+  "waste_rate": 3.629712771248791,
+  "total_volume": 6130
+ },
+ {
+  "store": "17617: ลำภี",
+  "qty_sold": 6675,
+  "waste_qty": 153,
+  "waste_cost": 1927.979795909717,
+  "waste_rate": 2.170018013750288,
+  "total_volume": 6828
+ },
+ {
+  "store": "8641: อำเภอนาหม่อม",
+  "qty_sold": 1419,
+  "waste_qty": 164,
+  "waste_cost": 1924.725271994422,
+  "waste_rate": 9.207912033473988,
+  "total_volume": 1583
+ },
+ {
+  "store": "3508: ควนขนุน",
+  "qty_sold": 3500,
+  "waste_qty": 161,
+  "waste_cost": 1913.964243240074,
+  "waste_rate": 4.994608537037213,
+  "total_volume": 3661
+ },
+ {
+  "store": "2790: ซ.สุขศรีเมือง",
+  "qty_sold": 1445,
+  "waste_qty": 151,
+  "waste_cost": 1891.659862490025,
+  "waste_rate": 8.565799842395588,
+  "total_volume": 1596
+ },
+ {
+  "store": "16025: ชุมชนหน้าอำเภอปลายพระยา",
+  "qty_sold": 4721,
+  "waste_qty": 159,
+  "waste_cost": 1872.766995233199,
+  "waste_rate": 3.971298234019899,
+  "total_volume": 4880
+ },
+ {
+  "store": "18384: PTTOR สามกระบือเผือก (นครปฐม)",
+  "qty_sold": 529,
+  "waste_qty": 150,
+  "waste_cost": 1842.81396494751,
+  "waste_rate": 17.22497932175352,
+  "total_volume": 679
+ },
+ {
+  "store": "14114: สงขลา-ลพบุรีราเมศวร์",
+  "qty_sold": 4035,
+  "waste_qty": 148,
+  "waste_cost": 1786.365664311829,
+  "waste_rate": 4.135364499425956,
+  "total_volume": 4183
+ },
+ {
+  "store": "16699: PTTOR หาดใหญ่ (ช่องเขา)",
+  "qty_sold": 2091,
+  "waste_qty": 131,
+  "waste_cost": 1778.490662536727,
+  "waste_rate": 5.227183872504069,
+  "total_volume": 2222
+ },
+ {
+  "store": "16447: บ้านในใส",
+  "qty_sold": 5548,
+  "waste_qty": 146,
+  "waste_cost": 1761.591777946567,
+  "waste_rate": 3.606194690265487,
+  "total_volume": 5694
+ },
+ {
+  "store": "15725: หน้าอำเภอพิปูน",
+  "qty_sold": 4776,
+  "waste_qty": 141,
+  "waste_cost": 1696.080018521052,
+  "waste_rate": 4.295078989238421,
+  "total_volume": 4917
+ },
+ {
+  "store": "13089: ปตท.ถนนหาดใหญ่-รัตภูมิ",
+  "qty_sold": 5610,
+  "waste_qty": 135,
+  "waste_cost": 1678.615921585361,
+  "waste_rate": 3.602818356831436,
+  "total_volume": 5745
+ },
+ {
+  "store": "13269: ถนนนครศรีฯ - ปากพนัง",
+  "qty_sold": 2739,
+  "waste_qty": 128,
+  "waste_cost": 1636.439562100864,
+  "waste_rate": 2.738306261983142,
+  "total_volume": 2867
+ },
+ {
+  "store": "18339: PTTOR หนองหงส์ (ทุ่งสง)",
+  "qty_sold": 5228,
+  "waste_qty": 120,
+  "waste_cost": 1575.984217938433,
+  "waste_rate": 2.258944653290741,
+  "total_volume": 5348
+ },
+ {
+  "store": "10815: ถนนติณสูลานนท์",
+  "qty_sold": 2214,
+  "waste_qty": 126,
+  "waste_cost": 1574.23031874156,
+  "waste_rate": 5.882410106899902,
+  "total_volume": 2340
+ },
+ {
+  "store": "13426: จุฬาภรณ์",
+  "qty_sold": 5137,
+  "waste_qty": 124,
+  "waste_cost": 1536.712073035948,
+  "waste_rate": 3.288202876617511,
+  "total_volume": 5261
+ },
+ {
+  "store": "18413: PTTOR บ้านไร่-คลองปอม (หาดใหญ่)",
+  "qty_sold": 4101,
+  "waste_qty": 117,
+  "waste_cost": 1531.078960836331,
+  "waste_rate": 2.860983332337655,
+  "total_volume": 4218
+ },
+ {
+  "store": "11468: ถนนละงู-ทุ่งหว้า",
+  "qty_sold": 5347,
+  "waste_qty": 124,
+  "waste_cost": 1500.555444224896,
+  "waste_rate": 2.655370228899641,
+  "total_volume": 5471
+ },
+ {
+  "store": "13059: เขานัน ท่าศาลา",
+  "qty_sold": 2868,
+  "waste_qty": 115,
+  "waste_cost": 1468.402572789056,
+  "waste_rate": 3.784636829962609,
+  "total_volume": 2983
+ },
+ {
+  "store": "11863: ตลาดหนองดี",
+  "qty_sold": 4512,
+  "waste_qty": 125,
+  "waste_cost": 1431.277005118235,
+  "waste_rate": 3.060621958842518,
+  "total_volume": 4637
+ },
+ {
+  "store": "4186: ถนนท่าเมือง  2",
+  "qty_sold": 3392,
+  "waste_qty": 115,
+  "waste_cost": 1425.492352584764,
+  "waste_rate": 3.19373875216676,
+  "total_volume": 3507
+ },
+ {
+  "store": "16130: ปากจั่น",
+  "qty_sold": 6360,
+  "waste_qty": 117,
+  "waste_cost": 1399.303847494405,
+  "waste_rate": 2.599598310757504,
+  "total_volume": 6477
+ },
+ {
+  "store": "15098: บ้านน้ำจาน",
+  "qty_sold": 2060,
+  "waste_qty": 119,
+  "waste_cost": 1326.202387748574,
+  "waste_rate": 4.966366627951993,
+  "total_volume": 2179
+ },
+ {
+  "store": "19139: ตำบลชุมพล",
+  "qty_sold": 3470,
+  "waste_qty": 98,
+  "waste_cost": 1301.542909137703,
+  "waste_rate": 4.569884917040173,
+  "total_volume": 3568
+ },
+ {
+  "store": "19212: สามแยกดอนตูม-บางเลน",
+  "qty_sold": 7728,
+  "waste_qty": 98,
+  "waste_cost": 1292.865821613505,
+  "waste_rate": 1.453292349553347,
+  "total_volume": 7826
+ },
+ {
+  "store": "7847: ปากพะยูน",
+  "qty_sold": 10368,
+  "waste_qty": 107,
+  "waste_cost": 1279.690949882289,
+  "waste_rate": 1.75471432423336,
+  "total_volume": 10475
+ },
+ {
+  "store": "8731: อ.ร่อนพิบูลย์",
+  "qty_sold": 8254,
+  "waste_qty": 97,
+  "waste_cost": 1197.4734393725,
+  "waste_rate": 3.769270438733526,
+  "total_volume": 8351
+ },
+ {
+  "store": "16647: ตำบลเกาะสะบ้า",
+  "qty_sold": 1028,
+  "waste_qty": 96,
+  "waste_cost": 1197.112160435967,
+  "waste_rate": 8.45805889923537,
+  "total_volume": 1124
+ },
+ {
+  "store": "9839: คลองเขม้่า",
+  "qty_sold": 3810,
+  "waste_qty": 91,
+  "waste_cost": 1155.505192822697,
+  "waste_rate": 2.441471571906355,
+  "total_volume": 3901
+ },
+ {
+  "store": "10433: PTTOR ปาลัส 2",
+  "qty_sold": 17860,
+  "waste_qty": 108,
+  "waste_cost": 1149.487495621016,
+  "waste_rate": 0.6975956662587893,
+  "total_volume": 17968
+ },
+ {
+  "store": "445: ตลาดหัวอิฐ",
+  "qty_sold": 6083,
+  "waste_qty": 92,
+  "waste_cost": 1109.906493529432,
+  "waste_rate": 1.305825399926523,
+  "total_volume": 6175
+ },
+ {
+  "store": "16405: ถนนทุ่งใหญ่-พระแสง",
+  "qty_sold": 5869,
+  "waste_qty": 91,
+  "waste_cost": 1108.543632022171,
+  "waste_rate": 2.308871339700539,
+  "total_volume": 5960
+ },
+ {
+  "store": "7973: อ.ฉวาง",
+  "qty_sold": 5445,
+  "waste_qty": 81,
+  "waste_cost": 1097.726731179067,
+  "waste_rate": 2.401119683412862,
+  "total_volume": 5526
+ },
+ {
+  "store": "13255: ถ้ำเสือ",
+  "qty_sold": 3145,
+  "waste_qty": 89,
+  "waste_cost": 1026.266225627669,
+  "waste_rate": 3.030608812647158,
+  "total_volume": 3234
+ },
+ {
+  "store": "17714: ตำบลสะพานไม้แก่น",
+  "qty_sold": 1408,
+  "waste_qty": 95,
+  "waste_cost": 1002.082435961293,
+  "waste_rate": 7.000846023688664,
+  "total_volume": 1503
+ },
+ {
+  "store": "16274: โพธิ์ทอง - ควนขนุน",
+  "qty_sold": 4297,
+  "waste_qty": 78,
+  "waste_cost": 999.5123274443368,
+  "waste_rate": 2.689703641068829,
+  "total_volume": 4375
+ },
+ {
+  "store": "14736: อ.ศรีนครินทร์",
+  "qty_sold": 5046,
+  "waste_qty": 80,
+  "waste_cost": 977.688708589063,
+  "waste_rate": 2.617379633508666,
+  "total_volume": 5126
+ },
+ {
+  "store": "9392: พาณิชย์ทุ่งสง",
+  "qty_sold": 8734,
+  "waste_qty": 80,
+  "waste_cost": 966.9807969900388,
+  "waste_rate": 0.8712275672313731,
+  "total_volume": 8814
+ },
+ {
+  "store": "2120: PTTOR.เทพา",
+  "qty_sold": 3230,
+  "waste_qty": 79,
+  "waste_cost": 964.0752342378847,
+  "waste_rate": 2.608987256874581,
+  "total_volume": 3309
+ },
+ {
+  "store": "14708: บ้านหนองกก",
+  "qty_sold": 6959,
+  "waste_qty": 78,
+  "waste_cost": 936.848502965761,
+  "waste_rate": 1.162536443148688,
+  "total_volume": 7037
+ },
+ {
+  "store": "17093: น้ำตกอ้ายเขียว",
+  "qty_sold": 3378,
+  "waste_qty": 81,
+  "waste_cost": 936.6110523087998,
+  "waste_rate": 2.34447900466563,
+  "total_volume": 3459
+ },
+ {
+  "store": "11735: ถนนบ้านพรุธานี",
+  "qty_sold": 2291,
+  "waste_qty": 72,
+  "waste_cost": 932.6843558044112,
+  "waste_rate": 3.572552722694366,
+  "total_volume": 2363
+ },
+ {
+  "store": "17778: PTTOR ชะอวดนครศรีฯ",
+  "qty_sold": 4000,
+  "waste_qty": 84,
+  "waste_cost": 928.1669651449364,
+  "waste_rate": 3.502392546217248,
+  "total_volume": 4084
+ },
+ {
+  "store": "8556: อ.ป่าบอน",
+  "qty_sold": 4235,
+  "waste_qty": 70,
+  "waste_cost": 905.5974384197224,
+  "waste_rate": 2.470938610817562,
+  "total_volume": 4305
+ },
+ {
+  "store": "18143: ตลาดใหญ่ตะกั่วป่า",
+  "qty_sold": 7777,
+  "waste_qty": 73,
+  "waste_cost": 902.1444329695819,
+  "waste_rate": 1.22749021617694,
+  "total_volume": 7850
+ },
+ {
+  "store": "10236: นาบอน",
+  "qty_sold": 4209,
+  "waste_qty": 68,
+  "waste_cost": 876.298313594675,
+  "waste_rate": 1.683032414739732,
+  "total_volume": 4277
+ },
+ {
+  "store": "17781: ตำบลในเมือง นครศรีฯ",
+  "qty_sold": 4982,
+  "waste_qty": 66,
+  "waste_cost": 876.1833414933254,
+  "waste_rate": 1.671296296296296,
+  "total_volume": 5048
+ },
+ {
+  "store": "9978: มะนาวหวาน",
+  "qty_sold": 6559,
+  "waste_qty": 70,
+  "waste_cost": 869.9509356015328,
+  "waste_rate": 1.852277033983495,
+  "total_volume": 6629
+ },
+ {
+  "store": "15787: บ้านบางผึ้ง",
+  "qty_sold": 2597,
+  "waste_qty": 76,
+  "waste_cost": 831.9901412049416,
+  "waste_rate": 5.165311653116532,
+  "total_volume": 2673
+ },
+ {
+  "store": "18230: ชุมชนซอย 2",
+  "qty_sold": 5655,
+  "waste_qty": 67,
+  "waste_cost": 813.9886857373498,
+  "waste_rate": 1.663547545096153,
+  "total_volume": 5722
+ },
+ {
+  "store": "16582: สินปุน",
+  "qty_sold": 3424,
+  "waste_qty": 61,
+  "waste_cost": 770.2397214695583,
+  "waste_rate": 1.518042157913541,
+  "total_volume": 3485
+ },
+ {
+  "store": "14262: ชุมชนที่วัง",
+  "qty_sold": 3650,
+  "waste_qty": 58,
+  "waste_cost": 707.9319220316238,
+  "waste_rate": 1.409845636819321,
+  "total_volume": 3708
+ },
+ {
+  "store": "17458: เขาพระ นครศรีฯ",
+  "qty_sold": 3884,
+  "waste_qty": 50,
+  "waste_cost": 669.5819537487375,
+  "waste_rate": 1.152337365152011,
+  "total_volume": 3934
+ },
+ {
+  "store": "4244: พรหมคีรี",
+  "qty_sold": 3346,
+  "waste_qty": 47,
+  "waste_cost": 604.7530062853587,
+  "waste_rate": 1.526946107784431,
+  "total_volume": 3393
+ },
+ {
+  "store": "5092: K Town (กำแพงแสน)",
+  "qty_sold": 2509,
+  "waste_qty": 56,
+  "waste_cost": 585.1239610501099,
+  "waste_rate": 1.558779761904762,
+  "total_volume": 2565
+ },
+ {
+  "store": "6371: บ้านด่าน",
+  "qty_sold": 1547,
+  "waste_qty": 44,
+  "waste_cost": 566.055718200384,
+  "waste_rate": 3.701456310679612,
+  "total_volume": 1591
+ },
+ {
+  "store": "15096: ราชดำเนิน 76 นครศรีฯ",
+  "qty_sold": 7830,
+  "waste_qty": 40,
+  "waste_cost": 551.6435973933403,
+  "waste_rate": 0.9119115127887057,
+  "total_volume": 7870
+ },
+ {
+  "store": "18073: ตำบลพรุเตียว จ.กระบี่",
+  "qty_sold": 4283,
+  "waste_qty": 46,
+  "waste_cost": 542.6822658247848,
+  "waste_rate": 0.9086397075876913,
+  "total_volume": 4329
+ },
+ {
+  "store": "7972: ชุมชนไม้เรียง",
+  "qty_sold": 3276,
+  "waste_qty": 47,
+  "waste_cost": 528.8029493247789,
+  "waste_rate": 1.37396694214876,
+  "total_volume": 3323
+ },
+ {
+  "store": "9070: ทุ่งใหญ่ จุด 2",
+  "qty_sold": 3919,
+  "waste_qty": 45,
+  "waste_cost": 520.6161341478505,
+  "waste_rate": 1.361013302034429,
+  "total_volume": 3964
+ },
+ {
+  "store": "6008: ถนนรถไฟตะวันออก (นครปฐม)",
+  "qty_sold": 5673,
+  "waste_qty": 42,
+  "waste_cost": 495.5740028878947,
+  "waste_rate": 0.8972480052108777,
+  "total_volume": 5715
+ },
+ {
+  "store": "17824: อำเภอ กงหรา",
+  "qty_sold": 5613,
+  "waste_qty": 34,
+  "waste_cost": 448.5413594379837,
+  "waste_rate": 1.442002286875874,
+  "total_volume": 5647
+ },
+ {
+  "store": "13688: บ้านบ่อน้ำร้อน",
+  "qty_sold": 5107,
+  "waste_qty": 33,
+  "waste_cost": 421.1122201208699,
+  "waste_rate": 1.063499338018128,
+  "total_volume": 5140
+ },
+ {
+  "store": "18094: อ่าวลึกแหลมสัก",
+  "qty_sold": 2684,
+  "waste_qty": 33,
+  "waste_cost": 414.9866888764094,
+  "waste_rate": 2.615289384091612,
+  "total_volume": 2717
+ },
+ {
+  "store": "6012: หมู่บ้านอุดมสุข",
+  "qty_sold": 5638,
+  "waste_qty": 32,
+  "waste_cost": 365.9565308369604,
+  "waste_rate": 0.4755085249450003,
+  "total_volume": 5670
+ },
+ {
+  "store": "935: หัวไทร",
+  "qty_sold": 5462,
+  "waste_qty": 28,
+  "waste_cost": 362.9723844866403,
+  "waste_rate": 0.6742520016856299,
+  "total_volume": 5490
+ },
+ {
+  "store": "10401: ชนะสิทธิ์วิถี",
+  "qty_sold": 5868,
+  "waste_qty": 32,
+  "waste_cost": 359.7329108765207,
+  "waste_rate": 0.5972490347490347,
+  "total_volume": 5900
+ },
+ {
+  "store": "17393: ตลาดแม่กิมส้อง",
+  "qty_sold": 4942,
+  "waste_qty": 28,
+  "waste_cost": 357.0222325255705,
+  "waste_rate": 0.7651750258617813,
+  "total_volume": 4970
+ },
+ {
+  "store": "11165: เฉลิมพระเกียรติ",
+  "qty_sold": 3540,
+  "waste_qty": 28,
+  "waste_cost": 356.663161553628,
+  "waste_rate": 0.995288574793875,
+  "total_volume": 3568
+ },
+ {
+  "store": "14320: บ้านโคกเมา (บางกล่ำ)",
+  "qty_sold": 4176,
+  "waste_qty": 25,
+  "waste_cost": 313.5276550125664,
+  "waste_rate": 0.4907515534218531,
+  "total_volume": 4201
+ },
+ {
+  "store": "17928: จันดีพัฒนา",
+  "qty_sold": 8666,
+  "waste_qty": 24,
+  "waste_cost": 305.4827047390516,
+  "waste_rate": 0.3760526718726075,
+  "total_volume": 8690
+ },
+ {
+  "store": "7780: ม.ทักษิณพัทลุง",
+  "qty_sold": 1960,
+  "waste_qty": 22,
+  "waste_cost": 276.3569279953949,
+  "waste_rate": 1.170009551098376,
+  "total_volume": 1982
+ },
+ {
+  "store": "3437: PTTOR คึกคัก",
+  "qty_sold": 7066,
+  "waste_qty": 22,
+  "waste_cost": 272.3788403822623,
+  "waste_rate": 0.2112845716488388,
+  "total_volume": 7088
+ },
+ {
+  "store": "11505: ตลาดบางม่วง",
+  "qty_sold": 6200,
+  "waste_qty": 20,
+  "waste_cost": 237.3020588208561,
+  "waste_rate": 0.5470008617136862,
+  "total_volume": 6220
+ },
+ {
+  "store": "6864: รัตภูมิ",
+  "qty_sold": 4188,
+  "waste_qty": 15,
+  "waste_cost": 202.6001350862622,
+  "waste_rate": 0.4887005649717514,
+  "total_volume": 4203
+ },
+ {
+  "store": "2855: โรงพยาบาลนครชัยศรี",
+  "qty_sold": 7708,
+  "waste_qty": 19,
+  "waste_cost": 195.2014646124303,
+  "waste_rate": 0.3440812061501717,
+  "total_volume": 7727
+ },
+ {
+  "store": "661: ปาดังเบซาร์",
+  "qty_sold": 4803,
+  "waste_qty": 16,
+  "waste_cost": 168.0901476237803,
+  "waste_rate": 0.3546099290780141,
+  "total_volume": 4819
+ },
+ {
+  "store": "13722: ท้ายสำเภา",
+  "qty_sold": 3729,
+  "waste_qty": 19,
+  "waste_cost": 168.0640582425021,
+  "waste_rate": 0.5680649375920829,
+  "total_volume": 3748
+ },
+ {
+  "store": "14194: สุขสำราญ",
+  "qty_sold": 4554,
+  "waste_qty": 9,
+  "waste_cost": 103.9690621612536,
+  "waste_rate": 0.367625940605434,
+  "total_volume": 4563
+ },
+ {
+  "store": "16743: PTTOR ปริก-ทุ่งใหญ่",
+  "qty_sold": 7317,
+  "waste_qty": 6,
+  "waste_cost": 93.01948765721289,
+  "waste_rate": 0.1483855650522317,
+  "total_volume": 7323
+ },
+ {
+  "store": "10199: เกาะใหญ่",
+  "qty_sold": 3091,
+  "waste_qty": 10,
+  "waste_cost": 80.53131538898391,
+  "waste_rate": 0.4666666666666667,
+  "total_volume": 3101
+ },
+ {
+  "store": "8274: บางขัน",
+  "qty_sold": 4077,
+  "waste_qty": 5,
+  "waste_cost": 49.82697689004845,
+  "waste_rate": 0.3152948309837805,
+  "total_volume": 4082
+ },
+ {
+  "store": "5646: ตลาดไม้หลา",
+  "qty_sold": 5973,
+  "waste_qty": 2,
+  "waste_cost": 25.12166914609842,
+  "waste_rate": 0.0855431993156544,
+  "total_volume": 5975
+ },
+ {
+  "store": "11652: ตลาดควนปริง",
+  "qty_sold": 4244,
+  "waste_qty": 1,
+  "waste_cost": 9.830707832657575,
+  "waste_rate": 0.04599816007359706,
+  "total_volume": 4245
+ },
+ {
+  "store": "19174: ติวานนท์ 7 (ปากซอยเรวดี)",
+  "qty_sold": 9,
+  "waste_qty": 0,
+  "waste_cost": 0,
+  "waste_rate": 0,
+  "total_volume": 9
+ },
+ {
+  "store": "3674: ม.วลัยลักษณ์",
+  "qty_sold": 4803,
+  "waste_qty": 0,
+  "waste_cost": 0,
+  "waste_rate": 0,
+  "total_volume": 4803
+ },
+ {
+  "store": "10237: หน้าโรงพยาบาลตะกั่วทุ่ง",
+  "qty_sold": 5060,
+  "waste_qty": 0,
+  "waste_cost": 0,
+  "waste_rate": 0,
+  "total_volume": 5060
+ },
+ {
+  "store": "6129: หน้าอำเภอคุระบุรี",
+  "qty_sold": 6614,
+  "waste_qty": 0,
+  "waste_cost": 0,
+  "waste_rate": 0,
+  "total_volume": 6614
+ },
+ {
+  "store": "13392: บ้านหนองข้อง",
+  "qty_sold": 5405,
+  "waste_qty": 0,
+  "waste_cost": 0,
+  "waste_rate": 0,
+  "total_volume": 5405
+ },
+ {
+  "store": "6741: เทศบาลตะกั่วป่า",
+  "qty_sold": 3636,
+  "waste_qty": 0,
+  "waste_cost": 0,
+  "waste_rate": 0,
+  "total_volume": 3636
+ },
+ {
+  "store": "15135: งิ้วราย(นครชัยศรี)",
+  "qty_sold": 2998,
+  "waste_qty": 0,
+  "waste_cost": 0,
+  "waste_rate": 0,
+  "total_volume": 2998
+ },
+ {
+  "store": "15196: เชียรใหญ่",
+  "qty_sold": 3208,
+  "waste_qty": 0,
+  "waste_cost": 0,
+  "waste_rate": 0,
+  "total_volume": 3208
+ }
+]

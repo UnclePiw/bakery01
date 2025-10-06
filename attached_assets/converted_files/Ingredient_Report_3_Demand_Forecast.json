@@ -1,0 +1,110 @@
+[
+ {
+  "Ingredient_Code": "7601173",
+  "Total_Demand": 270,
+  "Unit": "PCS.",
+  "Num_SKUs": 1,
+  "Num_Branches": 30,
+  "Has_Substitute": false,
+  "Num_Substitutes": 0
+ },
+ {
+  "Ingredient_Code": "7601174",
+  "Total_Demand": 9922.5,
+  "Unit": "g.",
+  "Num_SKUs": 1,
+  "Num_Branches": 30,
+  "Has_Substitute": true,
+  "Num_Substitutes": 1
+ },
+ {
+  "Ingredient_Code": "7601332",
+  "Total_Demand": 405,
+  "Unit": "ML.",
+  "Num_SKUs": 1,
+  "Num_Branches": 30,
+  "Has_Substitute": true,
+  "Num_Substitutes": 1
+ },
+ {
+  "Ingredient_Code": "3200160",
+  "Total_Demand": 1649.92,
+  "Unit": "g.",
+  "Num_SKUs": 4,
+  "Num_Branches": 30,
+  "Has_Substitute": true,
+  "Num_Substitutes": 8
+ },
+ {
+  "Ingredient_Code": "7600190",
+  "Total_Demand": 130,
+  "Unit": "PCS.",
+  "Num_SKUs": 1,
+  "Num_Branches": 30,
+  "Has_Substitute": false,
+  "Num_Substitutes": 0
+ },
+ {
+  "Ingredient_Code": "7600262",
+  "Total_Demand": 204,
+  "Unit": "PCS.",
+  "Num_SKUs": 1,
+  "Num_Branches": 30,
+  "Has_Substitute": false,
+  "Num_Substitutes": 0
+ },
+ {
+  "Ingredient_Code": "7600418",
+  "Total_Demand": 612,
+  "Unit": "g.",
+  "Num_SKUs": 1,
+  "Num_Branches": 30,
+  "Has_Substitute": true,
+  "Num_Substitutes": 3
+ },
+ {
+  "Ingredient_Code": "7601138",
+  "Total_Demand": 2040,
+  "Unit": "g.",
+  "Num_SKUs": 1,
+  "Num_Branches": 30,
+  "Has_Substitute": true,
+  "Num_Substitutes": 2
+ },
+ {
+  "Ingredient_Code": "7600812",
+  "Total_Demand": 109,
+  "Unit": "PCS.",
+  "Num_SKUs": 1,
+  "Num_Branches": 30,
+  "Has_Substitute": true,
+  "Num_Substitutes": 1
+ },
+ {
+  "Ingredient_Code": "3203130",
+  "Total_Demand": 672,
+  "Unit": "g.",
+  "Num_SKUs": 1,
+  "Num_Branches": 30,
+  "Has_Substitute": true,
+  "Num_Substitutes": 4
+ },
+ {
+  "Ingredient_Code": "7601076",
+  "Total_Demand": 1075.2,
+  "Unit": "g.",
+  "Num_SKUs": 1,
+  "Num_Branches": 30,
+  "Has_Substitute": false,
+  "Num_Substitutes": 0
+ },
+ {
+  "Ingredient_Code": "7601151",
+  "Total_Demand": 64,
+  "Unit": "PCS.",
+  "Num_SKUs": 1,
+  "Num_Branches": 30,
+  "Has_Substitute": true,
+  "Num_Substitutes": 2
+ }
+]

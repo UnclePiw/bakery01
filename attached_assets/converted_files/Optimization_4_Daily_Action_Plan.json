@@ -1,0 +1,402 @@
+[
+ {
+  "Branch": "18469: ราไวย์บีช",
+  "Product": "ครัวซองต์",
+  "Morning_Action": "Produce 14 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "18469: ราไวย์บีช",
+  "Product": "คุกกี้เนย",
+  "Morning_Action": "Produce 12 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "18469: ราไวย์บีช",
+  "Product": "มัฟฟิน",
+  "Morning_Action": "Produce 4 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "18469: ราไวย์บีช",
+  "Product": "เค้กไข่ไต้หวัน",
+  "Morning_Action": "Produce 8 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "18469: ราไวย์บีช",
+  "Product": "ขนมปังปอนด์",
+  "Morning_Action": "Produce 7 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "14555: KARON  AVENUE",
+  "Product": "ครัวซองต์",
+  "Morning_Action": "Produce 4 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "14555: KARON  AVENUE",
+  "Product": "คุกกี้เนย",
+  "Morning_Action": "Produce 2 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "14555: KARON  AVENUE",
+  "Product": "มัฟฟิน",
+  "Morning_Action": "Produce 4 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "14555: KARON  AVENUE",
+  "Product": "เค้กไข่ไต้หวัน",
+  "Morning_Action": "Produce 2 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "14555: KARON  AVENUE",
+  "Product": "ขนมปังปอนด์",
+  "Morning_Action": "Produce 2 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "15757: The Bliss South Beach Patong",
+  "Product": "ครัวซองต์",
+  "Morning_Action": "Produce 15 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "15757: The Bliss South Beach Patong",
+  "Product": "คุกกี้เนย",
+  "Morning_Action": "Produce 5 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "15757: The Bliss South Beach Patong",
+  "Product": "มัฟฟิน",
+  "Morning_Action": "Produce 7 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "15757: The Bliss South Beach Patong",
+  "Product": "เค้กไข่ไต้หวัน",
+  "Morning_Action": "Produce 6 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "15757: The Bliss South Beach Patong",
+  "Product": "ขนมปังปอนด์",
+  "Morning_Action": "Produce 8 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "9641: หมู่บ้านฉลองสุข",
+  "Product": "ครัวซองต์",
+  "Morning_Action": "Produce 8 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "9641: หมู่บ้านฉลองสุข",
+  "Product": "คุกกี้เนย",
+  "Morning_Action": "Produce 2 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "9641: หมู่บ้านฉลองสุข",
+  "Product": "มัฟฟิน",
+  "Morning_Action": "Produce 5 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "9641: หมู่บ้านฉลองสุข",
+  "Product": "เค้กไข่ไต้หวัน",
+  "Morning_Action": "Produce 1 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "9641: หมู่บ้านฉลองสุข",
+  "Product": "ขนมปังปอนด์",
+  "Morning_Action": "Produce 6 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "3510: ชายหาดกมลา 1",
+  "Product": "ครัวซองต์",
+  "Morning_Action": "Produce 9 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "3510: ชายหาดกมลา 1",
+  "Product": "คุกกี้เนย",
+  "Morning_Action": "Produce 4 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "3510: ชายหาดกมลา 1",
+  "Product": "มัฟฟิน",
+  "Morning_Action": "Produce 5 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "3510: ชายหาดกมลา 1",
+  "Product": "เค้กไข่ไต้หวัน",
+  "Morning_Action": "Produce 4 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "3510: ชายหาดกมลา 1",
+  "Product": "ขนมปังปอนด์",
+  "Morning_Action": "Produce 6 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "13391: ถนนเสน่หานุสรณ์",
+  "Product": "ครัวซองต์",
+  "Morning_Action": "Produce 10 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "13391: ถนนเสน่หานุสรณ์",
+  "Product": "คุกกี้เนย",
+  "Morning_Action": "Produce 6 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "13391: ถนนเสน่หานุสรณ์",
+  "Product": "มัฟฟิน",
+  "Morning_Action": "Produce 11 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "13391: ถนนเสน่หานุสรณ์",
+  "Product": "เค้กไข่ไต้หวัน",
+  "Morning_Action": "Produce 6 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "13391: ถนนเสน่หานุสรณ์",
+  "Product": "ขนมปังปอนด์",
+  "Morning_Action": "Produce 5 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "9922: ศรีสุดา",
+  "Product": "ครัวซองต์",
+  "Morning_Action": "Produce 5 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "9922: ศรีสุดา",
+  "Product": "คุกกี้เนย",
+  "Morning_Action": "Produce 3 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "9922: ศรีสุดา",
+  "Product": "มัฟฟิน",
+  "Morning_Action": "Produce 27 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "9922: ศรีสุดา",
+  "Product": "เค้กไข่ไต้หวัน",
+  "Morning_Action": "Produce 3 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "9922: ศรีสุดา",
+  "Product": "ขนมปังปอนด์",
+  "Morning_Action": "Produce 3 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "11045: พรุฉิมพลี ซอย 1",
+  "Product": "ครัวซองต์",
+  "Morning_Action": "Produce 6 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "11045: พรุฉิมพลี ซอย 1",
+  "Product": "คุกกี้เนย",
+  "Morning_Action": "Produce 2 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "11045: พรุฉิมพลี ซอย 1",
+  "Product": "มัฟฟิน",
+  "Morning_Action": "Produce 9 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "11045: พรุฉิมพลี ซอย 1",
+  "Product": "เค้กไข่ไต้หวัน",
+  "Morning_Action": "Produce 2 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "11045: พรุฉิมพลี ซอย 1",
+  "Product": "ขนมปังปอนด์",
+  "Morning_Action": "Produce 5 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "2392: บ้านอ่าวนาง",
+  "Product": "ครัวซองต์",
+  "Morning_Action": "Produce 10 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "2392: บ้านอ่าวนาง",
+  "Product": "คุกกี้เนย",
+  "Morning_Action": "Produce 5 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "2392: บ้านอ่าวนาง",
+  "Product": "มัฟฟิน",
+  "Morning_Action": "Produce 7 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "2392: บ้านอ่าวนาง",
+  "Product": "เค้กไข่ไต้หวัน",
+  "Morning_Action": "Produce 3 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "2392: บ้านอ่าวนาง",
+  "Product": "ขนมปังปอนด์",
+  "Morning_Action": "Produce 3 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "13088: ร้านค้าสวัสดิการ รพ.ค่ายวชิราวุธ",
+  "Product": "ครัวซองต์",
+  "Morning_Action": "Produce 2 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "13088: ร้านค้าสวัสดิการ รพ.ค่ายวชิราวุธ",
+  "Product": "คุกกี้เนย",
+  "Morning_Action": "Produce 4 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "13088: ร้านค้าสวัสดิการ รพ.ค่ายวชิราวุธ",
+  "Product": "มัฟฟิน",
+  "Morning_Action": "Produce 6 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "13088: ร้านค้าสวัสดิการ รพ.ค่ายวชิราวุธ",
+  "Product": "เค้กไข่ไต้หวัน",
+  "Morning_Action": "Produce 4 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ },
+ {
+  "Branch": "13088: ร้านค้าสวัสดิการ รพ.ค่ายวชิราวุธ",
+  "Product": "ขนมปังปอนด์",
+  "Morning_Action": "Produce 3 units",
+  "Afternoon_Action": "Monitor stock at 19:00",
+  "Evening_Action": "Discount 40%",
+  "Shelf_Life": 2
+ }
+]
