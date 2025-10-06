@@ -1,9 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AlertTriangle, AlertCircle, Info, Calendar, Package } from "lucide-react";
 import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { api } from "@/lib/api";
+import { useToast } from "@/hooks/use-toast";
 
 interface ExpirationAlert {
   id: string;
@@ -15,60 +19,38 @@ interface ExpirationAlert {
   suggestedAction: string;
 }
 
-export default function Alerts() {
-  const mockAlerts: ExpirationAlert[] = [
-    {
-      id: "1",
-      ingredientName: "แป้งขนมปัง",
-      quantity: 5,
-      unit: "กก.",
-      expiryDate: "2025-10-06",
-      daysUntilExpiry: 0,
-      suggestedAction: "ใช้ทันที - ผลิตขนมปัง",
-    },
-    {
-      id: "2",
-      ingredientName: "นมสด",
-      quantity: 2,
-      unit: "ลิตร",
-      expiryDate: "2025-10-07",
-      daysUntilExpiry: 1,
-      suggestedAction: "ใช้ในการผลิตวันนี้",
-    },
-    {
-      id: "3",
-      ingredientName: "เนยสด",
-      quantity: 3,
-      unit: "กก.",
-      expiryDate: "2025-10-08",
-      daysUntilExpiry: 2,
-      suggestedAction: "วางแผนใช้ภายใน 2 วัน",
-    },
-    {
-      id: "4",
-      ingredientName: "ไข่ไก่",
-      quantity: 24,
-      unit: "ฟอง",
-      expiryDate: "2025-10-10",
-      daysUntilExpiry: 4,
-      suggestedAction: "ใช้ในการผลิตสัปดาห์นี้",
-    },
-    {
-      id: "5",
-      ingredientName: "ครีมสด",
-      quantity: 1.5,
-      unit: "ลิตร",
-      expiryDate: "2025-10-12",
-      daysUntilExpiry: 6,
-      suggestedAction: "ผลิตเค้กครีม",
-    },
-  ];
+interface AlertsProps {
+  selectedBranchId: string;
+}
 
-  const [alerts, setAlerts] = useState(mockAlerts);
+export default function Alerts({ selectedBranchId }: AlertsProps) {
+  const [dismissedAlerts, setDismissedAlerts] = useState<string[]>([]);
+  const { toast } = useToast();
 
-  const todayAlerts = alerts.filter((a) => a.daysUntilExpiry === 0);
-  const thisWeekAlerts = alerts.filter((a) => a.daysUntilExpiry > 0 && a.daysUntilExpiry <= 3);
-  const nextWeekAlerts = alerts.filter((a) => a.daysUntilExpiry > 3 && a.daysUntilExpiry <= 7);
+  const { data: alertsData, isLoading, error } = useQuery({
+    queryKey: ["/api/ingredients/expiring", selectedBranchId, 7],
+    queryFn: () => api.getExpiringIngredients(selectedBranchId, 7),
+  });
+
+  if (error) {
+    toast({
+      title: "เกิดข้อผิดพลาด",
+      description: "ไม่สามารถโหลดข้อมูลการแจ้งเตือนได้",
+      variant: "destructive",
+    });
+  }
+
+  const alerts = (alertsData || []).filter(
+    (alert: ExpirationAlert) => !dismissedAlerts.includes(alert.id)
+  );
+
+  const todayAlerts = alerts.filter((a: ExpirationAlert) => a.daysUntilExpiry === 0);
+  const thisWeekAlerts = alerts.filter(
+    (a: ExpirationAlert) => a.daysUntilExpiry > 0 && a.daysUntilExpiry <= 3
+  );
+  const nextWeekAlerts = alerts.filter(
+    (a: ExpirationAlert) => a.daysUntilExpiry > 3 && a.daysUntilExpiry <= 7
+  );
 
   const getAlertColor = (days: number) => {
     if (days === 0) return "border-l-critical bg-critical/5";
@@ -76,7 +58,27 @@ export default function Alerts() {
     return "border-l-primary bg-primary/5";
   };
 
+  const handleDismiss = (alertId: string) => {
+    setDismissedAlerts([...dismissedAlerts, alertId]);
+    toast({
+      title: "ยกเลิกการแจ้งเตือน",
+      description: "ยกเลิกการแจ้งเตือนเรียบร้อยแล้ว",
+    });
+  };
+
   const renderAlertList = (alertList: ExpirationAlert[]) => {
+    if (isLoading) {
+      return (
+        <div className="space-y-3">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <Card key={i} className="p-4">
+              <Skeleton className="h-24 w-full" />
+            </Card>
+          ))}
+        </div>
+      );
+    }
+
     if (alertList.length === 0) {
       return (
         <div className="text-center py-12 text-muted-foreground">
@@ -144,7 +146,7 @@ export default function Alerts() {
                 <Button
                   size="sm"
                   variant="ghost"
-                  onClick={() => setAlerts(alerts.filter((a) => a.id !== alert.id))}
+                  onClick={() => handleDismiss(alert.id)}
                   data-testid={`button-dismiss-${alert.id}`}
                 >
                   ยกเลิก
@@ -171,7 +173,11 @@ export default function Alerts() {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-muted-foreground">หมดอายุวันนี้</p>
-              <p className="text-2xl font-mono font-bold">{todayAlerts.length}</p>
+              {isLoading ? (
+                <Skeleton className="h-8 w-12 mt-1" />
+              ) : (
+                <p className="text-2xl font-mono font-bold">{todayAlerts.length}</p>
+              )}
             </div>
             <AlertCircle className="h-8 w-8 text-critical" />
           </div>
@@ -180,7 +186,11 @@ export default function Alerts() {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-muted-foreground">ภายใน 3 วัน</p>
-              <p className="text-2xl font-mono font-bold">{thisWeekAlerts.length}</p>
+              {isLoading ? (
+                <Skeleton className="h-8 w-12 mt-1" />
+              ) : (
+                <p className="text-2xl font-mono font-bold">{thisWeekAlerts.length}</p>
+              )}
             </div>
             <AlertTriangle className="h-8 w-8 text-warning" />
           </div>
@@ -189,7 +199,11 @@ export default function Alerts() {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-muted-foreground">สัปดาห์หน้า</p>
-              <p className="text-2xl font-mono font-bold">{nextWeekAlerts.length}</p>
+              {isLoading ? (
+                <Skeleton className="h-8 w-12 mt-1" />
+              ) : (
+                <p className="text-2xl font-mono font-bold">{nextWeekAlerts.length}</p>
+              )}
             </div>
             <Info className="h-8 w-8 text-primary" />
           </div>

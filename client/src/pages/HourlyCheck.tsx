@@ -3,8 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Skeleton } from "@/components/ui/skeleton";
 import { Clock, TrendingDown, TrendingUp, CheckCircle } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { api } from "@/lib/api";
+import { useToast } from "@/hooks/use-toast";
 
 interface Product {
   id: string;
@@ -13,27 +17,80 @@ interface Product {
   lastCheck?: string;
 }
 
-export default function HourlyCheck() {
-  const mockProducts: Product[] = [
-    { id: "1", name: "ครัวซองต์", systemQuantity: 25, lastCheck: "13:00" },
-    { id: "2", name: "เดนิช", systemQuantity: 18, lastCheck: "13:00" },
-    { id: "3", name: "บัตเตอร์เค้ก", systemQuantity: 32, lastCheck: "13:00" },
-    { id: "4", name: "โดนัท", systemQuantity: 40, lastCheck: "13:00" },
-    { id: "5", name: "คุกกี้", systemQuantity: 55, lastCheck: "13:00" },
-    { id: "6", name: "แซนด์วิช", systemQuantity: 12, lastCheck: "13:00" },
-  ];
+interface HourlyCheckProps {
+  selectedBranchId: string;
+}
 
-  const [counts, setCounts] = useState<Record<string, number>>(
-    mockProducts.reduce((acc, p) => ({ ...acc, [p.id]: p.systemQuantity }), {})
-  );
-
+export default function HourlyCheck({ selectedBranchId }: HourlyCheckProps) {
+  const [counts, setCounts] = useState<Record<string, number>>({});
   const [submitted, setSubmitted] = useState(false);
+  const { toast } = useToast();
+  const queryClient = useQueryClient();
+
+  const { data: productStock, isLoading } = useQuery({
+    queryKey: ["/api/products/stock", selectedBranchId],
+    queryFn: () => api.getProductStock(selectedBranchId),
+  });
+
+  useEffect(() => {
+    if (productStock) {
+      const initialCounts = productStock.reduce(
+        (acc: Record<string, number>, p: Product) => ({ ...acc, [p.id]: p.systemQuantity }),
+        {}
+      );
+      setCounts(initialCounts);
+    }
+  }, [productStock]);
+
+  const submitMutation = useMutation({
+    mutationFn: (checks: any[]) => api.submitHourlyCheck(selectedBranchId, checks),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["/api/products/stock", selectedBranchId] });
+      setSubmitted(true);
+      toast({
+        title: "บันทึกสำเร็จ",
+        description: "บันทึกการตรวจนับสต๊อกเรียบร้อยแล้ว",
+      });
+      setTimeout(() => setSubmitted(false), 3000);
+    },
+    onError: () => {
+      toast({
+        title: "เกิดข้อผิดพลาด",
+        description: "ไม่สามารถบันทึกการตรวจนับได้",
+        variant: "destructive",
+      });
+    },
+  });
 
   const handleSubmit = () => {
-    console.log("Submitting hourly check:", counts);
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    const checks = Object.entries(counts).map(([productId, actualCount]) => ({
+      productId,
+      actualCount,
+    }));
+    submitMutation.mutate(checks);
   };
+
+  if (isLoading) {
+    return (
+      <div className="space-y-6">
+        <div className="flex items-center justify-between">
+          <div>
+            <h1 className="text-2xl font-bold">ตรวจนับสต๊อกรายชั่วโมง</h1>
+            <p className="text-sm text-muted-foreground">
+              ตรวจนับสต๊อกเบเกอรี่เพื่อแนะนำโปรโมชั่นและปรับปรุงสต๊อก
+            </p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <Card key={i} className="p-6">
+              <Skeleton className="h-24 w-full" />
+            </Card>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
@@ -60,7 +117,7 @@ export default function HourlyCheck() {
       )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {mockProducts.map((product) => {
+        {(productStock || []).map((product: Product) => {
           const counted = counts[product.id] || 0;
           const variance = counted - product.systemQuantity;
           return (
@@ -117,8 +174,14 @@ export default function HourlyCheck() {
       </div>
 
       <Card className="p-6">
-        <Button onClick={handleSubmit} className="w-full" size="lg" data-testid="button-submit-check">
-          บันทึกการตรวจนับทั้งหมด
+        <Button 
+          onClick={handleSubmit} 
+          className="w-full" 
+          size="lg" 
+          data-testid="button-submit-check"
+          disabled={submitMutation.isPending}
+        >
+          {submitMutation.isPending ? "กำลังบันทึก..." : "บันทึกการตรวจนับทั้งหมด"}
         </Button>
       </Card>
     </div>

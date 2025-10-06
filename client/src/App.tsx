@@ -18,13 +18,21 @@ import HourlyCheck from "@/pages/HourlyCheck";
 import Alerts from "@/pages/Alerts";
 import NotFound from "@/pages/not-found";
 
-function Router() {
+function Router({ selectedBranchId }: { selectedBranchId: string }) {
   return (
     <Switch>
-      <Route path="/" component={Dashboard} />
-      <Route path="/ingredients" component={IngredientManagement} />
-      <Route path="/hourly-check" component={HourlyCheck} />
-      <Route path="/alerts" component={Alerts} />
+      <Route path="/">
+        <Dashboard selectedBranchId={selectedBranchId} />
+      </Route>
+      <Route path="/ingredients">
+        <IngredientManagement selectedBranchId={selectedBranchId} />
+      </Route>
+      <Route path="/hourly-check">
+        <HourlyCheck selectedBranchId={selectedBranchId} />
+      </Route>
+      <Route path="/alerts">
+        <Alerts selectedBranchId={selectedBranchId} />
+      </Route>
       <Route component={NotFound} />
     </Switch>
   );
@@ -144,7 +152,7 @@ function App() {
               </div>
             </header>
             <main className="container mx-auto px-4 py-6 pb-20 md:pb-6">
-              <Router />
+              <Router selectedBranchId={selectedBranch} />
             </main>
             <BottomNav />
           </div>

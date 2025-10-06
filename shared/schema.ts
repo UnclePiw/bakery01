@@ -52,7 +52,7 @@ export const hourlyChecks = pgTable("hourly_checks", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
   branchId: varchar("branch_id").notNull(),
   productId: varchar("product_id").notNull(),
-  checkTime: timestamp("check_time").notNull(),
+  checkTime: text("check_time").notNull(),
   countedQuantity: integer("counted_quantity").notNull(),
   systemQuantity: integer("system_quantity").notNull(),
   variance: integer("variance").notNull(),

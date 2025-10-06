@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Skeleton } from "@/components/ui/skeleton";
 import {
   Table,
   TableBody,
@@ -12,6 +13,9 @@ import {
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Package, Calendar } from "lucide-react";
 import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { api } from "@/lib/api";
+import { useToast } from "@/hooks/use-toast";
 
 interface IngredientStock {
   id: string;
@@ -23,54 +27,26 @@ interface IngredientStock {
   daysUntilExpiry: number;
 }
 
-export default function IngredientManagement() {
-  const [searchQuery, setSearchQuery] = useState("");
+interface IngredientManagementProps {
+  selectedBranchId: string;
+}
 
-  const mockStock: IngredientStock[] = [
-    {
-      id: "1",
-      name: "แป้งขนมปัง",
-      quantity: 25.5,
-      unit: "กก.",
-      expiryDate: "2025-10-08",
-      batchNumber: "BATCH-001",
-      daysUntilExpiry: 2,
-    },
-    {
-      id: "2",
-      name: "นมสด",
-      quantity: 15,
-      unit: "ลิตร",
-      expiryDate: "2025-10-07",
-      batchNumber: "BATCH-002",
-      daysUntilExpiry: 1,
-    },
-    {
-      id: "3",
-      name: "เนยสด",
-      quantity: 8.5,
-      unit: "กก.",
-      expiryDate: "2025-10-10",
-      batchNumber: "BATCH-003",
-      daysUntilExpiry: 4,
-    },
-    {
-      id: "4",
-      name: "ไข่ไก่",
-      quantity: 120,
-      unit: "ฟอง",
-      expiryDate: "2025-10-12",
-      daysUntilExpiry: 6,
-    },
-    {
-      id: "5",
-      name: "น้ำตาล",
-      quantity: 45,
-      unit: "กก.",
-      expiryDate: "2025-11-15",
-      daysUntilExpiry: 40,
-    },
-  ];
+export default function IngredientManagement({ selectedBranchId }: IngredientManagementProps) {
+  const [searchQuery, setSearchQuery] = useState("");
+  const { toast } = useToast();
+
+  const { data: stock, isLoading, error } = useQuery({
+    queryKey: ["/api/ingredients/stock", selectedBranchId],
+    queryFn: () => api.getIngredientStock(selectedBranchId),
+  });
+
+  if (error) {
+    toast({
+      title: "เกิดข้อผิดพลาด",
+      description: "ไม่สามารถโหลดข้อมูลวัตถุดิบได้",
+      variant: "destructive",
+    });
+  }
 
   const getExpiryBadge = (days: number) => {
     if (days <= 1) return { variant: "destructive" as const, text: "หมดอายุวันนี้" };
@@ -79,7 +55,7 @@ export default function IngredientManagement() {
     return { variant: "secondary" as const, text: `${days} วัน` };
   };
 
-  const filteredStock = mockStock.filter((item) =>
+  const filteredStock = (stock || []).filter((item: IngredientStock) =>
     item.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
@@ -121,7 +97,18 @@ export default function IngredientManagement() {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {filteredStock.length === 0 ? (
+              {isLoading ? (
+                Array.from({ length: 5 }).map((_, i) => (
+                  <TableRow key={i}>
+                    <TableCell><Skeleton className="h-4 w-32" /></TableCell>
+                    <TableCell><Skeleton className="h-4 w-20" /></TableCell>
+                    <TableCell><Skeleton className="h-4 w-28" /></TableCell>
+                    <TableCell><Skeleton className="h-5 w-16" /></TableCell>
+                    <TableCell><Skeleton className="h-4 w-24" /></TableCell>
+                    <TableCell><Skeleton className="h-8 w-24" /></TableCell>
+                  </TableRow>
+                ))
+              ) : filteredStock.length === 0 ? (
                 <TableRow>
                   <TableCell colSpan={6} className="text-center py-8 text-muted-foreground">
                     <Package className="h-12 w-12 mx-auto mb-2 opacity-50" />
@@ -129,7 +116,7 @@ export default function IngredientManagement() {
                   </TableCell>
                 </TableRow>
               ) : (
-                filteredStock.map((item) => {
+                filteredStock.map((item: IngredientStock) => {
                   const expiryBadge = getExpiryBadge(item.daysUntilExpiry);
                   return (
                     <TableRow key={item.id} data-testid={`row-ingredient-${item.id}`}>

@@ -8,90 +8,102 @@ import { DateTimePicker } from "@/components/DateTimePicker";
 import { Package, AlertTriangle, TrendingUp, ShoppingBag } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { api } from "@/lib/api";
+import { useToast } from "@/hooks/use-toast";
 
-export default function Dashboard() {
+interface DashboardProps {
+  selectedBranchId: string;
+}
+
+export default function Dashboard({ selectedBranchId }: DashboardProps) {
   const [showHourlyCheck, setShowHourlyCheck] = useState(false);
   const [showDateTimePicker, setShowDateTimePicker] = useState(false);
-  const [alerts, setAlerts] = useState([
-    {
-      id: "1",
-      type: "critical" as const,
-      message: "แป้งขนมปังจะหมดอายุวันนี้ (5 กก.)",
-      timestamp: "10 นาทีที่แล้ว",
-      actionLabel: "ดูรายละเอียด",
-    },
-    {
-      id: "2",
-      type: "warning" as const,
-      message: "นมสดเหลือน้อย (2 ลิตร) - ควรสั่งเพิ่ม",
-      timestamp: "30 นาทีที่แล้ว",
-      actionLabel: "สั่งซื้อ",
-    },
-    {
-      id: "3",
-      type: "info" as const,
-      message: "ถึงเวลาตรวจเช็คสต๊อกชั่วโมง 14:00",
-      timestamp: "5 นาทีที่แล้ว",
-      actionLabel: "ตรวจเช็คเลย",
-    },
-  ]);
+  const queryClient = useQueryClient();
+  const { toast } = useToast();
 
-  const mockForecastData = [
-    { hour: "08:00", predicted: 45, actual: 42 },
-    { hour: "09:00", predicted: 65, actual: 68 },
-    { hour: "10:00", predicted: 85, actual: 82 },
-    { hour: "11:00", predicted: 95, actual: 90 },
-    { hour: "12:00", predicted: 120, actual: 115 },
-    { hour: "13:00", predicted: 100, actual: 105 },
-    { hour: "14:00", predicted: 75 },
-    { hour: "15:00", predicted: 60 },
-    { hour: "16:00", predicted: 80 },
-  ];
+  const { data: stats } = useQuery({
+    queryKey: ["/api/stats", selectedBranchId],
+    queryFn: () => api.getStats(selectedBranchId),
+  });
 
-  const mockIngredients = [
-    { id: "1", name: "แป้งขนมปัง", unit: "กก." },
-    { id: "2", name: "นมสด", unit: "ลิตร" },
-    { id: "3", name: "เนยสด", unit: "กก." },
-    { id: "4", name: "ไข่ไก่", unit: "ฟอง" },
-    { id: "5", name: "น้ำตาล", unit: "กก." },
-  ];
+  const { data: expiringIngredients = [] } = useQuery({
+    queryKey: ["/api/ingredients/expiring", selectedBranchId],
+    queryFn: () => api.getExpiringIngredients(selectedBranchId, 7),
+  });
 
-  const mockProducts = [
-    { id: "1", name: "ครัวซองต์", systemQuantity: 25 },
-    { id: "2", name: "เดนิช", systemQuantity: 18 },
-    { id: "3", name: "บัตเตอร์เค้ก", systemQuantity: 32 },
-    { id: "4", name: "โดนัท", systemQuantity: 40 },
-  ];
+  const { data: forecastData = [] } = useQuery({
+    queryKey: ["/api/forecast", selectedBranchId],
+    queryFn: () => api.getForecast(selectedBranchId),
+  });
 
-  const mockProductionItems = [
-    {
-      id: "1",
-      name: "ครัวซองต์",
-      currentStock: 15,
-      forecastDemand: 45,
-      suggestedProduction: 35,
-      ingredientsAvailable: true,
-      shelfLifeHours: 8,
+  const { data: ingredients = [] } = useQuery({
+    queryKey: ["/api/ingredients"],
+    queryFn: () => api.getIngredients(),
+  });
+
+  const { data: products = [] } = useQuery({
+    queryKey: ["/api/products"],
+    queryFn: () => api.getProducts(),
+  });
+
+  const { data: productStock = [] } = useQuery({
+    queryKey: ["/api/products/stock", selectedBranchId],
+    queryFn: () => api.getProductStock(selectedBranchId),
+  });
+
+  const { data: productionPlan = [] } = useQuery({
+    queryKey: ["/api/production-plan", selectedBranchId],
+    queryFn: () => api.getProductionPlan(selectedBranchId),
+  });
+
+  const addIngredientBatchMutation = useMutation({
+    mutationFn: ({ entries, type }: { entries: any[]; type: "yesterday" | "today" }) =>
+      api.addIngredientStockBatch(selectedBranchId, entries, type),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["/api/ingredients/stock", selectedBranchId] });
+      queryClient.invalidateQueries({ queryKey: ["/api/ingredients/expiring", selectedBranchId] });
+      queryClient.invalidateQueries({ queryKey: ["/api/stats", selectedBranchId] });
+      toast({
+        title: "สำเร็จ",
+        description: "บันทึกข้อมูลวัตถุดิบเรียบร้อยแล้ว",
+      });
     },
-    {
-      id: "2",
-      name: "เดนิช",
-      currentStock: 8,
-      forecastDemand: 30,
-      suggestedProduction: 25,
-      ingredientsAvailable: true,
-      shelfLifeHours: 12,
+    onError: () => {
+      toast({
+        title: "เกิดข้อผิดพลาด",
+        description: "ไม่สามารถบันทึกข้อมูลได้",
+        variant: "destructive",
+      });
     },
-    {
-      id: "3",
-      name: "บัตเตอร์เค้ก",
-      currentStock: 20,
-      forecastDemand: 28,
-      suggestedProduction: 10,
-      ingredientsAvailable: false,
-      shelfLifeHours: 24,
+  });
+
+  const hourlyCheckMutation = useMutation({
+    mutationFn: (checks: any[]) => api.submitHourlyCheck(selectedBranchId, checks),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["/api/products/stock", selectedBranchId] });
+      queryClient.invalidateQueries({ queryKey: ["/api/stats", selectedBranchId] });
+      toast({
+        title: "สำเร็จ",
+        description: "บันทึกการตรวจนับเรียบร้อยแล้ว",
+      });
     },
-  ];
+    onError: () => {
+      toast({
+        title: "เกิดข้อผิดพลาด",
+        description: "ไม่สามารถบันทึกการตรวจนับได้",
+        variant: "destructive",
+      });
+    },
+  });
+
+  const alerts = expiringIngredients.slice(0, 5).map((ing: any, index: number) => ({
+    id: ing.id || `alert-${index}`,
+    type: ing.daysUntilExpiry === 0 ? ("critical" as const) : ing.daysUntilExpiry <= 3 ? ("warning" as const) : ("info" as const),
+    message: `${ing.ingredientName} ${ing.daysUntilExpiry === 0 ? "หมดอายุวันนี้" : `จะหมดอายุใน ${ing.daysUntilExpiry} วัน`} (${ing.quantity} ${ing.unit})`,
+    timestamp: new Date().toLocaleString("th-TH"),
+    actionLabel: "ดูรายละเอียด",
+  }));
 
   const handleDateTimeConfirm = (date: string, time: string) => {
     console.log("Confirmed date and time:", { date, time });
@@ -99,29 +111,57 @@ export default function Dashboard() {
   };
 
   const handleIngredientSubmit = (entries: any[], type: "yesterday" | "today") => {
-    console.log(`Submitting ${type} entries:`, entries);
+    if (entries.length === 0) {
+      toast({
+        title: "ไม่มีข้อมูล",
+        description: "กรุณาเพิ่มรายการวัตถุดิบ",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    const validEntries = entries.filter(
+      (e) => e.ingredientId && e.quantity > 0 && e.expiryDate
+    );
+
+    if (validEntries.length === 0) {
+      toast({
+        title: "ข้อมูลไม่ครบถ้วน",
+        description: "กรุณากรอกข้อมูลให้ครบถ้วน",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    addIngredientBatchMutation.mutate({ entries: validEntries, type });
   };
 
   const handleHourlyCheckSubmit = (checks: any[]) => {
-    console.log("Hourly check submitted:", checks);
+    hourlyCheckMutation.mutate(checks);
     setShowHourlyCheck(false);
   };
 
   const handleProductionStart = (plan: any[]) => {
     console.log("Starting production:", plan);
+    toast({
+      title: "เริ่มการผลิต",
+      description: `กำลังผลิต ${plan.length} รายการ`,
+    });
   };
 
   const handleAlertDismiss = (id: string) => {
-    setAlerts(alerts.filter((a) => a.id !== id));
+    console.log("Dismiss alert:", id);
   };
 
   const handleAlertAction = (id: string) => {
-    const alert = alerts.find((a) => a.id === id);
-    if (alert?.actionLabel === "ตรวจเช็คเลย") {
-      setShowHourlyCheck(true);
-    }
     console.log("Alert action:", id);
   };
+
+  const productsForHourlyCheck = productStock.map((ps: any) => ({
+    id: ps.productId,
+    name: ps.product.name,
+    systemQuantity: ps.quantity,
+  }));
 
   return (
     <div className="space-y-6">
@@ -147,49 +187,49 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <StatCard
           title="วัตถุดิบคงเหลือ"
-          value="87"
+          value={stats?.totalIngredients || 0}
           icon={Package}
           trend="+5 จากเมื่อวาน"
           status="success"
         />
         <StatCard
           title="ใกล้หมดอายุ"
-          value="12"
+          value={stats?.expiringCount || 0}
           icon={AlertTriangle}
           trend="ภายใน 3 วัน"
-          status="warning"
+          status={stats?.expiringCount > 5 ? "warning" : "success"}
         />
         <StatCard
           title="เบเกอรี่วันนี้"
-          value="245"
+          value={stats?.totalProducts || 0}
           icon={ShoppingBag}
           trend="85% ของเป้าหมาย"
           status="success"
         />
         <StatCard
           title="ยอดขาย"
-          value="45,200"
+          value={stats?.salesAmount?.toLocaleString() || "0"}
           icon={TrendingUp}
-          trend="+12% จากเมื่อวาน"
+          trend={`+${stats?.salesTrend || 0}% จากเมื่อวาน`}
           status="default"
         />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
-          <ForecastChart data={mockForecastData} currentHour="14:00" />
-          <IngredientEntryForm ingredients={mockIngredients} onSubmit={handleIngredientSubmit} />
+          <ForecastChart data={forecastData} currentHour={new Date().getHours().toString()} />
+          <IngredientEntryForm ingredients={ingredients} onSubmit={handleIngredientSubmit} />
         </div>
         <div className="space-y-6">
           <AlertList alerts={alerts} onDismiss={handleAlertDismiss} onAction={handleAlertAction} />
-          <ProductionRecommendation items={mockProductionItems} onStartProduction={handleProductionStart} />
+          <ProductionRecommendation items={productionPlan} onStartProduction={handleProductionStart} />
         </div>
       </div>
 
       <HourlyCheckModal
         open={showHourlyCheck}
         onClose={() => setShowHourlyCheck(false)}
-        products={mockProducts}
+        products={productsForHourlyCheck}
         onSubmit={handleHourlyCheckSubmit}
       />
     </div>
