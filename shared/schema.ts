@@ -199,6 +199,17 @@ export const productStockRelations = relations(productStock, ({ one }) => ({
   }),
 }));
 
+export const branchForecastsRelations = relations(branchForecasts, ({ many }) => ({
+  products: many(productForecasts),
+}));
+
+export const productForecastsRelations = relations(productForecasts, ({ one }) => ({
+  branchForecast: one(branchForecasts, {
+    fields: [productForecasts.branchForecastId],
+    references: [branchForecasts.id],
+  }),
+}));
+
 export const insertUserSchema = createInsertSchema(users).pick({
   username: true,
   password: true,
