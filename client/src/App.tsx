@@ -12,6 +12,8 @@ import { Badge } from "@/components/ui/badge";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { useRealtimeUpdates, requestNotificationPermission } from "@/hooks/useRealtimeUpdates";
+import { useQuery } from "@tanstack/react-query";
+import type { Branch } from "@shared/schema";
 
 import Dashboard from "@/pages/Dashboard";
 import IngredientManagement from "@/pages/IngredientManagement";
@@ -158,15 +160,22 @@ function AppContent({ selectedBranch, setSelectedBranch, alertCount, mockBranche
 }
 
 function App() {
-  const [selectedBranch, setSelectedBranch] = useState("1");
+  const [selectedBranch, setSelectedBranch] = useState("");
   const [alertCount] = useState(3);
 
-  const mockBranches = [
-    { id: "1", name: "สาขาสยาม", location: "สยามพารากอน" },
-    { id: "2", name: "สาขาอโศก", location: "เทอมินอล 21" },
-    { id: "3", name: "สาขาสีลม", location: "ซิลม คอมเพล็กซ์" },
-    { id: "4", name: "สาขาเซ็นทรัล", location: "เซ็นทรัลเวิลด์" },
-  ];
+  const { data: branches = [], isLoading } = useQuery<Branch[]>({
+    queryKey: ["/api/branches"],
+  });
+
+  useEffect(() => {
+    if (branches.length > 0 && !selectedBranch) {
+      setSelectedBranch(branches[0].id);
+    }
+  }, [branches, selectedBranch]);
+
+  if (isLoading || !selectedBranch) {
+    return null;
+  }
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -176,7 +185,7 @@ function App() {
             selectedBranch={selectedBranch}
             setSelectedBranch={setSelectedBranch}
             alertCount={alertCount}
-            mockBranches={mockBranches}
+            mockBranches={branches}
           />
           <Toaster />
         </TooltipProvider>
