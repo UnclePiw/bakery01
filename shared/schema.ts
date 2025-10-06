@@ -67,6 +67,29 @@ export const demandForecasts = pgTable("demand_forecasts", {
   predictedDemand: integer("predicted_demand").notNull(),
 });
 
+export const branchForecasts = pgTable("branch_forecasts", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  branchId: varchar("branch_id").notNull(),
+  branchName: text("branch_name").notNull(),
+  forecastDate: date("forecast_date").notNull(),
+  totalForecast: integer("total_forecast").notNull(),
+  accuracy: decimal("accuracy", { precision: 5, scale: 2 }),
+  createdAt: timestamp("created_at").notNull().default(sql`now()`),
+});
+
+export const productForecasts = pgTable("product_forecasts", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  branchForecastId: varchar("branch_forecast_id").notNull(),
+  productId: varchar("product_id").notNull(),
+  productCode: text("product_code"),
+  productName: text("product_name").notNull(),
+  forecastQuantity: integer("forecast_quantity").notNull(),
+  minQuantity: integer("min_quantity"),
+  maxQuantity: integer("max_quantity"),
+  accuracy: decimal("accuracy", { precision: 5, scale: 2 }),
+  modelType: text("model_type"),
+});
+
 export const insertUserSchema = createInsertSchema(users).pick({
   username: true,
   password: true,
@@ -79,6 +102,8 @@ export const insertBakeryProductSchema = createInsertSchema(bakeryProducts).omit
 export const insertProductStockSchema = createInsertSchema(productStock).omit({ id: true });
 export const insertHourlyCheckSchema = createInsertSchema(hourlyChecks).omit({ id: true });
 export const insertDemandForecastSchema = createInsertSchema(demandForecasts).omit({ id: true });
+export const insertBranchForecastSchema = createInsertSchema(branchForecasts).omit({ id: true, createdAt: true });
+export const insertProductForecastSchema = createInsertSchema(productForecasts).omit({ id: true });
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
@@ -89,3 +114,5 @@ export type BakeryProduct = typeof bakeryProducts.$inferSelect;
 export type ProductStock = typeof productStock.$inferSelect;
 export type HourlyCheck = typeof hourlyChecks.$inferSelect;
 export type DemandForecast = typeof demandForecasts.$inferSelect;
+export type BranchForecast = typeof branchForecasts.$inferSelect;
+export type ProductForecast = typeof productForecasts.$inferSelect;

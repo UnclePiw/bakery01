@@ -385,5 +385,83 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  app.post("/api/forecasts/import", async (req: Request, res: Response) => {
+    try {
+      const { forecastDate, branches } = req.body;
+
+      const importedForecasts = [];
+      
+      for (const branch of branches) {
+        const branchForecast = await storage.addBranchForecast({
+          branchId: branch.branchId,
+          branchName: branch.branchName,
+          forecastDate,
+          totalForecast: branch.totalForecast,
+          accuracy: branch.accuracy ? branch.accuracy.toString() : null,
+        });
+
+        for (const product of branch.products) {
+          await storage.addProductForecast({
+            branchForecastId: branchForecast.id,
+            productId: product.productId || null,
+            productCode: product.productCode,
+            productName: product.productName,
+            forecastQuantity: product.forecastQuantity,
+            minQuantity: product.minQuantity,
+            maxQuantity: product.maxQuantity,
+            accuracy: product.accuracy ? product.accuracy.toString() : null,
+            modelType: product.modelType,
+          });
+        }
+
+        importedForecasts.push(branchForecast);
+      }
+
+      io.emit("forecast-updated", { date: forecastDate });
+
+      res.json({
+        success: true,
+        count: importedForecasts.length,
+        forecasts: importedForecasts,
+      });
+    } catch (error) {
+      console.error("Failed to import forecasts:", error);
+      res.status(500).json({ error: "Failed to import forecasts" });
+    }
+  });
+
+  app.get("/api/forecasts/:date", async (req: Request, res: Response) => {
+    try {
+      const { date } = req.params;
+      const forecasts = await storage.getBranchForecasts(date);
+
+      const forecastsWithProducts = await Promise.all(
+        forecasts.map(async (forecast) => {
+          const products = await storage.getProductForecasts(forecast.id);
+          return { ...forecast, products };
+        })
+      );
+
+      res.json(forecastsWithProducts);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to fetch forecasts" });
+    }
+  });
+
+  app.get("/api/forecasts/:branchId/:date", async (req: Request, res: Response) => {
+    try {
+      const { branchId, date } = req.params;
+      const forecast = await storage.getBranchForecast(branchId, date);
+
+      if (!forecast) {
+        return res.status(404).json({ error: "Forecast not found" });
+      }
+
+      res.json(forecast);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to fetch forecast" });
+    }
+  });
+
   return httpServer;
 }

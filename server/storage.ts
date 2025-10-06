@@ -8,6 +8,8 @@ import {
   type ProductStock,
   type HourlyCheck,
   type DemandForecast,
+  type BranchForecast,
+  type ProductForecast,
 } from "@shared/schema";
 import { randomUUID } from "crypto";
 
@@ -43,6 +45,12 @@ export interface IStorage {
 
   getDemandForecasts(branchId: string, date: Date): Promise<DemandForecast[]>;
   addDemandForecast(forecast: Omit<DemandForecast, "id">): Promise<DemandForecast>;
+
+  getBranchForecasts(date: string): Promise<BranchForecast[]>;
+  getBranchForecast(branchId: string, date: string): Promise<(BranchForecast & { products: ProductForecast[] }) | undefined>;
+  addBranchForecast(forecast: Omit<BranchForecast, "id" | "createdAt">): Promise<BranchForecast>;
+  addProductForecast(forecast: Omit<ProductForecast, "id">): Promise<ProductForecast>;
+  getProductForecasts(branchForecastId: string): Promise<ProductForecast[]>;
 }
 
 export class MemStorage implements IStorage {
@@ -54,6 +62,8 @@ export class MemStorage implements IStorage {
   private productStock: Map<string, ProductStock>;
   private hourlyChecks: Map<string, HourlyCheck>;
   private demandForecasts: Map<string, DemandForecast>;
+  private branchForecasts: Map<string, BranchForecast>;
+  private productForecasts: Map<string, ProductForecast>;
 
   constructor() {
     this.users = new Map();
@@ -64,6 +74,8 @@ export class MemStorage implements IStorage {
     this.productStock = new Map();
     this.hourlyChecks = new Map();
     this.demandForecasts = new Map();
+    this.branchForecasts = new Map();
+    this.productForecasts = new Map();
     this.seedData();
   }
 
@@ -281,6 +293,42 @@ export class MemStorage implements IStorage {
     const newForecast: DemandForecast = { ...forecast, id };
     this.demandForecasts.set(id, newForecast);
     return newForecast;
+  }
+
+  async getBranchForecasts(date: string): Promise<BranchForecast[]> {
+    return Array.from(this.branchForecasts.values()).filter((f) => f.forecastDate === date);
+  }
+
+  async getBranchForecast(branchId: string, date: string): Promise<(BranchForecast & { products: ProductForecast[] }) | undefined> {
+    const branchForecast = Array.from(this.branchForecasts.values()).find(
+      (f) => f.branchId === branchId && f.forecastDate === date
+    );
+    if (!branchForecast) return undefined;
+
+    const products = await this.getProductForecasts(branchForecast.id);
+    return { ...branchForecast, products };
+  }
+
+  async addBranchForecast(forecast: Omit<BranchForecast, "id" | "createdAt">): Promise<BranchForecast> {
+    const id = randomUUID();
+    const newForecast: BranchForecast = { 
+      ...forecast, 
+      id,
+      createdAt: new Date(),
+    };
+    this.branchForecasts.set(id, newForecast);
+    return newForecast;
+  }
+
+  async addProductForecast(forecast: Omit<ProductForecast, "id">): Promise<ProductForecast> {
+    const id = randomUUID();
+    const newForecast: ProductForecast = { ...forecast, id };
+    this.productForecasts.set(id, newForecast);
+    return newForecast;
+  }
+
+  async getProductForecasts(branchForecastId: string): Promise<ProductForecast[]> {
+    return Array.from(this.productForecasts.values()).filter((f) => f.branchForecastId === branchForecastId);
   }
 }
 
