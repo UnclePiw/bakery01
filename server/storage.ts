@@ -10,6 +10,14 @@ import {
   type DemandForecast,
   type BranchForecast,
   type ProductForecast,
+  type ProductRecipe,
+  type ProductionPlan,
+  type PromotionRecommendation,
+  type DynamicPricingSchedule,
+  type ShelfLifeAlert,
+  type DailyActionPlan,
+  type BranchWasteAnalysis,
+  type IngredientDemandForecast,
 } from "@shared/schema";
 import { randomUUID } from "crypto";
 
@@ -51,6 +59,15 @@ export interface IStorage {
   addBranchForecast(forecast: Omit<BranchForecast, "id" | "createdAt">): Promise<BranchForecast>;
   addProductForecast(forecast: Omit<ProductForecast, "id">): Promise<ProductForecast>;
   getProductForecasts(branchForecastId: string): Promise<ProductForecast[]>;
+
+  getProductRecipes(sku?: string): Promise<ProductRecipe[]>;
+  getProductionPlans(branchId?: string): Promise<ProductionPlan[]>;
+  getPromotionRecommendations(branchId?: string): Promise<PromotionRecommendation[]>;
+  getDynamicPricingSchedules(branchId?: string): Promise<DynamicPricingSchedule[]>;
+  getShelfLifeAlerts(branchId?: string): Promise<ShelfLifeAlert[]>;
+  getDailyActionPlans(branchId?: string): Promise<DailyActionPlan[]>;
+  getBranchWasteAnalysis(branchId?: string): Promise<BranchWasteAnalysis[]>;
+  getIngredientDemandForecasts(): Promise<IngredientDemandForecast[]>;
 }
 
 export class MemStorage implements IStorage {
@@ -366,6 +383,38 @@ export class MemStorage implements IStorage {
   async getProductForecasts(branchForecastId: string): Promise<ProductForecast[]> {
     return Array.from(this.productForecasts.values()).filter((f) => f.branchForecastId === branchForecastId);
   }
+
+  async getProductRecipes(sku?: string): Promise<ProductRecipe[]> {
+    return [];
+  }
+
+  async getProductionPlans(branchId?: string): Promise<ProductionPlan[]> {
+    return [];
+  }
+
+  async getPromotionRecommendations(branchId?: string): Promise<PromotionRecommendation[]> {
+    return [];
+  }
+
+  async getDynamicPricingSchedules(branchId?: string): Promise<DynamicPricingSchedule[]> {
+    return [];
+  }
+
+  async getShelfLifeAlerts(branchId?: string): Promise<ShelfLifeAlert[]> {
+    return [];
+  }
+
+  async getDailyActionPlans(branchId?: string): Promise<DailyActionPlan[]> {
+    return [];
+  }
+
+  async getBranchWasteAnalysis(branchId?: string): Promise<BranchWasteAnalysis[]> {
+    return [];
+  }
+
+  async getIngredientDemandForecasts(): Promise<IngredientDemandForecast[]> {
+    return [];
+  }
 }
 
 import { db } from "./db";
@@ -555,6 +604,73 @@ export class DbStorage implements IStorage {
     return db.query.productForecasts.findMany({
       where: eq(schema.productForecasts.branchForecastId, branchForecastId),
     });
+  }
+
+  async getProductRecipes(sku?: string): Promise<ProductRecipe[]> {
+    if (sku) {
+      return db.query.productRecipes.findMany({
+        where: eq(schema.productRecipes.sku, sku),
+      });
+    }
+    return db.query.productRecipes.findMany();
+  }
+
+  async getProductionPlans(branchId?: string): Promise<ProductionPlan[]> {
+    if (branchId) {
+      return db.query.productionPlans.findMany({
+        where: eq(schema.productionPlans.branch, branchId),
+      });
+    }
+    return db.query.productionPlans.findMany();
+  }
+
+  async getPromotionRecommendations(branchId?: string): Promise<PromotionRecommendation[]> {
+    if (branchId) {
+      return db.query.promotionRecommendations.findMany({
+        where: eq(schema.promotionRecommendations.store, branchId),
+      });
+    }
+    return db.query.promotionRecommendations.findMany();
+  }
+
+  async getDynamicPricingSchedules(branchId?: string): Promise<DynamicPricingSchedule[]> {
+    if (branchId) {
+      return db.query.dynamicPricingSchedules.findMany({
+        where: eq(schema.dynamicPricingSchedules.branch, branchId),
+      });
+    }
+    return db.query.dynamicPricingSchedules.findMany();
+  }
+
+  async getShelfLifeAlerts(branchId?: string): Promise<ShelfLifeAlert[]> {
+    if (branchId) {
+      return db.query.shelfLifeAlerts.findMany({
+        where: eq(schema.shelfLifeAlerts.branch, branchId),
+      });
+    }
+    return db.query.shelfLifeAlerts.findMany();
+  }
+
+  async getDailyActionPlans(branchId?: string): Promise<DailyActionPlan[]> {
+    if (branchId) {
+      return db.query.dailyActionPlans.findMany({
+        where: eq(schema.dailyActionPlans.branch, branchId),
+      });
+    }
+    return db.query.dailyActionPlans.findMany();
+  }
+
+  async getBranchWasteAnalysis(branchId?: string): Promise<BranchWasteAnalysis[]> {
+    if (branchId) {
+      return db.query.branchWasteAnalysis.findMany({
+        where: eq(schema.branchWasteAnalysis.store, branchId),
+      });
+    }
+    return db.query.branchWasteAnalysis.findMany();
+  }
+
+  async getIngredientDemandForecasts(): Promise<IngredientDemandForecast[]> {
+    return db.query.ingredientDemandForecasts.findMany();
   }
 }
 

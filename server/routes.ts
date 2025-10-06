@@ -458,5 +458,84 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  app.get("/api/optimization/production-plans/:branchId?", async (req: Request, res: Response) => {
+    try {
+      const { branchId } = req.params;
+      const plans = await storage.getProductionPlans(branchId);
+      res.json(plans);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to fetch production plans" });
+    }
+  });
+
+  app.get("/api/optimization/promotions/:branchId?", async (req: Request, res: Response) => {
+    try {
+      const { branchId } = req.params;
+      const promotions = await storage.getPromotionRecommendations(branchId);
+      res.json(promotions);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to fetch promotion recommendations" });
+    }
+  });
+
+  app.get("/api/optimization/pricing-schedules/:branchId?", async (req: Request, res: Response) => {
+    try {
+      const { branchId } = req.params;
+      const schedules = await storage.getDynamicPricingSchedules(branchId);
+      res.json(schedules);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to fetch pricing schedules" });
+    }
+  });
+
+  app.get("/api/optimization/shelf-life-alerts/:branchId?", async (req: Request, res: Response) => {
+    try {
+      const { branchId } = req.params;
+      const alerts = await storage.getShelfLifeAlerts(branchId);
+      res.json(alerts);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to fetch shelf life alerts" });
+    }
+  });
+
+  app.get("/api/optimization/daily-actions/:branchId?", async (req: Request, res: Response) => {
+    try {
+      const { branchId } = req.params;
+      const actions = await storage.getDailyActionPlans(branchId);
+      res.json(actions);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to fetch daily action plans" });
+    }
+  });
+
+  app.get("/api/reports/waste-analysis/:branchId?", async (req: Request, res: Response) => {
+    try {
+      const { branchId } = req.params;
+      const analysis = await storage.getBranchWasteAnalysis(branchId);
+      res.json(analysis);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to fetch waste analysis" });
+    }
+  });
+
+  app.get("/api/reports/ingredient-demand", async (req: Request, res: Response) => {
+    try {
+      const demand = await storage.getIngredientDemandForecasts();
+      res.json(demand);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to fetch ingredient demand forecasts" });
+    }
+  });
+
+  app.get("/api/reports/product-recipes/:sku?", async (req: Request, res: Response) => {
+    try {
+      const { sku } = req.params;
+      const recipes = await storage.getProductRecipes(sku);
+      res.json(recipes);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to fetch product recipes" });
+    }
+  });
+
   return httpServer;
 }
