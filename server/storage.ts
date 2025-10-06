@@ -368,4 +368,194 @@ export class MemStorage implements IStorage {
   }
 }
 
-export const storage = new MemStorage();
+import { db } from "./db";
+import { eq, and, gte, lte } from "drizzle-orm";
+import * as schema from "@shared/schema";
+
+export class DbStorage implements IStorage {
+  async getUser(id: string): Promise<User | undefined> {
+    const result = await db.query.users.findFirst({ where: eq(schema.users.id, id) });
+    return result;
+  }
+
+  async getUserByUsername(username: string): Promise<User | undefined> {
+    const result = await db.query.users.findFirst({ where: eq(schema.users.username, username) });
+    return result;
+  }
+
+  async createUser(user: InsertUser): Promise<User> {
+    const [newUser] = await db.insert(schema.users).values(user).returning();
+    return newUser;
+  }
+
+  async getBranches(): Promise<Branch[]> {
+    return db.query.branches.findMany();
+  }
+
+  async getBranch(id: string): Promise<Branch | undefined> {
+    return db.query.branches.findFirst({ where: eq(schema.branches.id, id) });
+  }
+
+  async createBranch(branch: Branch): Promise<Branch> {
+    const [newBranch] = await db.insert(schema.branches).values(branch).returning();
+    return newBranch;
+  }
+
+  async getIngredients(): Promise<Ingredient[]> {
+    return db.query.ingredients.findMany();
+  }
+
+  async getIngredient(id: string): Promise<Ingredient | undefined> {
+    return db.query.ingredients.findFirst({ where: eq(schema.ingredients.id, id) });
+  }
+
+  async createIngredient(ingredient: Omit<Ingredient, "id">): Promise<Ingredient> {
+    const [newIngredient] = await db.insert(schema.ingredients).values(ingredient).returning();
+    return newIngredient;
+  }
+
+  async getIngredientStock(branchId: string): Promise<(IngredientStock & { ingredient: Ingredient })[]> {
+    const result = await db.query.ingredientStock.findMany({
+      where: eq(schema.ingredientStock.branchId, branchId),
+      with: { ingredient: true },
+    });
+    return result as (IngredientStock & { ingredient: Ingredient })[];
+  }
+
+  async getIngredientStockExpiringSoon(branchId: string, days: number): Promise<(IngredientStock & { ingredient: Ingredient })[]> {
+    const today = new Date();
+    const futureDate = new Date(today);
+    futureDate.setDate(futureDate.getDate() + days);
+    
+    const result = await db.query.ingredientStock.findMany({
+      where: and(
+        eq(schema.ingredientStock.branchId, branchId),
+        lte(schema.ingredientStock.expiryDate, futureDate.toISOString().split('T')[0])
+      ),
+      with: { ingredient: true },
+    });
+    return result as (IngredientStock & { ingredient: Ingredient })[];
+  }
+
+  async addIngredientStock(stock: Omit<IngredientStock, "id">): Promise<IngredientStock> {
+    const [newStock] = await db.insert(schema.ingredientStock).values(stock).returning();
+    return newStock;
+  }
+
+  async updateIngredientStock(id: string, quantity: number): Promise<IngredientStock | undefined> {
+    const [updated] = await db.update(schema.ingredientStock)
+      .set({ quantity: quantity.toString() })
+      .where(eq(schema.ingredientStock.id, id))
+      .returning();
+    return updated;
+  }
+
+  async deleteIngredientStock(id: string): Promise<boolean> {
+    const result = await db.delete(schema.ingredientStock).where(eq(schema.ingredientStock.id, id));
+    return true;
+  }
+
+  async getBakeryProducts(): Promise<BakeryProduct[]> {
+    return db.query.bakeryProducts.findMany();
+  }
+
+  async getBakeryProduct(id: string): Promise<BakeryProduct | undefined> {
+    return db.query.bakeryProducts.findFirst({ where: eq(schema.bakeryProducts.id, id) });
+  }
+
+  async createBakeryProduct(product: Omit<BakeryProduct, "id">): Promise<BakeryProduct> {
+    const [newProduct] = await db.insert(schema.bakeryProducts).values(product).returning();
+    return newProduct;
+  }
+
+  async getProductStock(branchId: string): Promise<(ProductStock & { product: BakeryProduct })[]> {
+    const result = await db.query.productStock.findMany({
+      where: eq(schema.productStock.branchId, branchId),
+      with: { product: true },
+    });
+    return result as (ProductStock & { product: BakeryProduct })[];
+  }
+
+  async addProductStock(stock: Omit<ProductStock, "id">): Promise<ProductStock> {
+    const [newStock] = await db.insert(schema.productStock).values(stock).returning();
+    return newStock;
+  }
+
+  async updateProductStock(id: string, quantity: number): Promise<ProductStock | undefined> {
+    const [updated] = await db.update(schema.productStock)
+      .set({ quantity })
+      .where(eq(schema.productStock.id, id))
+      .returning();
+    return updated;
+  }
+
+  async addHourlyCheck(check: Omit<HourlyCheck, "id">): Promise<HourlyCheck> {
+    const [newCheck] = await db.insert(schema.hourlyChecks).values(check).returning();
+    return newCheck;
+  }
+
+  async getHourlyChecks(branchId: string, date: Date): Promise<HourlyCheck[]> {
+    const dateStr = date.toISOString().split("T")[0];
+    return db.query.hourlyChecks.findMany({
+      where: and(
+        eq(schema.hourlyChecks.branchId, branchId),
+        gte(schema.hourlyChecks.checkTime, dateStr)
+      ),
+    });
+  }
+
+  async getDemandForecasts(branchId: string, date: Date): Promise<DemandForecast[]> {
+    const dateStr = date.toISOString().split("T")[0];
+    return db.query.demandForecasts.findMany({
+      where: and(
+        eq(schema.demandForecasts.branchId, branchId),
+        eq(schema.demandForecasts.forecastDate, dateStr)
+      ),
+    });
+  }
+
+  async addDemandForecast(forecast: Omit<DemandForecast, "id">): Promise<DemandForecast> {
+    const [newForecast] = await db.insert(schema.demandForecasts).values(forecast).returning();
+    return newForecast;
+  }
+
+  async getBranchForecasts(date: string): Promise<BranchForecast[]> {
+    return db.query.branchForecasts.findMany({
+      where: eq(schema.branchForecasts.forecastDate, date),
+    });
+  }
+
+  async getBranchForecast(branchId: string, date: string): Promise<(BranchForecast & { products: ProductForecast[] }) | undefined> {
+    const branchForecast = await db.query.branchForecasts.findFirst({
+      where: and(
+        eq(schema.branchForecasts.branchId, branchId),
+        eq(schema.branchForecasts.forecastDate, date)
+      ),
+      with: {
+        products: true,
+      },
+    });
+    if (!branchForecast) return undefined;
+    
+    const products = await this.getProductForecasts(branchForecast.id);
+    return { ...branchForecast, products };
+  }
+
+  async addBranchForecast(forecast: Omit<BranchForecast, "id" | "createdAt">): Promise<BranchForecast> {
+    const [newForecast] = await db.insert(schema.branchForecasts).values(forecast).returning();
+    return newForecast;
+  }
+
+  async addProductForecast(forecast: Omit<ProductForecast, "id">): Promise<ProductForecast> {
+    const [newForecast] = await db.insert(schema.productForecasts).values(forecast).returning();
+    return newForecast;
+  }
+
+  async getProductForecasts(branchForecastId: string): Promise<ProductForecast[]> {
+    return db.query.productForecasts.findMany({
+      where: eq(schema.productForecasts.branchForecastId, branchForecastId),
+    });
+  }
+}
+
+export const storage = process.env.DATABASE_URL ? new DbStorage() : new MemStorage();

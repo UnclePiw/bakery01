@@ -439,6 +439,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
           hoursOnShelf: Math.round(hoursOnShelf * 10) / 10,
           needsPromotion,
           shelfLifeHours: product?.shelfLifeHours || 0,
+          minQuantity: productForecast.minQuantity,
+          maxQuantity: productForecast.maxQuantity,
         };
       }) : [];
 

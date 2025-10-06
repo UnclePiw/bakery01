@@ -14,6 +14,8 @@ interface ProductForecastWithStock {
   productName: string;
   productCode: string | null;
   forecastQuantity: number;
+  minQuantity: number | null;
+  maxQuantity: number | null;
   currentStock: number;
   hoursOnShelf: number;
   needsPromotion: boolean;
@@ -167,11 +169,20 @@ export default function TodayForecast({ selectedBranchId }: TodayForecastProps) 
                         )}
                       </div>
 
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+                      <div className="grid grid-cols-2 md:grid-cols-5 gap-3 text-sm">
                         <div>
                           <div className="text-muted-foreground text-xs">จำนวนที่พยากรณ์</div>
                           <div className="font-semibold font-mono" data-testid={`text-forecast-quantity-${index}`}>
                             {product.forecastQuantity} ชิ้น
+                          </div>
+                        </div>
+
+                        <div>
+                          <div className="text-muted-foreground text-xs">ช่วงพยากรณ์</div>
+                          <div className="font-semibold font-mono text-xs" data-testid={`text-forecast-range-${index}`}>
+                            {product.minQuantity !== null && product.maxQuantity !== null
+                              ? `${product.minQuantity} - ${product.maxQuantity} ชิ้น`
+                              : "N/A"}
                           </div>
                         </div>
 
