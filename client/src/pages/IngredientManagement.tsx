@@ -12,7 +12,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Package, Calendar } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { useToast } from "@/hooks/use-toast";
@@ -40,13 +40,15 @@ export default function IngredientManagement({ selectedBranchId }: IngredientMan
     queryFn: () => api.getIngredientStock(selectedBranchId),
   });
 
-  if (error) {
-    toast({
-      title: "เกิดข้อผิดพลาด",
-      description: "ไม่สามารถโหลดข้อมูลวัตถุดิบได้",
-      variant: "destructive",
-    });
-  }
+  useEffect(() => {
+    if (error) {
+      toast({
+        title: "เกิดข้อผิดพลาด",
+        description: "ไม่สามารถโหลดข้อมูลวัตถุดิบได้",
+        variant: "destructive",
+      });
+    }
+  }, [error, toast]);
 
   const getExpiryBadge = (days: number) => {
     if (days <= 1) return { variant: "destructive" as const, text: "หมดอายุวันนี้" };

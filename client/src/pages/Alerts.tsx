@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AlertTriangle, AlertCircle, Info, Calendar, Package } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { useToast } from "@/hooks/use-toast";
@@ -32,13 +32,15 @@ export default function Alerts({ selectedBranchId }: AlertsProps) {
     queryFn: () => api.getExpiringIngredients(selectedBranchId, 7),
   });
 
-  if (error) {
-    toast({
-      title: "เกิดข้อผิดพลาด",
-      description: "ไม่สามารถโหลดข้อมูลการแจ้งเตือนได้",
-      variant: "destructive",
-    });
-  }
+  useEffect(() => {
+    if (error) {
+      toast({
+        title: "เกิดข้อผิดพลาด",
+        description: "ไม่สามารถโหลดข้อมูลการแจ้งเตือนได้",
+        variant: "destructive",
+      });
+    }
+  }, [error, toast]);
 
   const alerts = (alertsData || []).filter(
     (alert: ExpirationAlert) => !dismissedAlerts.includes(alert.id)
