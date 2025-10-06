@@ -9,8 +9,9 @@ import { BranchSelector } from "@/components/BranchSelector";
 import { Bell, LayoutDashboard, Package, Clock, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
+import { useRealtimeUpdates, requestNotificationPermission } from "@/hooks/useRealtimeUpdates";
 
 import Dashboard from "@/pages/Dashboard";
 import IngredientManagement from "@/pages/IngredientManagement";
@@ -105,22 +106,15 @@ function DesktopNav() {
   );
 }
 
-function App() {
-  const [selectedBranch, setSelectedBranch] = useState("1");
-  const [alertCount] = useState(3);
+function AppContent({ selectedBranch, setSelectedBranch, alertCount, mockBranches }: any) {
+  useRealtimeUpdates(selectedBranch);
 
-  const mockBranches = [
-    { id: "1", name: "สาขาสยาม", location: "สยามพารากอน" },
-    { id: "2", name: "สาขาอโศก", location: "เทอมินอล 21" },
-    { id: "3", name: "สาขาสีลม", location: "ซิลม คอมเพล็กซ์" },
-    { id: "4", name: "สาขาเซ็นทรัล", location: "เซ็นทรัลเวิลด์" },
-  ];
+  useEffect(() => {
+    requestNotificationPermission();
+  }, []);
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider>
-        <TooltipProvider>
-          <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
             <header className="sticky top-0 z-40 bg-card border-b">
               <div className="container mx-auto px-4 h-16 flex items-center justify-between gap-4">
                 <div className="flex items-center gap-4">
@@ -154,8 +148,32 @@ function App() {
             <main className="container mx-auto px-4 py-6 pb-20 md:pb-6">
               <Router selectedBranchId={selectedBranch} />
             </main>
-            <BottomNav />
-          </div>
+      <BottomNav />
+    </div>
+  );
+}
+
+function App() {
+  const [selectedBranch, setSelectedBranch] = useState("1");
+  const [alertCount] = useState(3);
+
+  const mockBranches = [
+    { id: "1", name: "สาขาสยาม", location: "สยามพารากอน" },
+    { id: "2", name: "สาขาอโศก", location: "เทอมินอล 21" },
+    { id: "3", name: "สาขาสีลม", location: "ซิลม คอมเพล็กซ์" },
+    { id: "4", name: "สาขาเซ็นทรัล", location: "เซ็นทรัลเวิลด์" },
+  ];
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider>
+        <TooltipProvider>
+          <AppContent
+            selectedBranch={selectedBranch}
+            setSelectedBranch={setSelectedBranch}
+            alertCount={alertCount}
+            mockBranches={mockBranches}
+          />
           <Toaster />
         </TooltipProvider>
       </ThemeProvider>
