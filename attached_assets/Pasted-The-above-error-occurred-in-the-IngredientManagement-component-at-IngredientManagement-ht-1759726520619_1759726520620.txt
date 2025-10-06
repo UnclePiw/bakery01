@@ -1,0 +1,29 @@
+The above error occurred in the <IngredientManagement> component:
+
+    at IngredientManagement (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/src/pages/IngredientManagement.tsx:36:48)
+    at Route (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=466fb8ca:323:16)
+    at Switch (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=466fb8ca:379:17)
+    at Router (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/src/App.tsx?v=abNwAg0DAFgPdTMHN3A3d:40:19)
+    at main
+    at div
+    at AppContent (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/src/App.tsx?v=abNwAg0DAFgPdTMHN3A3d:222:23)
+    at AppWithData (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/src/App.tsx?v=abNwAg0DAFgPdTMHN3A3d:348:47)
+    at Provider (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-S34NKWM7.js?v=466fb8ca:48:15)
+    at TooltipProvider (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=466fb8ca:60:5)
+    at ThemeProvider (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/src/components/ThemeProvider.tsx:20:33)
+    at QueryClientProvider (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=466fb8ca:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+Cannot read properties of undefined (reading 'toLowerCase')
+at https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/src/pages/IngredientManagement.tsx:58:25
+at Array.filter (<anonymous>)
+at IngredientManagement (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/src/pages/IngredientManagement.tsx:57:39)
+at renderWithHooks (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=466fb8ca:11548:26)
+at updateFunctionComponent (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=466fb8ca:14582:28)
+at beginWork (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=466fb8ca:15924:22)
+at beginWork$1 (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=466fb8ca:19753:22)
+at performUnitOfWork (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=466fb8ca:19198:20)
+at workLoopSync (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPCDYKBN.js?v=466fb8ca:19137:13)
+at renderRootSync (https://d75bfc6e-32de-4772-98dc-8eebd6afe935-00-tsd9zh6x3dgp.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/ch
