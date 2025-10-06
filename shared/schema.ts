@@ -1,4 +1,4 @@
-import { sql } from "drizzle-orm";
+import { sql, relations } from "drizzle-orm";
 import { pgTable, text, varchar, integer, date, timestamp, decimal, boolean } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
@@ -184,6 +184,20 @@ export const ingredientDemandForecasts = pgTable("ingredient_demand_forecasts", 
   hasSubstitute: boolean("has_substitute").notNull(),
   numSubstitutes: integer("num_substitutes").notNull(),
 });
+
+export const ingredientStockRelations = relations(ingredientStock, ({ one }) => ({
+  ingredient: one(ingredients, {
+    fields: [ingredientStock.ingredientId],
+    references: [ingredients.id],
+  }),
+}));
+
+export const productStockRelations = relations(productStock, ({ one }) => ({
+  product: one(bakeryProducts, {
+    fields: [productStock.productId],
+    references: [bakeryProducts.id],
+  }),
+}));
 
 export const insertUserSchema = createInsertSchema(users).pick({
   username: true,

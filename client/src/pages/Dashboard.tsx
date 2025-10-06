@@ -6,12 +6,16 @@ import { ProductionRecommendation } from "@/components/ProductionRecommendation"
 import { IngredientEntryForm } from "@/components/IngredientEntryForm";
 import { HourlyCheckModal } from "@/components/HourlyCheckModal";
 import { DateTimePicker } from "@/components/DateTimePicker";
-import { Package, AlertTriangle, TrendingUp, ShoppingBag } from "lucide-react";
+import { Package, AlertTriangle, TrendingUp, ShoppingBag, Calendar, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { useToast } from "@/hooks/use-toast";
+import { ToastAction } from "@/components/ui/toast";
+import { useLocation } from "wouter";
 
 interface DashboardProps {
   selectedBranchId: string;
@@ -23,6 +27,7 @@ export default function Dashboard({ selectedBranchId }: DashboardProps) {
   const [forecastDate, setForecastDate] = useState(new Date().toISOString().split("T")[0]);
   const queryClient = useQueryClient();
   const { toast } = useToast();
+  const [, setLocation] = useLocation();
 
   const { data: stats } = useQuery({
     queryKey: ["/api/stats", selectedBranchId],
@@ -59,6 +64,11 @@ export default function Dashboard({ selectedBranchId }: DashboardProps) {
     queryFn: () => api.getProductionPlan(selectedBranchId),
   });
 
+  const { data: ingredientStock = [] } = useQuery({
+    queryKey: ["/api/ingredients/stock", selectedBranchId],
+    queryFn: () => api.getIngredientStock(selectedBranchId),
+  });
+
   const addIngredientBatchMutation = useMutation({
     mutationFn: ({ entries, type }: { entries: any[]; type: "yesterday" | "today" }) =>
       api.addIngredientStockBatch(selectedBranchId, entries, type),
@@ -69,7 +79,13 @@ export default function Dashboard({ selectedBranchId }: DashboardProps) {
       toast({
         title: "สำเร็จ",
         description: "บันทึกข้อมูลวัตถุดิบเรียบร้อยแล้ว",
+        action: (
+          <ToastAction altText="ดูรายการ" onClick={() => setLocation("/ingredients")}>
+            ดูรายการ
+          </ToastAction>
+        ),
       });
+      setLocation("/ingredients");
     },
     onError: () => {
       toast({
@@ -165,6 +181,17 @@ export default function Dashboard({ selectedBranchId }: DashboardProps) {
     systemQuantity: ps.quantity,
   }));
 
+  const getExpiryBadge = (days: number) => {
+    if (days <= 1) return { variant: "destructive" as const, text: "หมดอายุวันนี้" };
+    if (days <= 3) return { variant: "destructive" as const, text: `${days} วัน` };
+    if (days <= 7) return { variant: "default" as const, text: `${days} วัน` };
+    return { variant: "secondary" as const, text: `${days} วัน` };
+  };
+
+  const recentIngredients = ingredientStock
+    .sort((a: any, b: any) => new Date(b.receivedDate).getTime() - new Date(a.receivedDate).getTime())
+    .slice(0, 5);
+
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
@@ -216,6 +243,62 @@ export default function Dashboard({ selectedBranchId }: DashboardProps) {
           status="default"
         />
       </div>
+
+      <Card className="p-6">
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <h2 className="text-lg font-semibold">วัตถุดิบที่เพิ่มล่าสุด</h2>
+            <p className="text-sm text-muted-foreground">รายการวัตถุดิบที่เพิ่มเข้ามาล่าสุด 5 รายการ</p>
+          </div>
+          <Button variant="ghost" onClick={() => setLocation("/ingredients")} data-testid="button-view-all-ingredients">
+            ดูทั้งหมด
+            <ArrowRight className="h-4 w-4 ml-2" />
+          </Button>
+        </div>
+        <div className="space-y-3">
+          {recentIngredients.length === 0 ? (
+            <div className="text-center py-8 text-muted-foreground">
+              <Package className="h-12 w-12 mx-auto mb-2 opacity-50" />
+              <p>ยังไม่มีรายการวัตถุดิบ</p>
+            </div>
+          ) : (
+            recentIngredients.map((item: any) => {
+              const expiryBadge = getExpiryBadge(item.daysUntilExpiry);
+              return (
+                <div
+                  key={item.id}
+                  className="flex items-center justify-between p-3 rounded-md border hover-elevate"
+                  data-testid={`recent-ingredient-${item.id}`}
+                >
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2">
+                      <p className="font-medium">{item.ingredient?.name || item.name}</p>
+                      {item.isFromYesterday && (
+                        <Badge variant="secondary" className="text-xs">จากเมื่อวาน</Badge>
+                      )}
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      จำนวน: {item.quantity} {item.ingredient?.unit || item.unit}
+                      {item.batchNumber && ` • แบตช์: ${item.batchNumber}`}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="text-right">
+                      <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                        <Calendar className="h-3 w-3" />
+                        <span>{new Date(item.expiryDate).toLocaleDateString("th-TH")}</span>
+                      </div>
+                      <Badge variant={expiryBadge.variant} className="mt-1">
+                        {expiryBadge.text}
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+              );
+            })
+          )}
+        </div>
+      </Card>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
